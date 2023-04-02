@@ -1,0 +1,7 @@
+type=3
+doubleQuout=0
+argument=
+workingFolder=
+iconFile=
+iconNumber=1
+explanation=

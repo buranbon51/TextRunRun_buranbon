@@ -1,0 +1,8 @@
+﻿; type=3
+; doubleQuout=0
+; argument=
+; workingFolder=
+; iconFile=
+; iconNumber=1
+; explanation=
+F_output("見本のアイテム２が実行されました。") %--
