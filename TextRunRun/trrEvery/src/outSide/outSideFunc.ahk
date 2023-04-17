@@ -861,12 +861,16 @@ outs_relativePathToAbsolutePath(p_strArg, curDir, LineFile, LineNumber, errView=
 		}
 		return  p_strArg
 	}
-	StringLeft, lchr, p_str, 1
-	if(lchr == """"){
-		StringRight, rchr, p_str, 1
-		if(rchr == """"){
-			dbQuouteFlag  := True
-			p_str := Trim( p_str, """" )
+	StringLen, p_strLen, p_str
+	if( p_strLen >= 3){
+		StringLeft, lchr, p_str, 1
+		if(lchr == """"){
+			StringRight, rchr, p_str, 1
+			if(rchr == """"){
+				dbQuouteFlag  := True
+				StringTrimLeft, p_str, p_str, 1
+				StringTrimRight, p_str, p_str, 1
+			}
 		}
 	}
 	if( func_myFileNotExit(p_str) )

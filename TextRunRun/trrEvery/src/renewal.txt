@@ -18,3 +18,8 @@ E_showTmpOutputToggle
 E_showOutputToggle
 E_showErrorOutputToggle
 E_showMultipleText1Toggle これらを加えた
+2023年4月17日
+outs_relativePathToAbsolutePath() で、"" の文字をカレントフォルダに変えるようになっていたのでそうならない様にした
+空白が無いなら、heard_miniEditFileNameOpen()の処理を最初の時点で止める様にした
+&sendPasteTextOutで % %を余分に展開してしまう問題に対処した。
+F_inputListSelectOutputAssign(GuiNum)を加えた

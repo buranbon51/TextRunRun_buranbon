@@ -424,7 +424,7 @@ cinp_sendPaste(rightStr, GuiNum, textOutFlag){
 	;Transform, rightStr, Deref, %rightStr%
 
 	if( textOutFlag ){
-		rightStr := outs_textOutTrimss(rightStr)
+		rightStr := outs_textOutTrimssSharp(rightStr)
 		; `n の文字を変えたり、%%の文字を展開したり
 		Transform, rightStr, Deref, %rightStr%
 	}

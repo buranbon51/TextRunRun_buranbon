@@ -2131,7 +2131,7 @@ edi_outTextToTextGuiAssign(rightStr, GuiNum, textOutFlag, addFlag){
 	num := guit_editTypeNumGet(targetGui)
 
 	if( textOutFlag ){
-		rightStr3 := outs_textOutTrimss(rightStr3)
+		rightStr3 := outs_textOutTrimssSharp(rightStr3)
 		Transform, rightStr3, Deref, %rightStr3%
 	}
 	if(num == 1){

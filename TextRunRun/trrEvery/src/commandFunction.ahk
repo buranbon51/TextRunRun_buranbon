@@ -962,7 +962,7 @@ cof_syscommandBefore(com1, rightStr, pOut, GuiNum) {
 		guf_showGuiAssign(82, "NA")
 		return True
 	} else if(com1 == "&outArgsToMultipleText1AddLinefeedTextOut" ) {
-		rightStr := outs_textOutTrimss(rightStr)
+		rightStr := outs_textOutTrimssSharp(rightStr)
 		Transform, rightStr, Deref, %rightStr%
 		guf_appendBoxEditBasisPlan(rightStr, "BoxEdit82_1", 82)
 		guf_showGuiAssign(82, "NA")

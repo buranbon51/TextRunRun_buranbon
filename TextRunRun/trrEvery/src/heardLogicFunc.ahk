@@ -3,6 +3,10 @@
 
 ; 空白のあるファイル名  と 引数  があった場合実行できるようにした処理
 heard_miniEditFileNameOpen(argStr, GuiNum, LineFile, LineNumber, openNum=1){
+	IfNotInString, argStr, %A_Space%
+	{
+		return  False
+	}
 	argStrDbReplace := heard_dbQuouteReplace(argStr, False)
 	argStrDbReplace := heard_searchReplaceFilePath(argStrDbReplace)
 	tmpArgStr := heard_dbQuouteReplaceReturn(argStrDbReplace, A_LineFile, A_LineNumber, True, True)

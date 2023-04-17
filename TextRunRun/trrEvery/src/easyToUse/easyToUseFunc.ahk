@@ -249,6 +249,11 @@ F_inputListUpDownKey(number){
 	aut_controlKeyUpDownTestAnotherGui(False, number)
 }
 
+F_inputListSelectOutputAssign(GuiNum){
+	flag := edi_pushEnterFromListEditAnotherGui(GuiNum, False)
+	return  flag
+}
+
 F_snippetAdd(key, sentence, spaceFlag=False){
 	cinp_snippetAdd(key, sentence, spaceFlag, "", 71)
 }
