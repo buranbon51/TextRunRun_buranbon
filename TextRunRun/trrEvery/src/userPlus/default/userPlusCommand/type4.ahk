@@ -32,7 +32,7 @@ uptype4_specialCommand(command, allArgs, allText, useControl, useGuiNum, history
 	読み込む
 -----------------------------
 	履歴に残すか
-	残す
+	コマンドによって、扱い方が違う
 -----------------------------
 	&&& での動作
 	コマンドによって、扱い方が違う
@@ -42,7 +42,7 @@ uptype4_specialCommand(command, allArgs, allText, useControl, useGuiNum, history
 
 -----------------------------
 	##と%%を展開するかどうか
-	しない
+	コマンドによって、扱い方が違う
 -----------------------------
 	" " があった場合
 	無視する

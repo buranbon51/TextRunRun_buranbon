@@ -40,7 +40,7 @@ init_checkFileAndFolderMakeFolderAndFile(){
 		cen_fileCheckMakeFolderAndFileUtf8(glob_pluginsStartUpExeFile, glob_pluginsDir, semicolon . " ソースコード版のみで有効。起動時に実行する処理を記述する`n")
 		cen_fileCheckMakeFolderAndFileUtf8(glob_pluginsSubAndFuncFile, glob_pluginsDir, semicolon . " ソースコード版のみで有効。サブルーチンや関数を記述する。`n")
 	}
-	func_easyFileCheckMakeFolderAndFile(gloco_userDir . glob_addWordListName, gloco_userDir . glob_userAddListDirName, "word1 /// 説明文###nが改行`nword2`nword3`n")
+	func_easyFileCheckMakeFolderAndFile(gloco_userDir . glob_addWordListName, gloco_userDir . glob_userAddListDirName, "word1/// 説明文###nが改行`nword2`nword3`n")
 }
 
 /*

@@ -1,25 +1,12 @@
-﻿2023年1月26日
-&timerStopに不具合があったので直した
-2023年2月4日
-ツールチップやＧｕｉの自動非表示に使うSetTimerを重複して使用させないように begin_local の変数を使って連続でSetTimerを使えないようにした
-inputGui関連が残っていたので取り除いた
-&guiShowWaitExecutorに使われるSetTimerも重複して使用させないようにした
-&timerや&waitで使われるSetTimerも重複して使用させないようにした
-linu_sleepLogic()の中のSetTimerの位置を少し変えた
-2023年2月8日
-E_showText1ToggleForClick
-E_showText2ToggleForClick
-E_showText3ToggleForClick
-E_showTextSplit1ToggleForClick
-E_showTextSplit2ToggleForClick
-E_showStock1Toggle
-E_showStock2Toggle
-E_showTmpOutputToggle
-E_showOutputToggle
-E_showErrorOutputToggle
-E_showMultipleText1Toggle これらを加えた
-2023年4月17日
+﻿2023年4月17日
 outs_relativePathToAbsolutePath() で、"" の文字をカレントフォルダに変えるようになっていたのでそうならない様にした
 空白が無いなら、heard_miniEditFileNameOpen()の処理を最初の時点で止める様にした
 &sendPasteTextOutで % %を余分に展開してしまう問題に対処した。
 F_inputListSelectOutputAssign(GuiNum)を加えた
+2023年5月8日
+userPlus の type4.ahk の説明文を変えた
+"%*" の指定の場合、最後に空白が追加されてしまうので対処した
+&addWordListAddFromFile を使って加える入力補完は、右端に空白があってもいい様にした。
+&snippetAddFromFile を使って加える簡易入力の展開後の文字は、前後に空白があってもいい様にした。
+addWordList.txt で右に空白があると説明を表示できなくなったので、初期ファイルは、word1 /// の部分の空白を詰めた
+cen_userMakeWordObjSetting( )とcen_snippetAddFromFileSetting( )を間違ったので直した

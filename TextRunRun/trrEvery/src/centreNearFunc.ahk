@@ -770,7 +770,7 @@ cen_userMakeWordObjSetting(wordFile){
 	explanation =
 	Loop, Read, %wordFile%
 	{
-		tmpStr := Trim(A_LoopReadLine)
+		tmpStr := A_LoopReadLine
 		IfInString, tmpStr, %division%
 		{
 			StringGetPos, index, tmpStr, %division%
@@ -781,10 +781,10 @@ cen_userMakeWordObjSetting(wordFile){
 			{
 				StringReplace, explanation, explanation, ###n , `n, All
 			}
-			command := Trim(command)
+			command := LTrim( command )
 			explanation := Trim(explanation)
 		} else {
-			command := Trim(tmpStr)
+			command := LTrim( tmpStr )
 			explanation := ""
 		}
 		if(command != ""){
@@ -824,9 +824,10 @@ cen_snippetAddFromFileSetting(snippetFile, fileNameOnly){
 	division := "///"
 	command =
 	sentence =
+	tmpSentence =
 	Loop, Read, %snippetFile%
 	{
-		tmpStr := Trim(A_LoopReadLine)
+		tmpStr := A_LoopReadLine
 		IfInString, tmpStr, %division%
 		{
 			StringGetPos, index, tmpStr, %division%
@@ -834,9 +835,9 @@ cen_snippetAddFromFileSetting(snippetFile, fileNameOnly){
 			index := index + 3
 			StringTrimLeft, sentence, tmpStr, index
 			command := Trim(command)
-			sentence := Trim(sentence)
+			tmpSentence := Trim(sentence)
 			if(command != ""){
-				if(sentence != ""){
+				if(tmpSentence != ""){
 					cen_snippetObjInsert(command, sentence, False, 4, fileNameOnly, "")
 				}
 			}

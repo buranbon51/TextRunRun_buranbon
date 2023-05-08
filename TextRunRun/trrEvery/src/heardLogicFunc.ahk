@@ -1108,6 +1108,7 @@ heard_itemArgssLogic_Cust(objArgss, inputArgss, file){
 			astricsStr .= inputArg_%argMax%  . " "
 		}
 	}
+	astricsStr := RTrim( astricsStr )
 
 	;  %1 %2 と書いてあるのをここで置換していく
 	Loop, 10	; 最大でも１０回
@@ -1209,6 +1210,7 @@ heard_itemExecuteArgssLogic(objArgss, inputArgss, file) {
 				max++
 			}
 		}
+		astricsStr := RTrim( astricsStr )
 
 		Loop , %objArg_0%
 		{
