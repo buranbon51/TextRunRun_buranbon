@@ -114,12 +114,14 @@ F_confirmDateTime6Char(str)
 F_confirmHMSSentence(str)
 F_getTimerInformation(listNumber, inforNumber=1)
 F_itemReloadOneFromFileName(itemName, itemCategoryDir="", categoryDir="")
+F_newItemFromCommand(radioNum, itemName, script, args="", workDir="", dbQuoutFlag=False)
 F_kanjiAndFullNumeralReplaceInteger(sentence, errorNotViewFlag=False)
 F_getDateTime6CharFromKanji(sentence="二十三時三分三十秒", errorNotViewFlag=False)
 F_getHMSSentenceFromKanji(sentence="三分三十秒", errorNotViewFlag=False)
 F_lastWordSetOneLineStr(firstNum, secondNum, oneLineStr, blankComment="#", passComment="[", keyTrimBefore="<", keyTrimAfter=">")
 F_lastWordSetOneFromAllLineStr(firstNum, secondNum, allLineStr, blankComment="#", passComment="[", keyTrimBefore="<", keyTrimAfter=">")
 F_lastWordSetFirstNumAllFromAllLineStr(firstNum, allLineStr, blankComment="#", passComment="[", keyTrimBefore="<", keyTrimAfter=">")
+E_donothing
 E_closeClickWindow
 E_showClickWindow
 E_showText1Toggle

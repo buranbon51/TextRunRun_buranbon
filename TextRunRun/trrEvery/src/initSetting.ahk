@@ -67,11 +67,6 @@ init_checkErrorLevelStartUpBuff("lastWord設定ファイルの読み込み時に
 init_startUpBuffOutput()
 init_startUpErrorBuffOutput()
 
-chec_commStockListLoadLogic("type1", gloco_userDir . glob_commStockFile77Name, 77)
-chec_changeStockListTitle(gloco_userDir . glob_commStockFile77Name, 77)
-chec_commStockListLoadLogic("type1", gloco_userDir . glob_commStockFile78Name, 78)
-chec_changeStockListTitle(gloco_userDir . glob_commStockFile78Name, 78)
-
 init_hotkeyItemObjSetting(True)
 init_hotkeyItemObjSetting(False)
 

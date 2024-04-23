@@ -356,7 +356,7 @@ Gui, 79:Add, Button,  x+10 yp+0 gSubButton79_2, Cancel
 Gui, 79:Add, Text,   X20 y+5, 説明(&M)
 Gui, 79:Add, Edit,   X10 y+5 w250    vBoxEdit79_1  R6 VScroll
 
-Gui, 79:Add, Text,   X20 y+10   ,キー入力(&H)
+Gui, 79:Add, Text,   X20 y+10   ,キー入力補助(&H)
 tmpNumW := cen_anyOfNumFromDpiAndFontSize(14, 16, 160, 140, 120)
 Gui, 79:Add, Hotkey,  X10 y+10 w%tmpNumW% vHotkey79_1 gSubHotkey79_1 Limit1
 

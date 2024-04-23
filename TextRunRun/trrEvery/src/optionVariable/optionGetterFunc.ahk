@@ -240,6 +240,10 @@ GetO_ClickWindowCloseFlag(){
 	return O_ClickWindowCloseFlag
 }
 
+GetO_suspendNotViewFlag(){
+	return O_suspendNotViewFlag
+}
+
 GetO_lastWordTabAllFlag2(){
 	return O_lastWordTabAllFlag2
 }

@@ -240,6 +240,10 @@ SetO_ClickWindowCloseFlag(flag=False){
 	O_ClickWindowCloseFlag := outs_getFlagByOnOffStrOrBasicAndErrMsg(flag, False, "O_ClickWindowCloseFlag")
 }
 
+SetO_suspendNotViewFlag(flag=False){
+	O_suspendNotViewFlag := outs_getFlagByOnOffStrOrBasicAndErrMsg(flag, False, "O_suspendNotViewFlag")
+}
+
 SetO_lastWordTabAllFlag2(flag=False){
 	O_lastWordTabAllFlag2 := outs_getFlagByOnOffStrOrBasicAndErrMsg(flag, False, "O_lastWordTabAllFlag2")
 }

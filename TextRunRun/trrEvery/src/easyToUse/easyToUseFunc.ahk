@@ -505,13 +505,24 @@ F_getTimerInformation(listNumber, inforNumber=1){
 ; エラーがある場合は 0 。編集した場合は 1 。新規登録の場合なら、2 を返す。
 ; アイテムを削除した後、エラーがある場合は 3 を返す
 F_itemReloadOneFromFileName(itemName, itemCategoryDir="", categoryDir=""){
-	str := "fromFileName のアイテムを一つだけ読み込む。`nitemCategoryDir の引数には、アイテムのカテゴリーフォルダ内にある場合に、フォルダ名を記入する。`ncategoryDir がカラなら first の指定と同じになる`nエラーがある場合は 0 。編集した場合は 1 。新規登録の場合なら、2 。削除をした後、エラーがあるなら 3 を返す"
 	itemName := Trim( itemName )
 	if(itemName == ""){
-		guit_setBoxEdit68_1CustSingle(str)
+		guit_errorAppend("F_itemReloadOneFromFileName() のエラー。`nアイテム名がカラになっている")
 		return "0"
 	}
 	returnValue := cen_itemReloadOneFromFileNameLogic(itemName, itemCategoryDir, categoryDir, A_ThisFunc . "()")
+	return returnValue
+}
+
+; アイテムを新規登録する。
+; エラーがある場合は 0 。新規登録した場合は 1 を返す。
+F_newItemFromCommand(radioNum, itemName, script, args="", workDir="", dbQuoutFlag=False){
+	itemName := Trim( itemName )
+	if(itemName == ""){
+		guit_errorAppend("F_newItemFromCommand() のエラー。`nアイテム名がカラになっている")
+		return "0"
+	}
+	returnValue := musc_newItemFromCommandLogic(radioNum, itemName, script, args, workDir, dbQuoutFlag, A_ThisFunc . "()")
 	return returnValue
 }
 

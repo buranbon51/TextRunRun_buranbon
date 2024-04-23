@@ -242,10 +242,18 @@ ahkc_Run(argss, pOut, GuiNum){
 				return
 			}
 		}
-		ahkArg3 := glob_ahkArg3 . " UseErrorLevel"
+		ahkArg3 := glob_ahkArg3
+		IfNotInString, glob_ahkArg3, UseErrorLevel
+		{
+			ahkArg3 := glob_ahkArg3 . " UseErrorLevel"
+		}
 		Run, %glob_ahkArg1% , %glob_ahkArg2%, %ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != "") {
-		ahkArg3 := glob_ahkArg3 . " UseErrorLevel"
+		ahkArg3 := glob_ahkArg3
+		IfNotInString, glob_ahkArg3, UseErrorLevel
+		{
+			ahkArg3 := glob_ahkArg3 . " UseErrorLevel"
+		}
 		Run, %glob_ahkArg1% , %glob_ahkArg2%, %ahkArg3%
 	} else if(glob_ahkArg2 != "") {
 		Run, %glob_ahkArg1% , %glob_ahkArg2%, UseErrorLevel
@@ -269,10 +277,18 @@ ahkc_RunWait(argss, pOut, GuiNum){
 				return
 			}
 		}
-		ahkArg3 := glob_ahkArg3 . " UseErrorLevel"
+		ahkArg3 := glob_ahkArg3
+		IfNotInString, glob_ahkArg3, UseErrorLevel
+		{
+			ahkArg3 := glob_ahkArg3 . " UseErrorLevel"
+		}
 		RunWait, %glob_ahkArg1% , %glob_ahkArg2%, %ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != "") {
-		ahkArg3 := glob_ahkArg3 . " UseErrorLevel"
+		ahkArg3 := glob_ahkArg3
+		IfNotInString, glob_ahkArg3, UseErrorLevel
+		{
+			ahkArg3 := glob_ahkArg3 . " UseErrorLevel"
+		}
 		RunWait, %glob_ahkArg1% , %glob_ahkArg2%, %ahkArg3%
 	} else if(glob_ahkArg2 != "") {
 		RunWait, %glob_ahkArg1% , %glob_ahkArg2%, UseErrorLevel
@@ -2679,7 +2695,11 @@ ahkc_Hotkey(argss, pOut, GuiNum){
 	}
 
 	if(glob_ahkArg3 != ""){
-		ahkArg3 := glob_ahkArg3 . " UseErrorLevel"
+		ahkArg3 := glob_ahkArg3
+		IfNotInString, glob_ahkArg3, UseErrorLevel
+		{
+			ahkArg3 := glob_ahkArg3 . " UseErrorLevel"
+		}
 		Hotkey, %glob_ahkArg1% , %glob_ahkArg2%, %ahkArg3%
 	} else if(glob_ahkArg2 != ""){
 		Hotkey, %glob_ahkArg1%, %glob_ahkArg2%, UseErrorLevel

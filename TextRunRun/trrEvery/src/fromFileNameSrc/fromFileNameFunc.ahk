@@ -210,7 +210,10 @@ frfnf_makeOneItemFromFolderName(folderFullPath, folderName, categoryDir, itemCat
 			workDir .= "\"			;	その親フォルダをかえすようにする(\をやっぱり付け足す)
 		}
 
-		tempStr := outs_textOutDqAllTrim(script)		; %%と##を展開する(でも登録はしない)
+/*
+		フォルダーかどうかはあえてチェックしない。
+		ユーザーが % % や # # を使った場合、対応できなくなるので
+		tempStr := outs_textOutDqAllTrim(script)
 		type := FileExist(tempStr)
 		IfInString, type, D
 		{
@@ -219,6 +222,7 @@ frfnf_makeOneItemFromFolderName(folderFullPath, folderName, categoryDir, itemCat
 			args := ""
 			workDir := ""
 		}
+*/
 	} else if(radioNum == 2){
 		args := ""
 		workDir := ""
@@ -445,7 +449,9 @@ frfnf_makeOneItemFromTextFileName(fileFullName, categoryDir, itemCategoryDir){
 			workDir .= "\"			;	その親フォルダをかえすようにする(\をやっぱり付け足す)
 		}
 
-		; %%と##を展開する(でも登録はしない)
+/*
+		フォルダーかどうかはあえてチェックしない。
+		ユーザーが % % や # # を使った場合、対応できなくなるので
 		tempStr := outs_textOutDqAllTrim(script)
 		type := FileExist(tempStr)
 		IfInString, type, D
@@ -455,6 +461,7 @@ frfnf_makeOneItemFromTextFileName(fileFullName, categoryDir, itemCategoryDir){
 			args := ""
 			workDir := ""
 		}
+*/
 	} else if(radioNum == 2){
 		args := ""
 		workDir := ""

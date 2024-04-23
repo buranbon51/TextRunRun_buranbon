@@ -62,6 +62,7 @@ O_inputListAutoNotFlag
 O_minimizeTextFlag
 O_tmpOutputMultipleTextFlag
 O_ClickWindowCloseFlag
+O_suspendNotViewFlag
 O_lastWordTabAllFlag2
 O_lastWordTabAllFlag3
 O_lastWordTabAllFlag4

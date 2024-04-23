@@ -80,6 +80,8 @@ global O_tmpOutputMultipleTextFlag = 0
 
 global O_ClickWindowCloseFlag = 0
 
+global O_suspendNotViewFlag = 0
+
 global O_lastWordTabAllFlag2 = 0
 global O_lastWordTabAllFlag3 = 0
 global O_lastWordTabAllFlag4 = 0

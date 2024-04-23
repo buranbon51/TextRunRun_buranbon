@@ -3,6 +3,10 @@
 
 
 
+E_donothing:
+
+	return
+
 E_guiPositionSave:
 	cen_ahkGuiSizePosSave()
 	guit_setExplainNotShow("このソフトのGuiの位置とサイズを保存した", 71)
@@ -133,6 +137,13 @@ E_SuspendOff:
 E_SuspendToggle:
 	Suspend , Toggle
 	cen_trayIconChangeFromSuspendOrPause()
+	if( O_suspendNotViewFlag == False ){
+		if( A_IsSuspended == 1 ){
+			guit_setExplainToolTip("Suspendオン")
+		} else {
+			guit_setExplainToolTip("Suspendオフ")
+		}
+	}
 	return
 
 E_PauseOn:

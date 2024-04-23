@@ -789,43 +789,17 @@ musc_itemToObjFromCommand(arg1, arg2, arg3, arg4, arg6, dbQuout, iconFile, iconN
 	}
 }
 
-; アイテムをコマンドのみで登録する
-musc_newItemFromCommand(radioNum, itemName, script, args, workDir, dbQuoutFlag, GuiNum){
-	str =
-(LTrim
-アイテムをコマンドで登録する。
-&newItem を使用して登録するのと違い、ファイルに保存しないので、再起動した後は無効になる。
-引数１  種類
-（１  ソフト・ファイル  ２  フォルダ  ３  スクリプト  4  二行以上のアイテム）
-引数２  アイテム名
-引数３  リンク先
-引数４  引数
-引数５  作業フォルダ
-引数６  ダブルクオーテをつけるかどうか
-（１ なら チェックと同じ）
-
-カラなら、初期値が変わりに設定される
-普通のアイテムの登録と違い、作業フォルダがカラなら、リンク先の親フォルダになる。
-
-引数６は true false や on off の指定でも可
-
-半角スペースがあるファイル名などはダブルクオーテで囲むと１つの引数扱いになるのでそれを利用するとよい。
-)
-	if( edc_helpViewIfHyphenH(str, itemName, GuiNum) ){
-		return
-	}
-	if(itemName == ""){
-		guit_setExplain(str, GuiNum)
-		return
-	}
+; アイテムをコマンドで登録する
+; エラーがある場合は 0 。新規登録した場合は 1 を返す。
+musc_newItemFromCommandLogic(radioNum, itemName, script, args, workDir, dbQuoutFlag, funcName){
 	if( script == "" ) {
-		guit_errorAppend("&newItemFromCommandのエラー。`nリンク先がカラなので登録できない`nアイテム名   " . itemName)
-		return
+		guit_errorAppend(funcName . " のエラー。`nリンク先がカラなので登録できない`nアイテム名   " . itemName)
+		return "0"
 	}
 
 	if( cen_keyWordIsObject(itemName) ) {			;アイテム名がかぶってるかどうか
-		guit_errorAppend("&newItemFromCommandのエラー。`n同じアイテム名のものがすでに存在している`nアイテム名    " . itemName)
-		return
+		guit_errorAppend(funcName . " のエラー。`n同じアイテム名のものがすでに存在している`nアイテム名    " . itemName)
+		return "0"
 	}
 
 	if(dbQuoutFlag == ""){
@@ -834,19 +808,19 @@ musc_newItemFromCommand(radioNum, itemName, script, args, workDir, dbQuoutFlag, 
 	if( func_checkFlagStr(dbQuoutFlag) ){
 		dbQuoutFlag := func_getFlagByOnOffStr(dbQuoutFlag)
 	} else {
-		guit_errorAppend("&newItemFromCommandのエラー。`ndoubleQuoutの値でTrueかFalse以外が指定されている`n値  " . dbQuoutFlag . "`nアイテム名   " . itemName)
-		return
+		guit_errorAppend(funcName . " のエラー。`ndoubleQuoutの値でTrueかFalse以外が指定されている`n値  " . dbQuoutFlag . "`nアイテム名   " . itemName)
+		return "0"
 	}
 
 	If radioNum is not integer
 	{
-		guit_errorAppend("&newItemFromCommandのエラー。`nアイテムの種類の番号が整数でない`n番号   " . radioNum . "`nアイテム名   " . itemName)
-		return
+		guit_errorAppend(funcName . " のエラー。`nアイテムの種類の番号が整数でない`n番号   " . radioNum . "`nアイテム名   " . itemName)
+		return "0"
 	}
 	If radioNum not between 0 and 5
 	{
-		guit_errorAppend("&newItemFromCommandのエラー。`nアイテムの種類の番号が１から４ではない`n番号   " . radioNum . "`nアイテム名   " . itemName)
-		return
+		guit_errorAppend(funcName . " のエラー。`nアイテムの種類の番号が１から４ではない`n番号   " . radioNum . "`nアイテム名   " . itemName)
+		return "0"
 	}
 
 	if(radioNum == 4){
@@ -870,21 +844,21 @@ musc_newItemFromCommand(radioNum, itemName, script, args, workDir, dbQuoutFlag, 
 	; もう一度
 	script := Trim(script)
 	if( script == "" ) {
-		guit_errorAppend("&newItemFromCommandのエラー。`nリンク先がカラなので登録できない`nアイテム名   " . itemName)
-		return
+		guit_errorAppend(funcName . " のエラー。`nリンク先がカラなので登録できない`nアイテム名   " . itemName)
+		return "0"
 	}
 
 	if( ite_itemNameExistNGCharacter(itemName) ) {
-		guit_errorAppend("&newItemFromCommandのエラー。`nアイテム名として使えない文字がある`nアイテム名   " . itemName)
-		return
+		guit_errorAppend(funcName . " のエラー。`nアイテム名として使えない文字がある`nアイテム名   " . itemName)
+		return "0"
 	}
 
 	; ループを避けるため、アイテム名とパスが同じものはエラーにする
 	StringLower, itemNameLower, itemName
 	StringLower, scriptLower, script
 	if(itemNameLower == scriptLower) {
-		guit_errorAppend("&newItemFromCommandのエラー。`nアイテム名とリンク先が同じものは、禁止にしている`nアイテム名   " . itemName)
-		return
+		guit_errorAppend(funcName . " のエラー。`nアイテム名とリンク先が同じものは、禁止にしている`nアイテム名   " . itemName)
+		return "0"
 	}
 
 	;if(imagePath == ""){
@@ -917,31 +891,67 @@ musc_newItemFromCommand(radioNum, itemName, script, args, workDir, dbQuoutFlag, 
 			;	; リンク先がフォルダではない時、フォルダにチェックを入れてればエラー
 			;	GuiControl, 72:+cFF0000, Text72_3
 			;	GuiControl, 72:, Text72_3, 種類を確認してください(&L)
-			;	return
+			;	return "0"
 			;}
 		}
 	}
 
-	typeStr := "ソフト・ファイル"
+	;typeStr := "ソフト・ファイル"
 	if(radioNum == 1){
 
 	} else if(radioNum == 2){			; フォルダかスクリプトなら、引数と作業フォルダをカラに
 		args := ""
 		workDir := ""
-		typeStr := "フォルダ"
+		;typeStr := "フォルダ"
 	} else if(radioNum == 3){
 		args := ""
 		workDir := ""
-		typeStr := "スクリプト"
+		;typeStr := "スクリプト"
 	} else if(radioNum == 4){
 		args := ""
 		workDir := ""
-		typeStr := "二行以上"
+		;typeStr := "二行以上"
 	}
 
 	musc_itemToObjFromCommand(itemName, script, args, workDir, radioNum, dbQuoutFlag, "", 1, "", 2)
-	guit_setExplain(itemName . " の " . typeStr . " のアイテムを新規登録した", GuiNum)
-	; cen_anyFileEntryDisplay("アイテムの" . str, itemName  . "`nの " . typeStr . " のアイテムを" . str . "した")
-	; アイテム一覧が出てたら更新する
-	ite_updateGui73()
+	return "1"
+}
+
+; アイテムをコマンドのみで登録する
+musc_newItemFromCommand(radioNum, itemName, script, args, workDir, dbQuoutFlag, GuiNum){
+	str =
+(LTrim
+アイテムをコマンドで登録する。
+&newItem を使用して登録するのと違い、ファイルに保存しないので、再起動した後は無効になる。
+引数１  種類
+（１  ソフト・ファイル  ２  フォルダ  ３  スクリプト  4  二行以上のアイテム）
+引数２  アイテム名
+引数３  リンク先
+引数４  引数
+引数５  作業フォルダ
+引数６  ダブルクオーテをつけるかどうか
+（１ なら チェックと同じ）
+
+カラなら、初期値が変わりに設定される
+普通のアイテムの登録と違い、作業フォルダがカラなら、リンク先の親フォルダになる。
+
+引数６は true false や on off の指定でも可
+
+半角スペースがあるファイル名などはダブルクオーテで囲むと１つの引数扱いになるのでそれを利用するとよい。
+)
+	if( edc_helpViewIfHyphenH(str, itemName, GuiNum) ){
+		return
+	}
+	if(itemName == ""){
+		guit_setExplain(str, GuiNum)
+		return
+	}
+	returnNum := musc_newItemFromCommandLogic(radioNum, itemName, script, args, workDir, dbQuoutFlag, "&newItemFromCommand")
+	if( returnNum == 1 ){
+		guit_setExplain(itemName . " のアイテムを新規登録した", GuiNum)
+		; アイテム一覧が出てたら更新する
+		ite_updateGui73()
+	} else if( returnNum == 0 ){
+		;guit_setExplain(itemName . " のアイテムの登録に失敗している。", GuiNum)
+	}
 }

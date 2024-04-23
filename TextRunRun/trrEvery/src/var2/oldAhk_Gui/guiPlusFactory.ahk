@@ -25,7 +25,7 @@ Gui, 90:Add, Edit,   X10 y+5 w%tmpNumW% vEdit90_3
 Gui, 90:Add, Text,   X20 y+5, 説明(&M)
 Gui, 90:Add, Edit,   X10 y+5 w250    vBoxEdit90_1  R3 VScroll
 
-Gui, 90:Add, Text,   X20 y+10   ,キー入力(&H)
+Gui, 90:Add, Text,   X20 y+10   ,キー入力補助(&H)
 tmpNumW := cen_anyOfNumFromDpiAndFontSize(14, 16, 160, 140, 120)
 Gui, 90:Add, Hotkey,  X10 y+10 w%tmpNumW% vHotkey90_1 gSubHotkey90_1 Limit1
 

@@ -1,12 +1,16 @@
-﻿2023年4月17日
-outs_relativePathToAbsolutePath() で、"" の文字をカレントフォルダに変えるようになっていたのでそうならない様にした
-空白が無いなら、heard_miniEditFileNameOpen()の処理を最初の時点で止める様にした
-&sendPasteTextOutで % %を余分に展開してしまう問題に対処した。
-F_inputListSelectOutputAssign(GuiNum)を加えた
-2023年5月8日
+﻿2023年5月8日
 userPlus の type4.ahk の説明文を変えた
 "%*" の指定の場合、最後に空白が追加されてしまうので対処した
 &addWordListAddFromFile を使って加える入力補完は、右端に空白があってもいい様にした。
 &snippetAddFromFile を使って加える簡易入力の展開後の文字は、前後に空白があってもいい様にした。
 addWordList.txt で右に空白があると説明を表示できなくなったので、初期ファイルは、word1 /// の部分の空白を詰めた
 cen_userMakeWordObjSetting( )とcen_snippetAddFromFileSetting( )を間違ったので直した
+2024年4月22日
+fromFileNameのアイテムの登録時にフォルダーかどうかをチェックしない様にした。
+これにより、% % や # # を使って、ソフト・ファイルとフォルダのアイテムを登録する事が可能になる。
+F_newItemFromCommand() を作った
+Run, と Hotkey, で、UseErrorLevel をあえて指定してもエラーにならないようにした
+キー入力の文字をキー入力補助に変えた
+何もしないサブルーチンE_donothingを加えた
+O_suspendNotViewFlagの変数を作った。この変数により、E_SuspendToggleを使った時にツールチップで表示するかどうか選ぶ
+ストックの１ページめをセットするタイミングを最後にした
