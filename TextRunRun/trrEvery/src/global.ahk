@@ -67,10 +67,6 @@ global glob_tmpScriptsItemName := glob_tmpScriptsDirName . "\tmpScriptsItem.ini"
 
 global glob_tmpScriptsTextDirName := glob_tmpScriptsDirName . "\tmpScriptsText"
 
-; addListフォルダ内
-global glob_userAddListDirName :=  "\addList"
-
-global glob_addWordListName :=  glob_userAddListDirName . "\addWordList.txt"
 
 ; scriptsフォルダ内
 global glob_scriptsDirName :=  "\scripts"
@@ -85,6 +81,12 @@ global glob_userSnippetDirName :=  "\snippet"
 
 global glob_snippetFileName := glob_userSnippetDirName . "\snippetConfig.ini"
 global glob_snippetListFileName := glob_userSnippetDirName . "\snippetList.txt"
+
+
+; addListフォルダ内
+global glob_addListDir :=  A_ScriptDir . gloco_softEveryDirName . "\addList"
+
+global glob_addWordListName :=  "\addWordList.txt"
 
 
 ; docフォルダ内

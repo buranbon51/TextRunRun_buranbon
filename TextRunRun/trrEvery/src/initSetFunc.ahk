@@ -3,12 +3,12 @@
 
 init_checkFileAndFolderMakeFolderAndFile(){
 	func_easyFolderCheckMakeFolder(gloco_userDir . glob_userTmpDirName)
-	func_easyFolderCheckMakeFolder(gloco_userDir . glob_userAddListDirName)
 	func_easyFolderCheckMakeFolder(gloco_userDir . glob_userItemDirName)
 	func_easyFolderCheckMakeFolder(gloco_userDir . glob_userTmpTmpItemDirName)
 	func_easyFolderCheckMakeFolder(gloco_userDir . glob_userHotKeyItemDirName)
 	func_easyFolderCheckMakeFolder(gloco_userDir . glob_userTmpHotkeyItemDirName)
 	func_easyFolderCheckMakeFolder(gloco_docDir)
+	func_easyFolderCheckMakeFolder(glob_addListDir)
 	;func_easyFolderCheckMakeFolder(glob_defaultDir)
 	;init_fileExistAdvice(gloco_docDir . glob_syscommFileName)
 	;init_fileExistAdvice(gloco_docDir . glob_specialWordFileName)
@@ -40,7 +40,7 @@ init_checkFileAndFolderMakeFolderAndFile(){
 		cen_fileCheckMakeFolderAndFileUtf8(glob_pluginsStartUpExeFile, glob_pluginsDir, semicolon . " ソースコード版のみで有効。起動時に実行する処理を記述する`n")
 		cen_fileCheckMakeFolderAndFileUtf8(glob_pluginsSubAndFuncFile, glob_pluginsDir, semicolon . " ソースコード版のみで有効。サブルーチンや関数を記述する。`n")
 	}
-	func_easyFileCheckMakeFolderAndFile(gloco_userDir . glob_addWordListName, gloco_userDir . glob_userAddListDirName, "word1/// 説明文###nが改行`nword2`nword3`n")
+	func_easyFileCheckMakeFolderAndFile(glob_addListDir . glob_addWordListName, glob_addListDir, "word1/// 説明文###nが改行`nword2`nword3`n")
 }
 
 /*
@@ -73,7 +73,6 @@ init_userFileCheck(){
 	;userMakeScript
 	init_userFileCheckAndMakeFromDefault(glob_userMakeStartExeFile)
 	init_userFileCheckAndMakeFromDefault(glob_userMakeSubFuncFile)
-	init_userFileCheckAndMakeFromDefault(glob_addWordListName)
 }
 */
 

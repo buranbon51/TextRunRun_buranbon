@@ -14,3 +14,6 @@ Run, と Hotkey, で、UseErrorLevel をあえて指定してもエラーにな�
 何もしないサブルーチンE_donothingを加えた
 O_suspendNotViewFlagの変数を作った。この変数により、E_SuspendToggleを使った時にツールチップで表示するかどうか選ぶ
 ストックの１ページめをセットするタイミングを最後にした
+2024年4月23日
+&popAddWordFilterList と &popHistoryFilterList を使う場合、大文字と小文字どちらでも使える様にした
+addWordList.txt の位置を user フォルダ内にしない様にするため位置を変えた

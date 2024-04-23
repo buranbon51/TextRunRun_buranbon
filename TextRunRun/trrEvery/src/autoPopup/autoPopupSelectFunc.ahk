@@ -502,10 +502,12 @@ auts_pupupUserMakeWordFilterNullIfStrNull(str, maxCount) {
 	if(str == ""){
 		return ""
 	}
+	StringLower, str, str
 
 	for key, optionObj in glob_userMakeWordObj {
 		if(key != "") {
-			IfInString, key, %str%
+			StringLower, lowkey, key
+			IfInString, lowkey, %str%
 			{
 				listStr .= "|" . key
 				if(count >= maxCount){
@@ -668,9 +670,12 @@ auts_pupupHistoryObj(str, maxCount){
 auts_pupupHistoryObjFilter(str, maxCount){
 	historyStr =
 	count = 1
+	StringLower, str, str
+
 	for key, optionObj in glob_historyObj {
 		if(optionObj != "") {
-			IfInString, optionObj, %str%
+			StringLower, lowObj, optionObj
+			IfInString, lowObj, %str%
 			{
 				historyStr .= "|" .  optionObj
 				if(count >= maxCount){
