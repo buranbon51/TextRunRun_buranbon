@@ -115,9 +115,20 @@
 -----------------------------------------------------
 入力補完を表示。
 
-trrEvery\user\addList\addWordList.txt
+trrEvery\addList\addWordList.txt
 で追加した単語を表示する。
 テキストの文字から、部分一致するものを全て表示する。
+
+
+
+昔のバージョンで
+
+バージョン 2.00.01 とそれ以前では
+%A_ScriptDir%\trrEvery\user\addList\addWordList.txt
+
+この位置にファイルが存在する様にしていました。
+
+
 
 テキストの文字がない場合
 

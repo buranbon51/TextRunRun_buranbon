@@ -1,19 +1,30 @@
 
+‚±‚ê‚ÍƒRƒ“ƒpƒCƒ‹”Å‚ÉŒü‚¯‚Ä‘‚¢‚Ä‚¢‚Ü‚·B
 
-³Ž®–¼FTextRunRun  iƒeƒLƒXƒgƒ‰ƒ“ƒ‰ƒ“j  
-ƒo[ƒWƒ‡ƒ“F2.00  
-”z•zƒtƒ@ƒCƒ‹–¼FTextRunRun_buranbon.zip  
-ìŽÒFƒuƒ‰ƒ“ƒ{ƒ“  
-WebFhttps://textrunrunburanbon.com  
-MailFSAKUJOburanbon@textrunrunburanbon.com  
-iæ“ª‚ÌSAKUJO‚ðíœ‚µ‚Ä‚­‚¾‚³‚¢---ƒXƒpƒ€ƒ[ƒ‹‘Îôj  
-Ží•ÊFƒtƒŠ[ƒ\ƒtƒg  
+
+³Ž®–¼FTextRunRun  iƒeƒLƒXƒgƒ‰ƒ“ƒ‰ƒ“j
+ƒo[ƒWƒ‡ƒ“F2.02
+”z•zƒtƒ@ƒCƒ‹–¼FTextRunRun_buranbon.zip
+ìŽÒFƒuƒ‰ƒ“ƒ{ƒ“
+WebFhttps://textrunrunburanbon.com
+MailFSAKUJOburanbon@textrunrunburanbon.com
+iæ“ª‚ÌSAKUJO‚ðíœ‚µ‚Ä‚­‚¾‚³‚¢---ƒXƒpƒ€ƒ[ƒ‹‘Îôj
+Ží•ÊFƒtƒŠ[ƒ\ƒtƒg
 
 CopyRight(C)@@ƒuƒ‰ƒ“ƒ{ƒ“
 
 
+-----------------------------------------------------
+
+AutoHotkey ‚Ìƒo[ƒWƒ‡ƒ“ 1.1.37.02 ‚Ì‚à‚Ì‚ðŽg—p‚µ‚Ä‚¢‚Ü‚·B
+
+Ahk2Exe.exe ‚ðŽg‚Á‚Äì¬‚µ‚Ä‚¢‚é‚à‚Ì‚Å‚·B
+
+-----------------------------------------------------
+
+
 
-# ŠT—v
+  ŠT—v
 
 
 ‰SŽÒ‚©‚çã‹‰ŽÒ‚Ü‚Å•L‚­Žg‚¦‚éƒRƒ}ƒ“ƒhƒ‰ƒCƒ“ƒ‰ƒ“ƒ`ƒƒ[‚Å‚·B
@@ -28,7 +39,7 @@ https://textrunrunburanbon.com
 
 
 
-# Žg‚¤‚É‚ ‚½‚Á‚Ä‚Ì’ˆÓ“_
+  Žg‚¤‚É‚ ‚½‚Á‚Ä‚Ì’ˆÓ“_
 
 
 ŒöŠJ‚µ‚Ä‚¨‚¢‚Ä‰½‚Å‚·‚ªA‚±‚Ìƒ\ƒtƒg‚Í—V‚Ñ‚Ì”ÍˆÍ‚ÅŽg‚Á‚Ä‚­‚¾‚³‚¢B
@@ -40,15 +51,16 @@ https://textrunrunburanbon.com
 
 i•s‹ï‡‚ÍAŒ©‚Â‚¯‚Ä‚Í‰ü‘P‚µ‚Ä‚¢‚­‚Æ‚¢‚¤Œ`‚ð‚Æ‚è‚Ü‚·Bj
 
+
 
-# “®ìŠÂ‹«
+  “®ìŠÂ‹«
 
 
-TextRunRun ‚Í Unicode”Å‚ÌAutoHotkeyã‚Å“®ì‚µ‚Ü‚·B  
+TextRunRun ‚Í Unicode”Å‚ÌAutoHotkeyã‚Å“®ì‚³‚¹‚Ä‚¢‚Ü‚·B  
 AutoHotkey_L  Unicode”Å  ‚ÌŽ–‚ð‚¢‚¢‚Ü‚·B
 
 OS ‚ÍAWindows‚Å‚Ì‚ÝŽg—p‚Å‚«‚Ü‚·B  
-Windows XP / 2003 / Vista / 7 / 8 / 10 (32-bitA64-bit—¼‘Î‰ž)
+Windows XP / 2003 / Vista / 7 / 8 / 10 / 11 (32-bitA64-bit—¼‘Î‰ž)
 
 AutoHotkey_L ‚ª“®ì‚·‚éŠÂ‹«‚Å‚ ‚ê‚Î‰Â”\‚¾‚ÆŽv‚¢‚Ü‚·B
 
@@ -58,17 +70,47 @@ Windows 2000 ‚Å‚à‰Â”\‚¾‚ÆŽv‚¢‚Ü‚·B
 
 -----------------------------------------------------
 
-¦ AutoHotkey ‚Ì”h¶”Å‚Å‚ ‚é uAutoHotkey_L Unicode”Åv‚Å‚Ì‚Ý“®ì‚µ‚Ü‚·B
-
-Œ³‚Ì AutoHotkey ‚Å‚ÍŽg‚¦‚Ü‚¹‚ñB
+Ahk2Exe.exe ‚ðŽg‚Á‚Äì¬‚µ‚Ä‚¢‚é‚à‚Ì‚Å‚·B
 
 
-‚»‚ê‚Æ  AutoHotkey 1.1.xx ‚Ìƒo[ƒWƒ‡ƒ“‚Ì‚Ý‚ÅŽg‚¦‚Ü‚·B  
-AutoHotkey 2.xx ‚Ìƒo[ƒWƒ‡ƒ“‚Å‚ÍŽg‚¦‚Ü‚¹‚ñB
+¦ AutoHotkey ‚Ì”h¶”Å‚Å‚ ‚é uAutoHotkey_L Unicode”Åv‚Å“®ì‚³‚¹‚Ä‚¢‚Ü‚·B
+
+Œ³‚Ì AutoHotkey ‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
+
+
+‚»‚ê‚Æ  AutoHotkey 1.1.xx ‚Ìƒo[ƒWƒ‡ƒ“‚ðŽg‚Á‚Ä‚¢‚Ü‚·B
+AutoHotkey 2.xx ‚Ìƒo[ƒWƒ‡ƒ“‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
+
+-----------------------------------------------------
+
+[[[[[[[[[[[
+    AutoHotkey ‚ðƒCƒ“ƒXƒg[ƒ‹‚·‚é•K—v‚Í–³‚¢
+[[[[[[[[[[[
+
+AutoHotkey_L ‚ðŽg‚Á‚Ä“®ì‚³‚¹‚é‚Æ‘‚«‚Ü‚µ‚½‚ªA
+AutoHotkey ‚ðƒCƒ“ƒXƒg[ƒ‹‚·‚é•K—v‚Í‚ ‚è‚Ü‚¹‚ñB
+
+AutoHotkey_L  ‚ªŽg—p‰Â”\‚Èƒpƒ\ƒRƒ“‚È‚çA TextRunRun ‚àŽg—p‰Â”\‚Å‚ ‚é‚Æ‚¢‚¤Ž–‚ªŒ¾‚¢‚½‚©‚Á‚½‚¾‚¯‚Å‚·B
+
+‚±‚±‚ÅŒöŠJ‚µ‚½‚à‚Ì‚ÍƒRƒ“ƒpƒCƒ‹”Å‚Å‚·‚Ì‚ÅA
+TextRunRun.exe  ‚ðŠJ‚¯‚Î‹N“®‚µ‚Ü‚·B
+
+
+[[[[[[[[[[[
+    ƒ\[ƒXƒR[ƒh”Å‚È‚ç
+[[[[[[[[[[[
+
+ƒ\[ƒXƒR[ƒh”Å‚Ì•û‚ÍAAutoHotkey.exe ‚ðŽg‚¢‚Ü‚·B
+‚½‚¾‚µAAutoHotkey  ‚ðƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚¢‚é•K—v‚Í‚ ‚è‚Ü‚¹‚ñB
+
+AutoHotkey.exe  ‚³‚¦‚ ‚ê‚Îƒ\[ƒXƒR[ƒh”Å‚àŽg‚¦‚Ü‚·B
+
+ƒ\[ƒXƒR[ƒh”Å‚ÌŽg‚¢•û‚Íƒz[ƒ€ƒy[ƒW‚Ì•û‚Åà–¾‚µ‚Ü‚·B
+
 
 
 
-# Žå‚È“Á’¥
+  Žå‚È“Á’¥
 
 
 ‚±‚Ìƒ\ƒtƒg‚Ìu“ü—Í—“‚Ì‚ ‚éƒEƒCƒ“ƒhƒEv‚ð@uƒeƒLƒXƒgv‚Æ–¼•t‚¯‚Ä‚¢‚Ü‚·B  
@@ -88,7 +130,7 @@ AutoHotkey 2.xx ‚Ìƒo[ƒWƒ‡ƒ“‚Å‚ÍŽg‚¦‚Ü‚¹‚ñB
 
 
 ----------------------------------------------------
-###  I—¹‚ÌŽd•û
+    I—¹‚ÌŽd•û
 
 @‚±‚Ìƒ\ƒtƒg‚ð‹N“®‚·‚é‚ÆAƒ^ƒXƒNƒgƒŒƒC‚É‚±‚Ìƒ\ƒtƒg‚ÌƒAƒCƒRƒ“‚ª•\Ž¦‚·‚é—l‚É‚È‚Á‚Ä‚¢‚Ü‚·B
 @‚»‚ê‚ð‰EƒNƒŠƒbƒN‚·‚é‚Æƒƒjƒ…[‚ª•\Ž¦‚µ‚Ü‚·B
@@ -100,48 +142,32 @@ AutoHotkey 2.xx ‚Ìƒo[ƒWƒ‡ƒ“‚Å‚ÍŽg‚¦‚Ü‚¹‚ñB
 ----------------------------------------------------
 
 
-
-# ƒtƒ@ƒCƒ‹‚Ì\¬
-
-
-TextRunRun.exe				–{‘Ì‚Å‚·B  
-
-trrEveryiƒtƒHƒ‹ƒ_j		TextRunRun ‚É•K—v‚Èƒtƒ@ƒCƒ‹‚âƒtƒHƒ‹ƒ_‚Í  
-							‚±‚Ì’†‚É\¬‚³‚ê‚é‚æ‚¤‚É‚È‚Á‚Ä‚¢‚Ü‚·B
-
-trrEvery  ƒtƒHƒ‹ƒ_“à  
-
-	trrEvery\user			ƒ†[ƒU[‚ªÝ’è‚µ‚½Ž–‚Í‚±‚ÌƒtƒHƒ‹ƒ_“à‚É”½‰f‚³‚ê‚Ü‚·B
-
-	trrEvery\doc			‰æ‘œ‚ð’u‚¢‚Ä‚¨‚­êŠ‚Å‚·B  
-							Œˆ‚ß‚ç‚ê‚½ƒtƒ@ƒCƒ‹–¼‚Ì‰æ‘œ‚ð’u‚­‚Æ  
-							ƒ\ƒtƒg‚ÌƒEƒCƒ“ƒhƒE“à‚É”½‰f‚³‚ê‚Ü‚·B
-
-	trrEvery\fromFileName		ƒ†[ƒU[‚ªƒtƒ@ƒCƒ‹‚ðì‚é‚±‚Æ‚Å  
-								ƒAƒCƒeƒ€‚âƒVƒ‡[ƒgƒJƒbƒgƒL[‚ð  
-								ì‚é‚±‚Æ‚ª‰Â”\‚É‚È‚éêŠ‚Å‚·B
-
-
-‚±‚ê‚ç‚ÌƒtƒHƒ‹ƒ_[“à‚ªƒJƒ‰‚Ìê‡A
-TextRunRun.exe ‚ðŽÀs‚·‚é‚ÆAŽ©“®“I‚Éì¬‚·‚é‚æ‚¤‚É‚È‚Á‚Ä‚¢‚Ü‚·B
-‚½‚¾‚µAtrrEvery\doc ‚Ì‰æ‘œ‚È‚Ç‚ÍŽ©“®“I‚Éì¬‚Å‚«‚Ü‚¹‚ñB
-
 
 
-# ƒCƒ“ƒXƒg[ƒ‹
+  ƒtƒHƒ‹ƒ_‚Ì\¬
 
 
-Œ»Žž“_‚Å‚ÍAƒCƒ“ƒXƒg[ƒ‰[‚Í‚ ‚è‚Ü‚¹‚ñB
+‚·‚Å‚É‚±‚Ì readme.txt ‚ðŠJ‚¢‚Ä‚¢‚é•û‚Í‚à‚¤•ª‚©‚Á‚Ä‚¢‚éŽ–‚¾‚ÆŽv‚¢‚Ü‚·‚ªA
+‚±‚Ìƒ\ƒtƒg‚ÍƒtƒHƒ‹ƒ_‚Ì\¬‚ª“Æ“Á‚É‚È‚Á‚Ä‚¢‚Ü‚·B
 
-›ƒŒƒWƒXƒgƒŠ‚Í‚¢‚¶‚è‚Ü‚¹‚ñ  
-@USB‚È‚Ç‚ÌƒXƒgƒŒ[ƒW‚©‚çŽg—p‚·‚é‚±‚Æ‚à‰Â”\‚Å‚·B
+‚±‚ê‚ÍA32ƒrƒbƒg”Å‚Æ 64ƒrƒbƒg”Å‚Ì—¼•û‚ð‚Ü‚Æ‚ß‚½‚à‚Ì‚ð”z•z‚µ‚Ä‚¢‚é‚©‚ç‚Å‚·B
+
+‚±‚Ì‚æ‚¤‚ÈƒtƒHƒ‹ƒ_‚Ì\¬‚É‚È‚Á‚Ä‚¢‚Ü‚·B
 
 
-ƒ_ƒEƒ“ƒ[ƒh‚µ‚½ƒtƒ@ƒCƒ‹‚ð‰ð“€ƒ\ƒtƒg‚Å“WŠJ‚µ‚Ä‚­‚¾‚³‚¢B
 
-‚»‚ÌŒã‚ÉD‚«‚ÈƒtƒHƒ‹ƒ_“à‚É”z’u‚µ‚ÄŽg‚Á‚Ä‚­‚¾‚³‚¢B  
-TextRunRun.exe  ‚ðŽÀs‚·‚é‚ÆA  
-TextRunRun ‚É•K—v‚Èƒtƒ@ƒCƒ‹‚âƒtƒHƒ‹ƒ_‚ª“¯‚¶ƒtƒHƒ‹ƒ_“à‚ÉŽ©“®“I‚Éì¬‚³‚ê‚Ü‚·B
+TextRunRun_buranbon --- TextRunRun_32bit --- TextRunRun --- TextRunRun.exe
+                     |
+                     |- TextRunRun_64bit --- TextRunRun --- TextRunRun.exe
+
+
+
+TextRunRun_32bit ˆÈ‰º‚Ì‚à‚Ì ‚Æ TextRunRun_64bit ˆÈ‰º‚Ì‚à‚Ì‚ÍˆË‘¶ŠÖŒW‚É‚ ‚è‚Ü‚¹‚ñB
+‚Ç‚¿‚ç‚©‚¾‚¯‚ðŽg‚¢‚Ü‚·B
+
+
+TextRunRun_32bit ‚© TextRunRun_64bit ˆÈ‰º‚É‚ ‚éA
+TextRunRun ‚ÌƒtƒHƒ‹ƒ_‚ðŽ©•ª—p‚ÌƒvƒƒOƒ‰ƒ€ƒtƒHƒ‹ƒ_‚È‚Ç‚É”z’u‚µ‚Ä‚­‚¾‚³‚¢B
 
 ----------------------------------------------------
 
@@ -153,8 +179,72 @@ Program Files  ‚È‚Ç‚Ì UACŠÇ—‰º‚ÌƒtƒHƒ‹ƒ_‚Ì’†‚Å‚Í
 ----------------------------------------------------
 
 
+
 
-# ƒAƒ“ƒCƒ“ƒXƒg[ƒ‹
+  TextRunRun ƒtƒHƒ‹ƒ_ˆÈ‰º‚Ì\¬
+
+
+TextRunRun.exe				–{‘Ì‚Å‚·B  
+
+trrEveryiƒtƒHƒ‹ƒ_j		TextRunRun ‚É•K—v‚Èƒtƒ@ƒCƒ‹‚âƒtƒHƒ‹ƒ_‚Í  
+							‚±‚Ì’†‚É\¬‚³‚ê‚é‚æ‚¤‚É‚È‚Á‚Ä‚¢‚Ü‚·B
+
+trrEvery  ƒtƒHƒ‹ƒ_“à  
+
+	trrEvery\user			uÝ’è‚ÌƒEƒCƒ“ƒhƒEv‚ÅÝ’è‚µ‚½Ž–‚Í‚±‚ÌƒtƒHƒ‹ƒ_“à‚É”½‰f‚³‚ê‚Ü‚·B
+
+	trrEvery\doc			‰æ‘œ‚ð’u‚¢‚Ä‚¨‚­êŠ‚Å‚·B  
+							Œˆ‚ß‚ç‚ê‚½ƒtƒ@ƒCƒ‹–¼‚Ì‰æ‘œ‚ð’u‚­‚Æ  
+							ƒ\ƒtƒg‚ÌƒEƒCƒ“ƒhƒE“à‚É”½‰f‚³‚ê‚Ü‚·B
+
+	trrEvery\fromFileName		ƒ†[ƒU[‚ªƒtƒ@ƒCƒ‹‚ðì‚é‚±‚Æ‚Å  
+								ƒAƒCƒeƒ€‚âƒVƒ‡[ƒgƒJƒbƒgƒL[‚ð  
+								ì‚é‚±‚Æ‚ª‰Â”\‚É‚È‚éêŠ‚Å‚·B
+
+	trrEvery\addList\addWordList.txt		‚±‚ê‚Íƒtƒ@ƒCƒ‹‚Å‚·B
+											‚±‚Ìƒtƒ@ƒCƒ‹“à‚É‹L“ü‚µ‚½•¶Žš‚ª“ü—Í•âŠ®‚ÌŒó•â‚Æ‚µ‚Ä’Ç‰Á‚³‚ê‚Ü‚·B
+
+
+‚±‚ê‚ç‚ÌƒtƒHƒ‹ƒ_[“à‚ªƒJƒ‰‚Ìê‡A
+TextRunRun.exe ‚ðŽÀs‚·‚é‚ÆAŽ©“®“I‚Éì¬‚·‚é‚æ‚¤‚É‚È‚Á‚Ä‚¢‚Ü‚·B
+‚½‚¾‚µAtrrEvery\doc “à‚Ì‰æ‘œ‚ÍŽ©“®“I‚Éì¬‚Å‚«‚Ü‚¹‚ñB
+
+
+
+  ƒCƒ“ƒXƒg[ƒ‹
+
+
+Œ»Žž“_‚Å‚ÍAƒCƒ“ƒXƒg[ƒ‰[‚Í‚ ‚è‚Ü‚¹‚ñB
+
+›ƒŒƒWƒXƒgƒŠ‚Í‚¢‚¶‚è‚Ü‚¹‚ñ  
+@USB‚È‚Ç‚ÌƒXƒgƒŒ[ƒW‚©‚çŽg—p‚·‚é‚±‚Æ‚à‰Â”\‚Å‚·B
+
+
+ƒ_ƒEƒ“ƒ[ƒh‚µ‚½ƒtƒ@ƒCƒ‹‚ð‰ð“€ƒ\ƒtƒg‚Å“WŠJ‚µ‚Ä‚­‚¾‚³‚¢B
+
+‚»‚ÌŒã‚ÉD‚«‚ÈƒtƒHƒ‹ƒ_“à‚É”z’u‚µ‚ÄŽg‚Á‚Ä‚­‚¾‚³‚¢B  
+
+----------------------------------------------------
+
+¦  æ‚Ù‚Ç‚É‘‚¢‚Ä‚¢‚½‚±‚Æ‚Å‚·‚ªAƒtƒHƒ‹ƒ_‚Ì\¬‚ª“Æ“Á‚É‚È‚Á‚Ä‚¢‚Ü‚·B
+TextRunRun_32bit ‚© TextRunRun_64bit ˆÈ‰º‚É‚ ‚éA
+TextRunRun ‚ÌƒtƒHƒ‹ƒ_‚ðŽ©•ª—p‚ÌƒvƒƒOƒ‰ƒ€ƒtƒHƒ‹ƒ_‚È‚Ç‚É”z’u‚µ‚Ä‚­‚¾‚³‚¢B
+
+----------------------------------------------------
+
+Program Files  ‚È‚Ç‚Ì UACŠÇ—‰º‚ÌƒtƒHƒ‹ƒ_‚Ì’†‚Å‚Í  
+‚±‚Ìƒ\ƒtƒg‚ÍŽg—p‚Å‚«‚Ü‚¹‚ñB
+
+‚»‚êˆÈŠO‚ÌƒtƒHƒ‹ƒ_‚É”z’u‚µ‚ÄŽg‚Á‚Ä‚­‚¾‚³‚¢B
+
+----------------------------------------------------
+
+TextRunRun.exe  ‚ðŽÀs‚·‚é‚ÆA  
+TextRunRun ‚É•K—v‚Èƒtƒ@ƒCƒ‹‚âƒtƒHƒ‹ƒ_‚ª“¯‚¶ƒtƒHƒ‹ƒ_“à‚ÉŽ©“®“I‚Éì¬‚³‚ê‚Ü‚·B
+
+
+
+  ƒAƒ“ƒCƒ“ƒXƒg[ƒ‹
 
 
 ƒŒƒWƒXƒgƒŠ‚Í‚¢‚¶‚Á‚Ä‚¢‚Ü‚¹‚ñB  
@@ -165,13 +255,17 @@ trrEvery  ‚ÌƒtƒHƒ‹ƒ_“à‚É‚Ì‚Ýì‚ç‚ê‚Ü‚·B
 ‚Å‚·‚ªAƒ†[ƒU[‚ªŒÌˆÓ‚Éì‚Á‚½‚à‚Ì‚ÍAƒ†[ƒU[‚ªŠo‚¦‚Ä‚¨‚­•K—v‚ª‚ ‚è‚Ü‚·B
 
 
-# ƒo[ƒWƒ‡ƒ“ƒAƒbƒv
+  ƒo[ƒWƒ‡ƒ“ƒAƒbƒv
 
 
 1. TextRunRun ‚ð•K‚¸I—¹‚³‚¹‚Ä‚¨‚¢‚Ä‚­‚¾‚³‚¢B
 
 2. ‰ð“€‚µ‚½‚Î‚©‚è‚È‚ç‚Î‚»‚Ì‚Ü‚ÜƒtƒHƒ‹ƒ_“à‚Ìƒtƒ@ƒCƒ‹‚ð
    ‚·‚×‚Äã‘‚«‚·‚ê‚ÎOK‚Å‚·B
+
+	Žg‚¢•û‚È‚Ç‚ð‹L“ü‚µ‚½ƒtƒ@ƒCƒ‹‚âA‰æ‘œƒtƒ@ƒCƒ‹‚ÌŽ–‚ð‹C‚É‚µ‚È‚¢‚Ì‚Å‚ ‚ê‚ÎA
+	TextRunRun.exe  ‚¾‚¯‚ðã‘‚«‚·‚é‚¾‚¯‚Å\‚¢‚Ü‚¹‚ñB
+
 
 -------------------------------------------------
 
@@ -188,7 +282,7 @@ trrEvery  ‚ÌƒtƒHƒ‹ƒ_“à‚É‚Ì‚Ýì‚ç‚ê‚Ü‚·B
 @‚ÌƒtƒHƒ‹ƒ_‚ðƒoƒbƒNƒAƒbƒv‚µ‚Ä‚¨‚­Ž–‚ð‘E‚ß‚Ü‚·B
 
 
-# ƒoƒbƒNƒAƒbƒv
+  ƒoƒbƒNƒAƒbƒv
 
 
 	trrEvery\user  
@@ -209,7 +303,7 @@ trrEvery  ‚ÌƒtƒHƒ‹ƒ_“à‚É‚Ì‚Ýì‚ç‚ê‚Ü‚·B
 
 
 
-# ƒL[”z’u•ÏŠ·ƒ\ƒtƒg‚Æ‚Ì‘Š«
+  ƒL[”z’u•ÏŠ·ƒ\ƒtƒg‚Æ‚Ì‘Š«
 
 
 TextRunRun ‚ÍAAutoHotkey ‚Æ“¯‚¶—l‚É
@@ -234,7 +328,7 @@ TextRunRun ‚Å‚ÍA‘g‚Ý‡‚í‚¹ƒL[‚ÍŽg—p‚µ‚È‚¢•û‚ª‚¢‚¢‚ÆŽv‚¢‚Ü‚·B
 
 
 
-# •s‹ï‡‚ð”­Œ©‚µ‚½ê‡
+  •s‹ï‡‚ð”­Œ©‚µ‚½ê‡
 
 
 •s‹ï‡‚ð”­Œ©‚µ‚½ê‡‚Íƒ[ƒ‹‚Å‚²•ñ‚µ‚Ä‚­‚¾‚³‚¢B
@@ -246,7 +340,7 @@ TextRunRun ‚Å‚ÍA‘g‚Ý‡‚í‚¹ƒL[‚ÍŽg—p‚µ‚È‚¢•û‚ª‚¢‚¢‚ÆŽv‚¢‚Ü‚·B
 Œ´‘¥‚Æ‚µ‚ÄìŽÒ‚©‚ç‚Ì•ÔM‚Í‚ ‚è‚Ü‚¹‚ñB
 
 ----------------------------------------------------
-## •ñ‚·‚éÛ
+   •ñ‚·‚éÛ
 ----------------------------------------------------
 
 ˆÈ‰º‚Ì€–Ú‚ð‹L“ü‚µ‚Ä‚­‚¾‚³‚¢B
@@ -258,7 +352,7 @@ TextRunRun ‚Å‚ÍA‘g‚Ý‡‚í‚¹ƒL[‚ÍŽg—p‚µ‚È‚¢•û‚ª‚¢‚¢‚ÆŽv‚¢‚Ü‚·B
 
 userƒtƒHƒ‹ƒ_‚ðˆ³k‚µ‚Ä“Y•t‚µ‚Ä‚à‚æ‚¢‚Å‚·B
 
----------------------------------
+-----------------------------------------------------
 
 ‚±‚Ìƒ\ƒtƒg‚Ì“Á«‚Å fromFileName ‚Æ‚¢‚¤‚à‚Ì‚ðŽg‚Á‚ÄFX‚È‚à‚Ì‚ðì‚éŽ–‚ª‚Å‚«‚Ü‚·‚ªA
 ‚±‚Ì’†‚É‚ ‚éƒXƒNƒŠƒvƒg‚ÉŒ´ˆö‚ª‚ ‚é‚©‚à‚µ‚ê‚È‚¢‚Ì‚ÅA
@@ -266,12 +360,12 @@ fromFileName ‚ðŽg‚Á‚Ä‚¢‚é•û‚Íˆê“x fromFileName ‚ÌƒtƒHƒ‹ƒ_‚ðíœ‚©ˆÚ“®‚µ‚Ä‚Ý‚Ä‚­‚
 
 fromFileName ‚ÍŠ®‘S‚Éƒ†[ƒU[‚ªì‚é‚à‚Ì‚È‚Ì‚ÅA‚»‚ê‚ªŒ´ˆö‚Ì•s‹ï‡‚Í‘Îˆ‚Å‚«‚Ü‚¹‚ñB
 
----------------------------------
+-----------------------------------------------------
 
 
 
 
-# ˜A—æ
+  ˜A—æ
 
 
 ƒ\ƒtƒgƒEƒFƒA‚Ì•s‹ï‡‚Ì•ñ‚â—v–]“™‚É‚Â‚¢‚Ä‚ÍAˆÈ‰º‚Ì‚¢‚¸‚ê‚©‚Ì˜A—æ‚Ü‚Å‚Ç‚¤‚¼B  
@@ -285,7 +379,7 @@ fromFileName ‚ÍŠ®‘S‚Éƒ†[ƒU[‚ªì‚é‚à‚Ì‚È‚Ì‚ÅA‚»‚ê‚ªŒ´ˆö‚Ì•s‹ï‡‚Í‘Îˆ‚Å‚«‚Ü‚¹‚
 
 
 
-# —˜—p‹K–ñ
+  —˜—p‹K–ñ
 
 
 TextRunRun ‚Ìƒ‰ƒCƒZƒ“ƒX‚ÍGPL‚Å‚·B
@@ -293,12 +387,12 @@ TextRunRun ‚Ìƒ‰ƒCƒZƒ“ƒX‚ÍGPL‚Å‚·B
 GNU General Public License v2.0 <http://www.gnu.org/licenses/gpl-2.0.html>  
 TextRunRun ‚ªŽg—p‚µ‚Ä‚¢‚éƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚Ìƒ‰ƒCƒZƒ“ƒXA‚Â‚Ü‚è AutoHotkey_L ‚ªÌ—p‚µ‚Ä‚¢‚éƒ‰ƒCƒZƒ“ƒX‚ð“K—p‚µ‚Ü‚·B
 
-#### ŸŸ’˜ìŒ ŸŸ
+     ŸŸ’˜ìŒ ŸŸ
 - ƒXƒNƒŠƒvƒg‚Ì’˜ìŒ ‚ÍAƒuƒ‰ƒ“ƒ{ƒ“‚ª•ÛŽ‚µ‚Ü‚·B
 - –{ƒ\ƒtƒg‚ÍA‚Ç‚È‚½‚Å‚à–³—¿‚ÅA‚Ü‚½Ž©—R‚É—˜—pE”z•z‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
 - ŽGŽ‚È‚Ç‚ÉŒfÚ‚·‚éê‡‚ÍAŽ–‘O‚É˜A—‚ð‚¨Šè‚¢‚µ‚Ü‚·B
 
-#### ŸŸƒTƒ|[ƒgE–ÆÓŸŸ  
+     ŸŸƒTƒ|[ƒgE–ÆÓŸŸ  
 - –{ƒ\ƒtƒg‚ÍƒtƒŠ[ƒEƒFƒA‚Å‚ ‚èAŠî–{“I‚É‚ÍŒÂ•Ê‚ÌƒTƒ|[ƒg‚Í‚Å‚«‚Ü‚¹‚ñB
 @‚½‚¾‚µAƒoƒOE—v–]‚È‚Ç‚É‚Â‚¢‚Ä‚ÍA‚º‚ÐìŽÒ‚Ü‚Å‚¨’m‚ç‚¹‚­‚¾‚³‚¢B
 - –{ƒ\ƒtƒg‚ð—˜—p‚µ‚½Œ‹‰ÊA–œˆê•sK‚ÈŒ‹‰Ê‚ª”­¶‚µ‚½‚Æ‚µ‚Ä‚àA
@@ -309,8 +403,43 @@ TextRunRun ‚ªŽg—p‚µ‚Ä‚¢‚éƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚Ìƒ‰ƒCƒZƒ“ƒXA‚Â‚Ü‚è AutoHotkey_L ‚ªÌ—
 Ž©ŒÈÓ”C‚Å‚Ì—˜—p‚É“¯ˆÓ‚Å‚«‚È‚¢ê‡A—˜—p‚Í”F‚ß‚ç‚ê‚Ü‚¹‚ñB
 
 
-# Ä”z•z‚È‚Ç
+  Ä”z•z‚È‚Ç
 
 
 ƒA[ƒJƒCƒu‚Ì“à—e‚ð•ÏX‚µ‚È‚¢ŒÀ‚èA–³’f‚ÅÄ”z•z‚ª‰Â”\‚Å‚·B
+
+
+
+
+  XV—š—ð
+
+
+[[[[[[[[[[[[[[[[[[[[[[[[[[
+  2.00.02
+[[[[[[[[[[[[[[[[[[[[[[[[[[
+ - addWordList.txt ‚ÌˆÊ’u‚ð user ƒtƒHƒ‹ƒ_“à‚É‚µ‚È‚¢—l‚É‚·‚é‚½‚ßˆÊ’u‚ð•Ï‚¦‚½B
+   trrEvery\addList\addWordList.txt
+   ‚ÌêŠ‚É•ÏX‚µ‚½B
+ - fromFileName‚ÌƒAƒCƒeƒ€‚Ì“o˜^Žž‚ÉƒtƒHƒ‹ƒ_[‚©‚Ç‚¤‚©‚ðƒ`ƒFƒbƒN‚µ‚È‚¢—l‚É‚µ‚½B
+   ‚±‚ê‚É‚æ‚èA% % ‚â # # ‚ðŽg‚Á‚ÄAƒ\ƒtƒgEƒtƒ@ƒCƒ‹‚ÆƒtƒHƒ‹ƒ_‚ÌƒAƒCƒeƒ€‚ð“o˜^‚·‚éŽ–‚ª‰Â”\‚É‚È‚éB
+   i ƒ†[ƒU[‚ªƒOƒ[ƒoƒ‹éŒ¾‚ð‚µ‚½•Ï”‚Å‚Í‚±‚ê‚ª‚Å‚«‚È‚¢ƒ~ƒX‚ª‚ ‚Á‚½B j
+ - ƒXƒgƒbƒN‚Ì‚Pƒy[ƒW‚ß‚ðƒZƒbƒg‚·‚éƒ^ƒCƒ~ƒ“ƒO‚ð‹N“®Žž‚ÌÅŒã‚É‚µ‚½B
+ - F_newItemFromCommand() ‚ðì‚Á‚½B
+ - ‰½‚à‚µ‚È‚¢ƒTƒuƒ‹[ƒ`ƒ“E_donothing‚ðì‚Á‚½B
+ - O_suspendNotViewFlag‚Ì•Ï”‚ðì‚Á‚½B
+   ‚±‚Ì•Ï”‚É‚æ‚èAE_SuspendToggle‚ðŽg‚Á‚½Žž‚Éƒc[ƒ‹ƒ`ƒbƒv‚Å•\Ž¦‚·‚é‚©‚Ç‚¤‚©‚ð‘I‚ÔB
+ - &popAddWordFilterList ‚Æ &popHistoryFilterList ‚ðŽg‚¤ê‡A‘å•¶Žš‚Æ¬•¶Žš‚Ç‚¿‚ç‚Å‚àŽg‚¦‚é—l‚É‚µ‚½B
+ - Run, ‚Æ Hotkey, ‚ÅAUseErrorLevel ‚ðƒ†[ƒU[‚ª‚ ‚¦‚ÄŽw’è‚µ‚Ä‚àƒGƒ‰[‚É‚È‚ç‚È‚¢‚æ‚¤‚É‚µ‚½B
+ - ƒL[“ü—Í‚Ì•¶Žš‚ðƒL[“ü—Í•â•‚Ì•¶Žš‚É•Ï‚¦‚½B
+
+[[[[[[[[[[[[[[[[[[[[[[[[[[
+  2.00.01
+[[[[[[[[[[[[[[[[[[[[[[[[[[
+ - ˆø”‚ª "" ‚Å‚ ‚Á‚½ê‡AƒJƒŒƒ“ƒgƒtƒHƒ‹ƒ_‚É•Ï‚í‚Á‚Ä‚µ‚Ü‚¤•s‹ï‡‚ð’¼‚µ‚½
+ - &sendPasteTextOut ‚ðŽg‚¤‚Æ % % ‚Ì“WŠJ‚ð“ñd‚É‚·‚éŽ–‚É‚È‚Á‚Ä‚¢‚½‚Ì‚Å‚»‚¤‚µ‚È‚¢—l‚É‚µ‚½
+ - F_inputListSelectOutputAssign(GuiNum)‚ð ‰Á‚¦‚½
+ - userPlus ‚Ì type4.ahk ‚Ìà–¾•¶‚ð•Ï‚¦‚½
+ - "%*" ‚ÌŽw’è‚Ìê‡AÅŒã‚É‹ó”’‚ª’Ç‰Á‚³‚ê‚Ä‚µ‚Ü‚¤‚Ì‚Å’¼‚µ‚½
+ - &addWordListAddFromFile ‚ðŽg‚Á‚Ä‰Á‚¦‚é“ü—Í•âŠ®‚ÍA‰E’[‚É‹ó”’‚ª‚ ‚Á‚Ä‚à‚¢‚¢—l‚É‚µ‚½
+ - &snippetAddFromFile ‚ðŽg‚Á‚Ä‰Á‚¦‚éŠÈˆÕ“ü—Í‚Ì“WŠJŒã‚Ì•¶Žš‚ÍA‘OŒã‚É‹ó”’‚ª‚ ‚Á‚Ä‚à‚¢‚¢—l‚É‚µ‚½
 

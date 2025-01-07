@@ -44,11 +44,22 @@
 入力補完に追加する。
 
 ファイルパスを指定する。
-trrEvery\user\addList\addWordList.txt
+trrEvery\addList\addWordList.txt
 
 のファイルを使うと「追加の単語」として入力補完に表示する文字を追加できるが、 それと同じ種類に追加する。
 
 この &addWordListAddFromFile で指定するファイルは、そのファイルと同じ書式で記述する。
+
+
+
+昔のバージョンで
+
+バージョン 2.00.01 とそれ以前では
+%A_ScriptDir%\trrEvery\user\addList\addWordList.txt
+
+この位置にファイルが存在する様にしていました。
+
+
 
 書式の説明
 
@@ -754,12 +765,23 @@ shutdown.exe
 そして、さらにその下に引数で指定したファイルのファイル名も表示するようにしている。
 
 指定するファイル内の書式だが、「追加の単語」に使う
-trrEvery\user\addList\addWordList.txt
+trrEvery\addList\addWordList.txt
 
 のファイルとほぼ同じ書式で記入する。
 [キーの文字１] /// [展開後の文字１]
 [キーの文字２] /// [展開後の文字２]
 [キーの文字３] /// [展開後の文字３]
+
+
+
+昔のバージョンで
+
+バージョン 2.00.01 とそれ以前では
+%A_ScriptDir%\trrEvery\user\addList\addWordList.txt
+
+この位置にファイルが存在する様にしていました。
+
+
 
 書式の説明
 

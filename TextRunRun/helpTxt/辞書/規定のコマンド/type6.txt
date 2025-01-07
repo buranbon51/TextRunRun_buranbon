@@ -74,9 +74,20 @@ none の文字を入れてたら、文字がカラの一つの引数として扱われる。
 入力補完に追加する。
 
 一つだけの追加となる。
-trrEvery\user\addList\addWordList.txt
+trrEvery\addList\addWordList.txt
 
 のファイルを使うと「追加の単語」として入力補完に表示する文字を追加できるが、それと同じ種類に追加する。
+
+
+
+昔のバージョンで
+
+バージョン 2.00.01 とそれ以前では
+%A_ScriptDir%\trrEvery\user\addList\addWordList.txt
+
+この位置にファイルが存在する様にしていました。
+
+
 
 引数1に追加する文字を。
 
@@ -553,6 +564,11 @@ F_itemReloadOneFromFileName(  )
 ファイルに設定を保存したりしないので、再起動すると、全て無かったことになる。
 
 アイテム一覧 で見ると コマンドから登録 と表示される。
+
+
+似たようなものに、
+F_newItemFromCommand( ) の関数が存在している。 
+
 
 以下の指定の仕方になる。
 引数1 	種類

@@ -2,168 +2,168 @@
 
 
 
+
 a,　b,　c,　d,　e
 
-    &addWordListAdd6
-    &addWordListAddFromFile5
-    &backOneDir2
-    &cd5
-    &cdmain5
-    &cdmydocu5
-    &cleanText3
-    &cleanTextAssign6
-    &cleanTextEasy3
-    &cleanTextExecutor5
-    &cmd5
-    &collabText4
-    &config6
-    &deleteItem5
-    &doubleQuoute2
-    &doubleQuouteCustom2
-    &editItem3
-    &enterForLastWord3
+    &addWordListAdd (6)
+    &addWordListAddFromFile (5)
+    &backOneDir (2)
+    &cd (5)
+    &cdmain (5)
+    &cdmydocu (5)
+    &cleanText (3)
+    &cleanTextAssign (6)
+    &cleanTextEasy (3)
+    &cleanTextExecutor (5)
+    &cmd (5)
+    &collabText (4)
+    &config (6)
+    &deleteItem (5)
+    &doubleQuoute (2)
+    &doubleQuouteCustom (2)
+    &editItem (3)
+    &enterForLastWord (3)
 
 f,　g,　h
 
-    &fileDialog2
-    &folderDialog2
-    &fullPath2
-    &fullPathAll2
-    &fullPathAssign6
-    &getObj6
-    &getValue2
-    &goFunc4
-    &guiHideAndShowWaitExecutor5
-    &guiHideTextExecutor5
-    &guiShow5
-    &guiShowWaitExecutor5
-    &hideInputList1
-    &hideInputListExecutor1
-    &hotkeyAllGroundDelete5
-    &hotkeyAllGroundEdit3
-    &hotkeyAllGroundNew3
-    &hotkeyAllGroundNewFromCommand6
-    &hotkeyOnTextDelete5
-    &hotkeyOnTextEdit3
-    &hotkeyOnTextNew3
-    &hotkeyOnTextNewFromCommand6
+    &fileDialog (2)
+    &folderDialog (2)
+    &fullPath (2)
+    &fullPathAll (2)
+    &fullPathAssign (6)
+    &getObj (6)
+    &getValue (2)
+    &goFunc (4)
+    &guiHideAndShowWaitExecutor (5)
+    &guiHideTextExecutor (5)
+    &guiShow (5)
+    &guiShowWaitExecutor (5)
+    &hideInputList (1)
+    &hideInputListExecutor (1)
+    &hotkeyAllGroundDelete (5)
+    &hotkeyAllGroundEdit (3)
+    &hotkeyAllGroundNew (3)
+    &hotkeyAllGroundNewFromCommand (6)
+    &hotkeyOnTextDelete (5)
+    &hotkeyOnTextEdit (3)
+    &hotkeyOnTextNew (3)
+    &hotkeyOnTextNewFromCommand (6)
 
 i,　j,　k,　l,　m,　n
 
-    &inputListSelectOnly1
-    &itemReloadAll5
-    &itemReloadOneFromFileName6
-    &lastAsHead2
-    &lastAsHeadExecute2
-    &logoff5
-    &ls5
-    &menuShow2
-    &mkdir5
-    &more3
-    &moreTextOut3
-    &multiplelineExe4
-    &multiplelineExeFromFile5
-    &newItem3
-    &newItemFromCommand6
-    &newMultipleItem3
+    &inputListSelectOnly (1)
+    &itemReloadAll (5)
+    &itemReloadOneFromFileName (6)
+    &lastAsHead (2)
+    &lastAsHeadExecute (2)
+    &logoff (5)
+    &ls (5)
+    &menuShow (2)
+    &mkdir (5)
+    &more (3)
+    &moreTextOut (3)
+    &multiplelineExe (4)
+    &multiplelineExeFromFile (5)
+    &newItem (3)
+    &newItemFromCommand (6)
+    &newMultipleItem (3)
 
 o
 
-    &open7
-    &openConfirm7
-    &openConfirmOneLine7
-    &openTextOut7
-    &outArgsTestType11
-    &outArgsTestType22
-    &outArgsTestType33
-    &outArgsTestType44
-    &outArgsTestType55
-    &outArgsTestType66
-    &outArgsToFileAssignAddLinefeed3
-    &outArgsToFileAssignAddLinefeedTextOut3
-    &outArgsToMultipleText1AddLinefeed3
-    &outArgsToMultipleText1AddLinefeedTextOut3
-    &outArgsToOutFileAddLinefeed3
-    &outArgsToOutFileAddLinefeedTextOut3
-    &outArgsToOutGuiAddLinefeed3
-    &outArgsToOutGuiAddLinefeedTextOut3
-    &outArgsToTextEditExecutor3
-    &outArgsToTextEditExecutorTextOut3
-    &outArgsToTextGuiAssign3
-    &outArgsToTextGuiAssignAdd3
-    &outArgsToTextGuiAssignAddTextOut3
-    &outArgsToTextGuiAssignTextOut3
-    &outArgsToTmpOutGui3
-    &outArgsToTmpOutGuiTextOut3
-    &outErrFileToFileGui3
-    &outErrGuiToErrFileAddLinefeed3
-    &outOutFileToFileGui3
-    &outOutGuiToOutFileAddLinefeed3
-    &outTmpOutGuiToOutFileAddLinefeed3
-    &outTmpOutGuiToOutGuiAddLinefeed3
-    &outTmpOutGuiToText3
-    &outTmpOutGuiToTmpFile3
+    &open (7)
+    &openConfirm (7)
+    &openConfirmOneLine (7)
+    &openTextOut (7)
+    &outArgsTestType1 (1)
+    &outArgsTestType2 (2)
+    &outArgsTestType3 (3)
+    &outArgsTestType4 (4)
+    &outArgsTestType5 (5)
+    &outArgsTestType6 (6)
+    &outArgsToFileAssignAddLinefeed (3)
+    &outArgsToFileAssignAddLinefeedTextOut (3)
+    &outArgsToMultipleText1AddLinefeed (3)
+    &outArgsToMultipleText1AddLinefeedTextOut (3)
+    &outArgsToOutFileAddLinefeed (3)
+    &outArgsToOutFileAddLinefeedTextOut (3)
+    &outArgsToOutGuiAddLinefeed (3)
+    &outArgsToOutGuiAddLinefeedTextOut (3)
+    &outArgsToTextEditExecutor (3)
+    &outArgsToTextEditExecutorTextOut (3)
+    &outArgsToTextGuiAssign (3)
+    &outArgsToTextGuiAssignAdd (3)
+    &outArgsToTextGuiAssignAddTextOut (3)
+    &outArgsToTextGuiAssignTextOut (3)
+    &outArgsToTmpOutGui (3)
+    &outArgsToTmpOutGuiTextOut (3)
+    &outErrFileToFileGui (3)
+    &outErrGuiToErrFileAddLinefeed (3)
+    &outOutFileToFileGui (3)
+    &outOutGuiToOutFileAddLinefeed (3)
+    &outTmpOutGuiToOutFileAddLinefeed (3)
+    &outTmpOutGuiToOutGuiAddLinefeed (3)
+    &outTmpOutGuiToText (3)
+    &outTmpOutGuiToTmpFile (3)
 
 p,　q,　r
 
-    &parsentss2
-    &pathLink2
-    &pctime6
-    &popAddWordFilterList1
-    &popFileList1
-    &popHistoryFilterList1
-    &popHistoryList1
-    &popItemFolderList1
-    &popItemScriptList1
-    &popItemSoftList1
-    &popList1
-    &popSpecialWordList1
-    &pwd6
-    &readFile5
-    &reBackOneDir2
-    &relativeAssign6
-    &relativePath2
-    &returnOutputGui6
+    &parsentss (2)
+    &pathLink (2)
+    &pctime (6)
+    &popAddWordFilterList (1)
+    &popFileList (1)
+    &popHistoryFilterList (1)
+    &popHistoryList (1)
+    &popItemFolderList (1)
+    &popItemScriptList (1)
+    &popItemSoftList (1)
+    &popList (1)
+    &popSpecialWordList (1)
+    &pwd (6)
+    &readFile (5)
+    &reBackOneDir (2)
+    &relativeAssign (6)
+    &relativePath (2)
+    &returnOutputGui (6)
 
 s
 
-    &sendEndToTextEditExecutor3
-    &sendPaste3
-    &sendPasteFromFile3
-    &sendPasteFromFileTextOut3
-    &sendPasteTextOut3
-    &sendScriptToText3
-    &sendTextItself3
-    &setValue6
-    &setValueMultipleText16
-    &setValueTmpOutGui6
-    &sharpss2
-    &sharpssCustom2
-    &shortCutPath5
-    &shutdown5
-    &shutdown_r5
-    &snippetAdd6
-    &snippetAddFromFile5
-    &snippetDelete5
-    &snippetOpen2
-    &startupFlag6
-    &stockAddBlue3
-    &stockAddGreen3
-    &stockChangeBlue6
-    &stockChangeGreen6
-    &stockExeAllBlue5
-    &stockExeAllGreen5
-    &stockSaveBlue6
-    &stockSaveGreen6
+    &sendEndToTextEditExecutor (3)
+    &sendPaste (3)
+    &sendPasteFromFile (3)
+    &sendPasteFromFileTextOut (3)
+    &sendPasteTextOut (3)
+    &sendScriptToText (3)
+    &sendTextItself (3)
+    &setValue (6)
+    &setValueMultipleText1 (6)
+    &setValueTmpOutGui (6)
+    &sharpss (2)
+    &sharpssCustom (2)
+    &shortCutPath (5)
+    &shutdown (5)
+    &shutdown_r (5)
+    &snippetAdd (6)
+    &snippetAddFromFile (5)
+    &snippetDelete (5)
+    &snippetOpen (2)
+    &startupFlag (6)
+    &stockAddBlue (3)
+    &stockAddGreen (3)
+    &stockChangeBlue (6)
+    &stockChangeGreen (6)
+    &stockExeAllBlue (5)
+    &stockExeAllGreen (5)
+    &stockSaveBlue (6)
+    &stockSaveGreen (6)
 
 t,　u,　v,　w,　x,　y,　z
 
-    &textOut2
-    &timer4
-    &timerStop6
-    &timerView6
-    &tmpDelete6
-    &wait4
-    &winCapture6
-
+    &textOut (2)
+    &timer (4)
+    &timerStop (6)
+    &timerView (6)
+    &tmpDelete (6)
+    &wait (4)
+    &winCapture (6)
 
