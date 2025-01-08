@@ -964,14 +964,14 @@ cof_syscommandBefore(com1, rightStr, pOut, GuiNum) {
 		edi_outTextToTextGuiAssign(rightStr, GuiNum, True, True)
 		return True
 	} else if(com1 == "&outArgsToMultipleText1AddLinefeed" ) {
-		guf_appendBoxEditBasisPlan(rightStr, "BoxEdit82_1", 82)
-		guf_showGuiAssign(82, "NA")
+		guf_appendBoxEditBasisPlan(rightStr, "BoxEdit82_1", "82")
+		guf_showGuiAssign("82", "NA")
 		return True
 	} else if(com1 == "&outArgsToMultipleText1AddLinefeedTextOut" ) {
 		rightStr := outs_textOutTrimssSharp(rightStr)
 		Transform, rightStr, Deref, %rightStr%
-		guf_appendBoxEditBasisPlan(rightStr, "BoxEdit82_1", 82)
-		guf_showGuiAssign(82, "NA")
+		guf_appendBoxEditBasisPlan(rightStr, "BoxEdit82_1", "82")
+		guf_showGuiAssign("82", "NA")
 		return True
 	} else if(com1 == "&outOutGuiToOutFileAddLinefeed" ) {
 		syf_OutOutGuiToFile(rightStr, pOut, GuiNum)

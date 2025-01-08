@@ -520,7 +520,7 @@ syf_changeStockBlue(com2, com3, pOut, GuiNum){
 		guf_showGuiAssign(77, " NA")
 		return
 	}
-	guit_showGuiEnyAutoClose(glob_iniStock_sec, "gGlob_timerGui77", "SubGui77Close", 77, " NA")
+	guit_showGuiEnyAutoClose(glob_iniStock_sec, "gGlob_timerGui77", "SubGui77Close", "77", " NA")
 }
 
 syf_changeStockGreen(com2, com3, pOut, GuiNum){
@@ -590,7 +590,7 @@ syf_changeStockGreen(com2, com3, pOut, GuiNum){
 		guf_showGuiAssign(78, " NA")
 		return
 	}
-	guit_showGuiEnyAutoClose(glob_iniStock_sec, "gGlob_timerGui78", "SubGui78Close", 78, " NA")
+	guit_showGuiEnyAutoClose(glob_iniStock_sec, "gGlob_timerGui78", "SubGui78Close", "78", " NA")
 }
 
 syf_showGui75AndSetting(){

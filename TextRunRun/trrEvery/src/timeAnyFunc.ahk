@@ -442,7 +442,7 @@ timf_showGui87_autoClose(params) {
 		guf_showGuiAssign(87, params)
 		return
 	}
-	guit_showGuiEnyAutoClose(glob_iniTimerGui_sec, "gGlob_timerGui87", "SubGui87Close", 87, params)
+	guit_showGuiEnyAutoClose(glob_iniTimerGui_sec, "gGlob_timerGui87", "SubGui87Close", "87", params)
 }
 
 timf_showOrHideTimerGui(){

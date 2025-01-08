@@ -635,7 +635,7 @@ init_discriminationTextInsert(){
 
 init_showFromCommGuiOnlyFlag(){
 	if( glob_reloadIniCommGuiOnlyFlag ){
-		guf_showGuiAssign(63)
+		guf_showGuiAssign("63")
 	}
 }
 

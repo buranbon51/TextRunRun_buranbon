@@ -51,7 +51,7 @@ guit_appendBoxEdit66_1(append) {
 	GuiControl,66: , BoxEdit66_1, %after%
 
 	if( glob_iniOutputNotViewFlag == False ){
-		guit_showGuiEnyAutoClose(glob_iniOutput_sec, "gGlob_timerGui66", "SubGui66Close", 66, "NA")
+		guit_showGuiEnyAutoClose(glob_iniOutput_sec, "gGlob_timerGui66", "SubGui66Close", "66", "NA")
 	}
 
 	DetectHiddenWindows, On
@@ -59,7 +59,7 @@ guit_appendBoxEdit66_1(append) {
 	DetectHiddenWindows, Off
 ;	GuiControlGet, OutputVar , 66:Visible, BoxEdit66_1
 ;	if(OutputVar != 1){
-;		guit_showGuiEnyAutoClose(glob_iniOutput_sec, "gGlob_timerGui66", "SubGui66Close", 66, "NA")
+;		guit_showGuiEnyAutoClose(glob_iniOutput_sec, "gGlob_timerGui66", "SubGui66Close", "66", "NA")
 ;	}
 }
 
@@ -78,7 +78,7 @@ guit_appendBoxEdit66_1Cust(append="", str2="@", str3="@", str4="@") {
 	}
 
 	if( glob_iniOutputNotViewFlag == False ){
-		guit_showGuiEnyAutoClose(glob_iniOutput_sec, "gGlob_timerGui66", "SubGui66Close", 66, "NA")
+		guit_showGuiEnyAutoClose(glob_iniOutput_sec, "gGlob_timerGui66", "SubGui66Close", "66", "NA")
 	}
 
 	DetectHiddenWindows, On
@@ -86,7 +86,7 @@ guit_appendBoxEdit66_1Cust(append="", str2="@", str3="@", str4="@") {
 	DetectHiddenWindows, Off
 ;	GuiControlGet, OutputVar , 66:Visible, BoxEdit66_1
 ;	if(OutputVar != 1){
-;		guit_showGuiEnyAutoClose(glob_iniOutput_sec, "gGlob_timerGui66", "SubGui66Close", 66, "NA")
+;		guit_showGuiEnyAutoClose(glob_iniOutput_sec, "gGlob_timerGui66", "SubGui66Close", "66", "NA")
 ;	}
 }
 
@@ -105,7 +105,7 @@ guit_setBoxEdit66_1CustSingle(before, after="@", str3="@", str4="@", str5="@") {
 	}
 
 	if( glob_iniOutputNotViewFlag == False ){
-		guit_showGuiEnyAutoClose(glob_iniOutput_sec, "gGlob_timerGui66", "SubGui66Close", 66, "NA")
+		guit_showGuiEnyAutoClose(glob_iniOutput_sec, "gGlob_timerGui66", "SubGui66Close", "66", "NA")
 	}
 
 	DetectHiddenWindows, On
@@ -113,7 +113,7 @@ guit_setBoxEdit66_1CustSingle(before, after="@", str3="@", str4="@", str5="@") {
 	DetectHiddenWindows, Off
 ;	GuiControlGet, OutputVar , 66:Visible, BoxEdit66_1
 ;	if(OutputVar != 1){
-;		guit_showGuiEnyAutoClose(glob_iniOutput_sec, "gGlob_timerGui66", "SubGui66Close", 66, "NA")
+;		guit_showGuiEnyAutoClose(glob_iniOutput_sec, "gGlob_timerGui66", "SubGui66Close", "66", "NA")
 ;	}
 }
 
@@ -151,7 +151,7 @@ guit_appendBoxEdit68_1(append) {
 	after := BoxEdit68_1  . append  . "`n"
 	GuiControl,68: , BoxEdit68_1, %after%
 	if( glob_iniTmpOutputNotViewFlag == False ){
-		guit_showGuiEnyAutoClose(glob_iniTmpOutput_sec, "gGlob_timerGui68", "SubGui68Close", 68, "NA")
+		guit_showGuiEnyAutoClose(glob_iniTmpOutput_sec, "gGlob_timerGui68", "SubGui68Close", "68", "NA")
 	}
 	ControlSend , , ^{End}, ahk_id  %gGlob_hwndBoxEdit68_1%
 }
@@ -174,14 +174,14 @@ guit_setBoxEdit68_1CustSingle(before, after="@", str3="@", str4="@", str5="@") {
 	if( glob_iniTmpOutputNotViewFlag ){
 		return
 	}
-	guit_showGuiEnyAutoClose(glob_iniTmpOutput_sec, "gGlob_timerGui68", "SubGui68Close", 68, "NA")
+	guit_showGuiEnyAutoClose(glob_iniTmpOutput_sec, "gGlob_timerGui68", "SubGui68Close", "68", "NA")
 	;ControlSend , , ^{End}, ahk_id  %gGlob_hwndBoxEdit68_1%
 }
 
 ; ファイルを読み込むＧＵＩ用
 guit_appendBoxEdit69_1(append) {
-	guf_appendBoxEditBasisPlan(append, "BoxEdit69_1", 69)
-	guf_showGuiAssign(69, "NA")
+	guf_appendBoxEditBasisPlan(append, "BoxEdit69_1", "69")
+	guf_showGuiAssign("69", "NA")
 	;DetectHiddenWindows, On
 	ControlSend , , ^{End}, ahk_id %gGlob_hwndBoxEdit69_1%
 	;DetectHiddenWindows, Off
@@ -194,7 +194,7 @@ guit_appendBoxEdit67_1(append) {
 	GuiControl,67: , BoxEdit67_1, %after%
 
 	if( glob_iniErrorNotViewFlag == False ){
-		guit_showGuiEnyAutoClose(glob_iniError_sec, "gGlob_timerGui67", "SubGui67Close", 67, "NA")
+		guit_showGuiEnyAutoClose(glob_iniError_sec, "gGlob_timerGui67", "SubGui67Close", "67", "NA")
 	}
 
 	DetectHiddenWindows, On
@@ -225,7 +225,7 @@ guit_appendBoxEdit67_1Cust(append="", str2="@", str3="@", str4="@") {
 		GuiControl,67: , BoxEdit67_1, %BoxEdit67_1%%append%`n%str2%`n%str3%`n%str4%`n
 	}
 	if( glob_iniErrorNotViewFlag == False ){
-		guit_showGuiEnyAutoClose(glob_iniError_sec, "gGlob_timerGui67", "SubGui67Close", 67, "NA")
+		guit_showGuiEnyAutoClose(glob_iniError_sec, "gGlob_timerGui67", "SubGui67Close", "67", "NA")
 	}
 	DetectHiddenWindows, On
 	ControlSend , , ^{End}, ahk_id  %gGlob_hwndBoxEdit67_1%
@@ -247,7 +247,7 @@ guit_appendBoxEdit67_1CustSingle(before, after="@", str3="@", str4="@", str5="@"
 	}
 
 	if( glob_iniErrorNotViewFlag == False ){
-		guit_showGuiEnyAutoClose(glob_iniError_sec, "gGlob_timerGui67", "SubGui67Close", 67, "NA")
+		guit_showGuiEnyAutoClose(glob_iniError_sec, "gGlob_timerGui67", "SubGui67Close", "67", "NA")
 	}
 
 	DetectHiddenWindows, On

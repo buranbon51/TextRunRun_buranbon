@@ -418,6 +418,138 @@ F_linefeedReplaceOnEscapeCharacter(str){
 	return str
 }
 
+F_sendToWindow(key, winTitle){
+	WinGetClass, exeClass , A
+	F_winActiveAndWait(winTitle)
+	Send, %key%
+	WinActivate , ahk_class %exeClass%
+}
+
+F_conversion16To10( hex ){
+	SetFormat, Integer, D
+	trimStr_local := Trim( hex )
+	if(trimStr_local == "") {
+		guit_errorAppend(A_ThisFunc . "() のエラー`n引数の値がカラ")
+		return "error"
+	}
+	If hex is not xdigit
+	{
+		guit_errorAppend(A_ThisFunc . "() のエラー`n引数の値が16進数以外の文字になっている`nhex   " . hex)
+		return "error"
+	}
+	if(hex == 0){
+		return "0"
+	}
+	if(hex == "0x"){
+		guit_errorAppend(A_ThisFunc . "() のエラー`n引数の値が0xだけの文字になっている`nhex   " . hex)
+		return "error"
+	}
+	StringLen, hexLen_local, hex
+	if(hexLen_local <= 2){
+		hex := LTrim(hex, "0")
+		if(hex == "") {
+			guit_errorAppend(A_ThisFunc . "() のエラー`n0を除くと引数の値がカラになってしまう")
+			return "error"
+		}
+		hex = 0x%hex%
+	} else {
+		; hexLen_local が 3以上の場合
+		StringLeft, hexChar2_local, hex, 2
+		if(hexChar2_local != "0x"){
+			hex := LTrim(hex, "0")
+			if(hex == "") {
+				guit_errorAppend(A_ThisFunc . "() のエラー`n0を除くと引数の値がカラになってしまう")
+				return "error"
+			}
+			hex = 0x%hex%
+		}
+	}
+	hexChange_local := hex + 0
+	if(hexChange_local == "") {
+		guit_errorAppend(A_ThisFunc . "() のエラー`n何らかの理由で値がカラに変換されてしまう`nhex   " . hex)
+		return "error"
+	}
+	If hexChange_local is not number
+	{
+		guit_errorAppend(A_ThisFunc . "() のエラー`n何らかの理由で値が数字以外に変換されてしまう`nhex   " . hex . "`n変換後   " . hexChange_local)
+		return "error"
+	}
+	return hexChange_local
+}
+
+F_conversion10To16( number, trim0xFlag=False ){
+	trimStr_local := Trim( number )
+	if(trimStr_local == "") {
+		guit_errorAppend(A_ThisFunc . "() のエラー`n引数の値がカラ")
+		SetFormat, Integer, D
+		return "error"
+	}
+	If number is not integer
+	{
+		guit_errorAppend(A_ThisFunc . "() のエラー`n引数の値が整数以外の文字になっている`nnumber   " . number)
+		SetFormat, Integer, D
+		return "error"
+	}
+	if(number <= -1) {
+		guit_errorAppend(A_ThisFunc . "() のエラー`nマイナス値は変換できない`nnumber   " . number)
+		SetFormat, Integer, D
+		return "error"
+	}
+
+	SetFormat, Integer, H
+	; １度計算する。でないと16進数にならない
+	hexValue_local := number + 0
+	if(hexValue_local == "") {
+		guit_errorAppend(A_ThisFunc . "() のエラー`n何らかの理由で値がカラに変換されてしまう`nnumber   " . number)
+		SetFormat, Integer, D
+		return "error"
+	}
+	if(trim0xFlag) {
+		; 0xを取り除く
+		StringTrimLeft, hexValue_local, hexValue_local, 2
+	}
+	If hexValue_local is not xdigit
+	{
+		guit_errorAppend(A_ThisFunc . "() のエラー`n変換後の文字が１６進数にならない`nnumber   " . number . "`n変換後   " . hexValue_local)
+		SetFormat, Integer, D
+		return "error"
+	}
+
+	StringLower, hexValue_local, hexValue_local
+	SetFormat, Integer, D
+	return hexValue_local
+}
+
+F_trim0xFrom16( hex ){
+	trimStr_local := Trim( hex )
+	if(trimStr_local == "") {
+		guit_errorAppend(A_ThisFunc . "() のエラー`n引数の値がカラ")
+		return hex
+	}
+	If hex is not xdigit
+	{
+		guit_errorAppend(A_ThisFunc . "() のエラー`n引数の値が16進数以外の文字になっている`nhex   " . hex)
+		return hex
+	}
+	if(hex == 0){
+		return "0"
+	}
+	if(hex == "0x"){
+		guit_errorAppend(A_ThisFunc . "() のエラー`n引数の値が0xだけの文字になっている`nhex   " . hex)
+		return hex
+	}
+	StringLen, hexLen_local, hex
+	if(hexLen_local >= 3){
+		StringLeft, hexChar2_local, hex, 2
+		if(hexChar2_local == "0x"){
+			; 0xを取り除く
+			StringTrimLeft, hexValue_local, hex, 2
+			return hexValue_local
+		}
+	}
+	return hex
+}
+
 F_confirmDateTime6Char(str){
 	returnStr := linu_getDateTimeOfAt(str)
 	if(returnStr == "error"){

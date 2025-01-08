@@ -1,19 +1,11 @@
-﻿2023年5月8日
-userPlus の type4.ahk の説明文を変えた
-"%*" の指定の場合、最後に空白が追加されてしまうので対処した
-&addWordListAddFromFile を使って加える入力補完は、右端に空白があってもいい様にした。
-&snippetAddFromFile を使って加える簡易入力の展開後の文字は、前後に空白があってもいい様にした。
-addWordList.txt で右に空白があると説明を表示できなくなったので、初期ファイルは、word1 /// の部分の空白を詰めた
-cen_userMakeWordObjSetting( )とcen_snippetAddFromFileSetting( )を間違ったので直した
-2024年4月22日
-fromFileNameのアイテムの登録時にフォルダーかどうかをチェックしない様にした。
-これにより、% % や # # を使って、ソフト・ファイルとフォルダのアイテムを登録する事が可能になる。
-F_newItemFromCommand() を作った
-Run, と Hotkey, で、UseErrorLevel をあえて指定してもエラーにならないようにした
-キー入力の文字をキー入力補助に変えた
-何もしないサブルーチンE_donothingを加えた
-O_suspendNotViewFlagの変数を作った。この変数により、E_SuspendToggleを使った時にツールチップで表示するかどうか選ぶ
-ストックの１ページめをセットするタイミングを最後にした
-2024年4月23日
+﻿2024年4月23日
 &popAddWordFilterList と &popHistoryFilterList を使う場合、大文字と小文字どちらでも使える様にした
 addWordList.txt の位置を user フォルダ内にしない様にするため位置を変えた
+2025年1月8日
+guit_showGuiEnyAutoClose()のGuiNumの指定の場合に" "で囲む様にした（あくまでいくつか）
+guf_showGuiAssign()のGuiNumの指定の場合に" "で囲む様にした（あくまでいくつか）
+guf_appendBoxEditBasisPlan()のGuiNumの指定の場合に" "で囲む様にした（あくまでいくつか）
+F_conversion16To10(hex)
+F_conversion10To16(number, trim0xFlag=False)
+F_trim0xFrom16(hex)
+F_sendToWindow(key, winTitle)を加えた
