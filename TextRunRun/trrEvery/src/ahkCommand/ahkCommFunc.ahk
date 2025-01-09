@@ -214,12 +214,12 @@ ahkc_IsFuncCountConfirm(funcArg_2, IsFunc_res){
 
 ahkc_Process(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg3 != ""){
-		if(glob_ahkArg4 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg4 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg3 != ""){
 		Process, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
 	} else if(glob_ahkArg2 != ""){
 		Process, %glob_ahkArg1%, %glob_ahkArg2%
@@ -236,12 +236,12 @@ ahkc_Process(argss, pOut, GuiNum){
 
 ahkc_Run(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg4 != "") {
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != "") {
 		ahkArg3 := glob_ahkArg3
 		IfNotInString, glob_ahkArg3, UseErrorLevel
 		{
@@ -271,12 +271,12 @@ ahkc_Run(argss, pOut, GuiNum){
 ahkc_RunWait(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	str =
-	if(glob_ahkArg4 != "") {
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != "") {
 		ahkArg3 := glob_ahkArg3
 		IfNotInString, glob_ahkArg3, UseErrorLevel
 		{
@@ -306,12 +306,12 @@ ahkc_RunWait(argss, pOut, GuiNum){
 ahkc_RunAs(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	str =
-	if(glob_ahkArg3 != "") {
-		if(glob_ahkArg4 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg4 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg3 != "") {
 		RunAs , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%
 	} else if(glob_ahkArg2 != "") {
 		RunAs , %glob_ahkArg1%, %glob_ahkArg2%
@@ -334,12 +334,12 @@ ahkc_RunAs(argss, pOut, GuiNum){
 
 ahkc_EnvAdd(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg3 != ""){
-		if(glob_ahkArg4 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg4 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg3 != ""){
 		EnvAdd, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
 	} else if(glob_ahkArg2 != ""){
 		EnvAdd, %glob_ahkArg1%, %glob_ahkArg2%
@@ -355,12 +355,12 @@ ahkc_EnvAdd(argss, pOut, GuiNum){
 
 ahkc_EnvSub(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg3 != ""){
-		if(glob_ahkArg4 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg4 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg3 != ""){
 		EnvSub, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
 	} else if(glob_ahkArg2 != ""){
 		EnvSub, %glob_ahkArg1%, %glob_ahkArg2%
@@ -376,12 +376,12 @@ ahkc_EnvSub(argss, pOut, GuiNum){
 
 ahkc_EnvMult(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg2 != ""){
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != ""){
 		EnvMult, %glob_ahkArg1%, %glob_ahkArg2%
 	} else {
 		str := "EnvMult, Var, Value"
@@ -395,12 +395,12 @@ ahkc_EnvMult(argss, pOut, GuiNum){
 
 ahkc_EnvDiv(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg2 != ""){
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != ""){
 		if(glob_ahkArg2 == 0) {
 			guit_appendExplain(argss . "`nのエラー。`n0を割る事はできない")
 			return
@@ -419,12 +419,12 @@ ahkc_EnvDiv(argss, pOut, GuiNum){
 
 ahkc_Transform(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg4 != ""){
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != ""){
 		Transform, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != ""){
 		Transform, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
@@ -440,12 +440,12 @@ ahkc_Transform(argss, pOut, GuiNum){
 
 ahkc_Shutdown(argss, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		if(glob_ahkArg1 == 0 || glob_ahkArg1 == 1 || glob_ahkArg1 == 2 || glob_ahkArg1 == 4 || glob_ahkArg1 == 5){
 			Shutdown, %glob_ahkArg1%
 			ahkc_checkErrorLevelAhkComm("AHKコマンドのエラー`n" . argss)
@@ -458,12 +458,12 @@ ahkc_Shutdown(argss, GuiNum){
 
 ahkc_ToolTip(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg4 != ""){
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != ""){
 		ToolTip, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%
 		;timf_toolTipClose(5)
 		;ahkc_checkErrorLevelAhkComm("AHKコマンドのエラー`n" . argss)
@@ -569,12 +569,12 @@ ahkc_MsgBox(argss, pOut, GuiNum){
 ahkc_WinWait(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg5 != ""){
-		if(glob_ahkArg6 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg6 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg5 != ""){
 		WinWait , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
 	} else if(glob_ahkArg4 != "") {
 		WinWait , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
@@ -596,12 +596,12 @@ ahkc_WinWait(argss, pOut, GuiNum){
 ahkc_WinWaitActive(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg5 != ""){
-		if(glob_ahkArg6 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg6 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg5 != ""){
 		WinWaitActive , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
 	} else if(glob_ahkArg4 != "") {
 		WinWaitActive , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
@@ -623,12 +623,12 @@ ahkc_WinWaitActive(argss, pOut, GuiNum){
 ahkc_WinWaitClose(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg5 != ""){
-		if(glob_ahkArg6 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg6 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg5 != ""){
 		WinWaitClose , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
 	} else if(glob_ahkArg4 != "") {
 		WinWaitClose , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
@@ -650,12 +650,12 @@ ahkc_WinWaitClose(argss, pOut, GuiNum){
 ahkc_WinWaitNotActive(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg5 != ""){
-		if(glob_ahkArg6 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg6 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg5 != ""){
 		WinWaitNotActive , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
 	} else if(glob_ahkArg4 != "") {
 		WinWaitNotActive , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
@@ -677,12 +677,12 @@ ahkc_WinWaitNotActive(argss, pOut, GuiNum){
 ahkc_WinHide(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg4 != "") {
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != "") {
 		WinHide , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != "") {
 		WinHide , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%
@@ -702,12 +702,12 @@ ahkc_WinHide(argss, pOut, GuiNum){
 ahkc_WinClose(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg5 != ""){
-		if(glob_ahkArg6 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg6 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg5 != ""){
 		WinClose , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
 	} else if(glob_ahkArg4 != "") {
 		WinClose , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
@@ -729,12 +729,12 @@ ahkc_WinClose(argss, pOut, GuiNum){
 ahkc_WinMove(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg8 != ""){
-		if(glob_ahkArg9 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg9 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg8 != ""){
 		WinMove , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%, %glob_ahkArg7%, %glob_ahkArg8%
 	} else if(glob_ahkArg7 != ""){
 		WinMove , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%, %glob_ahkArg7%
@@ -760,12 +760,12 @@ ahkc_WinMove(argss, pOut, GuiNum){
 ahkc_WinKill(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg5 != ""){
-		if(glob_ahkArg6 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg6 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg5 != ""){
 		WinKill , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
 	} else if(glob_ahkArg4 != "") {
 		WinKill , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
@@ -787,12 +787,12 @@ ahkc_WinKill(argss, pOut, GuiNum){
 ahkc_WinSet(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg6 != ""){
-		if(glob_ahkArg7 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg7 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg6 != ""){
 		if(glob_ahkArg2 == ""){
 			WinSet, %glob_ahkArg1%, , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%
 		} else {
@@ -832,12 +832,12 @@ ahkc_WinSet(argss, pOut, GuiNum){
 ahkc_WinActivate(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg4 != "") {
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != "") {
 		WinActivate , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != "") {
 		WinActivate , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%
@@ -857,12 +857,12 @@ ahkc_WinActivate(argss, pOut, GuiNum){
 ahkc_WinShow(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg4 != "") {
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != "") {
 		WinShow, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != "") {
 		WinShow, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%
@@ -882,12 +882,12 @@ ahkc_WinShow(argss, pOut, GuiNum){
 ahkc_WinSetTitle(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg5 != "") {
-		if(glob_ahkArg6 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg6 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg5 != "") {
 		WinSetTitle, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
 	} else if(glob_ahkArg4 != "") {
 		WinSetTitle, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
@@ -930,12 +930,12 @@ ahkc_WinMenuSelectItem(argss, pOut, GuiNum){
 
 ahkc_DetectHiddenWindows(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		DetectHiddenWindows , %glob_ahkArg1%
 	} else {
 		str := "DetectHiddenWindows, On|Off"
@@ -948,12 +948,12 @@ ahkc_DetectHiddenWindows(argss, pOut, GuiNum){
 
 ahkc_DetectHiddenText(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		DetectHiddenText , %glob_ahkArg1%
 	} else {
 		str := "DetectHiddenText, On|Off"
@@ -966,12 +966,12 @@ ahkc_DetectHiddenText(argss, pOut, GuiNum){
 
 ahkc_SetTitleMatchMode(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		SetTitleMatchMode , %glob_ahkArg1%
 	} else {
 		str := "SetTitleMatchMode, Fast|Slow|RegEx|1|2|3"
@@ -985,12 +985,12 @@ ahkc_SetTitleMatchMode(argss, pOut, GuiNum){
 ahkc_WinActivateBottom(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg4 != ""){
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != ""){
 		WinActivateBottom, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != ""){
 		WinActivateBottom, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
@@ -1010,12 +1010,12 @@ ahkc_WinActivateBottom(argss, pOut, GuiNum){
 ahkc_WinMaximize(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg4 != ""){
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != ""){
 		WinMaximize, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != ""){
 		WinMaximize, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
@@ -1035,12 +1035,12 @@ ahkc_WinMaximize(argss, pOut, GuiNum){
 ahkc_WinMinimize(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg4 != ""){
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != ""){
 		WinMinimize, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != ""){
 		WinMinimize, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
@@ -1060,12 +1060,12 @@ ahkc_WinMinimize(argss, pOut, GuiNum){
 ahkc_WinRestore(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg4 != ""){
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != ""){
 		WinRestore, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != ""){
 		WinRestore, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
@@ -1084,12 +1084,12 @@ ahkc_WinRestore(argss, pOut, GuiNum){
 
 ahkc_SetWinDelay(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		SetWinDelay , %glob_ahkArg1%
 	} else {
 		str := "SetWinDelay, Delay"
@@ -1102,12 +1102,12 @@ ahkc_SetWinDelay(argss, pOut, GuiNum){
 
 ahkc_SetControlDelay(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		SetControlDelay , %glob_ahkArg1%
 	} else {
 		str := "SetControlDelay, Delay"
@@ -1121,12 +1121,12 @@ ahkc_SetControlDelay(argss, pOut, GuiNum){
 ahkc_GroupAdd(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg6 != ""){
-		if(glob_ahkArg7 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg7 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg6 != ""){
 		GroupAdd, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%
 	} else if(glob_ahkArg5 != "") {
 		GroupAdd, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
@@ -1148,12 +1148,12 @@ ahkc_GroupAdd(argss, pOut, GuiNum){
 ahkc_GroupActivate(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg2 != ""){
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != ""){
 		GroupActivate, %glob_ahkArg1%, %glob_ahkArg2%
 	} else if(glob_ahkArg1 != "") {
 		GroupActivate, %glob_ahkArg1%
@@ -1169,12 +1169,12 @@ ahkc_GroupActivate(argss, pOut, GuiNum){
 ahkc_GroupClose(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg2 != ""){
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != ""){
 		GroupClose, %glob_ahkArg1%, %glob_ahkArg2%
 	} else if(glob_ahkArg1 != "") {
 		GroupClose, %glob_ahkArg1%
@@ -1190,12 +1190,12 @@ ahkc_GroupClose(argss, pOut, GuiNum){
 ahkc_GroupDeactivate(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg2 != ""){
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != ""){
 		GroupDeactivate, %glob_ahkArg1%, %glob_ahkArg2%
 	} else if(glob_ahkArg1 != "") {
 		GroupDeactivate, %glob_ahkArg1%
@@ -1211,12 +1211,12 @@ ahkc_GroupDeactivate(argss, pOut, GuiNum){
 ahkc_StatusBarWait(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg6 != ""){
-		if(glob_ahkArg7 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg7 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg6 != ""){
 		StatusBarWait, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%
 	} else if(glob_ahkArg5 != ""){
 		StatusBarWait, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
@@ -1240,12 +1240,12 @@ ahkc_StatusBarWait(argss, pOut, GuiNum){
 ahkc_FileSetAttrib(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg2 := outs_textOutToAbsolePath(glob_ahkArg2, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg4 != "") {
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != "") {
 		FileSetAttrib, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != "") {
 		FileSetAttrib, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%
@@ -1265,12 +1265,12 @@ ahkc_FileSetAttrib(argss, pOut, GuiNum){
 ahkc_FileSetTime(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg2 := outs_textOutToAbsolePath(glob_ahkArg2, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg5 != "") {
-		if(glob_ahkArg6 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg6 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg5 != "") {
 		FileSetTime, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
 	} else if(glob_ahkArg4 != "") {
 		FileSetTime, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
@@ -1291,12 +1291,12 @@ ahkc_FileSetTime(argss, pOut, GuiNum){
 
 ahkc_IniWrite(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg4 != "") {
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != "") {
 		IniWrite, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
 	} else {
 		str := "IniWrite, Value, Filename, Section, Key"
@@ -1310,12 +1310,12 @@ ahkc_IniWrite(argss, pOut, GuiNum){
 ahkc_IniDelete(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg2 := outs_textOutToAbsolePath(glob_ahkArg2, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg3 != "") {
-		if(glob_ahkArg4 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg4 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg3 != "") {
 		IniDelete, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%
 	} else if(glob_ahkArg2 != "") {
 		IniDelete, %glob_ahkArg1%, %glob_ahkArg2%
@@ -1330,12 +1330,12 @@ ahkc_IniDelete(argss, pOut, GuiNum){
 
 ahkc_Send(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		edc_hideCommGuiNotActiveIfCommOnly(GuiNum)
 		WinWaitActive , A, , 1
 		ErrorLevel = 0
@@ -1352,12 +1352,12 @@ ahkc_Send(argss, pOut, GuiNum){
 
 ahkc_SendRaw(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		edc_hideCommGuiNotActiveIfCommOnly(GuiNum)
 		WinWaitActive , A, , 1
 		ErrorLevel = 0
@@ -1374,12 +1374,12 @@ ahkc_SendRaw(argss, pOut, GuiNum){
 
 ahkc_SendInput(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		edc_hideCommGuiNotActiveIfCommOnly(GuiNum)
 		WinWaitActive , A, , 1
 		ErrorLevel = 0
@@ -1396,12 +1396,12 @@ ahkc_SendInput(argss, pOut, GuiNum){
 
 ahkc_SendPlay(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		edc_hideCommGuiNotActiveIfCommOnly(GuiNum)
 		WinWaitActive , A, , 1
 		ErrorLevel = 0
@@ -1418,12 +1418,12 @@ ahkc_SendPlay(argss, pOut, GuiNum){
 
 ahkc_SendEvent(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		edc_hideCommGuiNotActiveIfCommOnly(GuiNum)
 		WinWaitActive , A, , 1
 		ErrorLevel = 0
@@ -1441,12 +1441,12 @@ ahkc_SendEvent(argss, pOut, GuiNum){
 
 ahkc_KeyWait(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg2 != "") {
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != "") {
 		KeyWait, %glob_ahkArg1%, %glob_ahkArg2%
 	} else if(glob_ahkArg1 != "") {
 		KeyWait, %glob_ahkArg1%
@@ -1462,12 +1462,12 @@ ahkc_KeyWait(argss, pOut, GuiNum){
 
 ahkc_SendMode(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		SendMode, %glob_ahkArg1%
 	} else {
 		str := "SendMode, Event|Play|Input|InputThenPlay"
@@ -1480,12 +1480,12 @@ ahkc_SendMode(argss, pOut, GuiNum){
 
 ahkc_BlockInput(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		BlockInput, %glob_ahkArg1%
 	} else {
 		str := "BlockInput, On|Off|Send|Mouse|SendAndMouse|Default|MouseMove|MouseMoveOff`nKeyWaitを使わないと、ボタンが押し下げられたままになるので注意"
@@ -1499,12 +1499,12 @@ ahkc_BlockInput(argss, pOut, GuiNum){
 ahkc_Gui(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg4 != "") {
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != "") {
 		Gui, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != "") {
 		Gui, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%
@@ -1523,12 +1523,12 @@ ahkc_Gui(argss, pOut, GuiNum){
 
 ahkc_GuiControl(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg3 != "") {
-		if(glob_ahkArg4 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg4 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg3 != "") {
 		GuiControl, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%
 	} else if(glob_ahkArg2 != "") {
 		GuiControl, %glob_ahkArg1%, %glob_ahkArg2%
@@ -1543,12 +1543,12 @@ ahkc_GuiControl(argss, pOut, GuiNum){
 
 ahkc_Progress(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg5 != ""){
-		if(glob_ahkArg6 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg6 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg5 != ""){
 		Progress, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
 	} else if(glob_ahkArg4 != ""){
 		Progress, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%
@@ -1570,12 +1570,12 @@ ahkc_Progress(argss, pOut, GuiNum){
 ahkc_SplashImage(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg1 := outs_textOutToAbsolePath(glob_ahkArg1, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg6 != ""){
-		if(glob_ahkArg7 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg7 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg6 != ""){
 		SplashImage, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%
 	} else if(glob_ahkArg5 != ""){
 		SplashImage, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
@@ -1598,12 +1598,12 @@ ahkc_SplashImage(argss, pOut, GuiNum){
 
 ahkc_SplashTextOn(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg4 != ""){
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != ""){
 		SplashTextOn, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != ""){
 		SplashTextOn, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
@@ -1622,12 +1622,12 @@ ahkc_SplashTextOn(argss, pOut, GuiNum){
 
 ahkc_TrayTip(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg4 != ""){
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != ""){
 		TrayTip, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != ""){
 		TrayTip, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
@@ -1646,12 +1646,12 @@ ahkc_TrayTip(argss, pOut, GuiNum){
 
 ahkc_StringCaseSense(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		StringCaseSense, %glob_ahkArg1%
 	} else {
 		str := "StringCaseSense, On|Off|Locale"
@@ -1664,12 +1664,12 @@ ahkc_StringCaseSense(argss, pOut, GuiNum){
 
 ahkc_Pause(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg2 != "") {
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != "") {
 		;guit_appendExplain(argss  . "`nを実行")
 		cen_trayPauseIconChangeBefore()
 		Pause, %glob_ahkArg1%, %glob_ahkArg2%
@@ -1690,12 +1690,12 @@ ahkc_Pause(argss, pOut, GuiNum){
 
 ahkc_Gosub(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		if( outs_checkIsLabel(glob_ahkArg1, GuiNum) == False ){
 			return
 		}
@@ -1972,12 +1972,12 @@ ahkc_dbQuouteOrVariable(arg, errViewFlag){
 
 ahkc_SetTimer(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg2 != "") {
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != "") {
 		if( outs_checkIsLabel(glob_ahkArg1, GuiNum) == False ){
 			return
 		}
@@ -1998,12 +1998,12 @@ ahkc_SetTimer(argss, pOut, GuiNum){
 
 ahkc_Menu(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg5 != ""){
-		if(glob_ahkArg6 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg6 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg5 != ""){
 		Menu, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
 	} else if(glob_ahkArg4 != "") {
 		Menu, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
@@ -2024,12 +2024,12 @@ ahkc_Menu(argss, pOut, GuiNum){
 ahkc_SoundPlay(argss, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg1 := outs_textOutToAbsolePath(glob_ahkArg1, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg2 != ""){
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != ""){
 		SoundPlay, %glob_ahkArg1% , %glob_ahkArg2%
 	} else if(glob_ahkArg1 != "") {
 		SoundPlay, %glob_ahkArg1%
@@ -2045,12 +2045,12 @@ ahkc_SoundPlay(argss, GuiNum){
 
 ahkc_SoundBeep(argss, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg2 != ""){
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != ""){
 		SoundBeep, %glob_ahkArg1% , %glob_ahkArg2%
 	} else if(glob_ahkArg1 != "") {
 		SoundBeep, %glob_ahkArg1%
@@ -2064,12 +2064,12 @@ ahkc_SoundBeep(argss, GuiNum){
 ahkc_SetWorkingDir(argss, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg1 := outs_textOutToAbsolePath(glob_ahkArg1, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		SetWorkingDir, %glob_ahkArg1%
 	} else {
 		str := "SetWorkingDir, DirName"
@@ -2083,12 +2083,12 @@ ahkc_SetWorkingDir(argss, GuiNum){
 ahkc_FileCopyDir(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg1 := outs_textOutToAbsolePath(glob_ahkArg1, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg3 != ""){
-		if(glob_ahkArg4 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg4 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg3 != ""){
 		FileCopyDir, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
 	} else if(glob_ahkArg2 != ""){
 		FileCopyDir, %glob_ahkArg1%, %glob_ahkArg2%
@@ -2104,12 +2104,12 @@ ahkc_FileCopyDir(argss, pOut, GuiNum){
 ahkc_FileRemoveDir(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg1 := outs_textOutToAbsolePath(glob_ahkArg1, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg2 != ""){
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != ""){
 		FileRemoveDir, %glob_ahkArg1%, %glob_ahkArg2%
 	} else if(glob_ahkArg1 != ""){
 		FileRemoveDir, %glob_ahkArg1%
@@ -2125,12 +2125,12 @@ ahkc_FileRemoveDir(argss, pOut, GuiNum){
 ahkc_FileCreateDir(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg1 := outs_textOutToAbsolePath(glob_ahkArg1, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg1 != ""){
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != ""){
 		FileCreateDir, %glob_ahkArg1%
 	} else {
 		str := "FileCreateDir, Path"
@@ -2144,12 +2144,12 @@ ahkc_FileCreateDir(argss, pOut, GuiNum){
 ahkc_FileRecycle(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg1 := outs_textOutToAbsolePath(glob_ahkArg1, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg1 != ""){
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != ""){
 		FileRecycle, %glob_ahkArg1%
 	} else {
 		str := "FileRecycle, FilePattern"
@@ -2163,12 +2163,12 @@ ahkc_FileRecycle(argss, pOut, GuiNum){
 ahkc_FileRecycleEmpty(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg1 := outs_textOutToAbsolePath(glob_ahkArg1, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg1 != ""){
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != ""){
 		FileRecycleEmpty, %glob_ahkArg1%
 	} else {
 		FileRecycleEmpty
@@ -2183,12 +2183,12 @@ ahkc_FileRecycleEmpty(argss, pOut, GuiNum){
 ahkc_FileDelete(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg1 := outs_textOutToAbsolePath(glob_ahkArg1, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg1 != ""){
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != ""){
 		FileDelete, %glob_ahkArg1%
 	} else {
 		str := "FileDelete, FilePattern"
@@ -2202,12 +2202,12 @@ ahkc_FileDelete(argss, pOut, GuiNum){
 ahkc_FileRead(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg2 := outs_textOutToAbsolePath(glob_ahkArg2, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg2 != ""){
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != ""){
 		FileRead, %glob_ahkArg1%, %glob_ahkArg2%
 	} else {
 		str := "FileRead, OutputVar, Filename"
@@ -2221,12 +2221,12 @@ ahkc_FileRead(argss, pOut, GuiNum){
 ahkc_SplitPath(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg1 := outs_textOutToAbsolePath(glob_ahkArg1, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg6 != ""){
-		if(glob_ahkArg7 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg7 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg6 != ""){
 		SplitPath, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%
 	} else if(glob_ahkArg5 != "") {
 		SplitPath, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
@@ -2247,12 +2247,12 @@ ahkc_SplitPath(argss, pOut, GuiNum){
 
 ahkc_FileEncoding(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != ""){
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != ""){
 		FileEncoding, %glob_ahkArg1%
 	} else {
 		FileEncoding
@@ -2267,12 +2267,12 @@ ahkc_FileEncoding(argss, pOut, GuiNum){
 ahkc_FileMoveDir(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg1 := outs_textOutToAbsolePath(glob_ahkArg1, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg3 != ""){
-		if(glob_ahkArg4 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg4 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg3 != ""){
 		FileMoveDir, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
 	} else if(glob_ahkArg2 != ""){
 		FileMoveDir, %glob_ahkArg1%, %glob_ahkArg2%
@@ -2288,12 +2288,12 @@ ahkc_FileMoveDir(argss, pOut, GuiNum){
 ahkc_FileCopy(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg1 := outs_textOutToAbsolePath(glob_ahkArg1, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg3 != ""){
-		if(glob_ahkArg4 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg4 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg3 != ""){
 		FileCopy, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
 	} else if(glob_ahkArg2 != ""){
 		FileCopy, %glob_ahkArg1%, %glob_ahkArg2%
@@ -2309,12 +2309,12 @@ ahkc_FileCopy(argss, pOut, GuiNum){
 ahkc_FileMove(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg1 := outs_textOutToAbsolePath(glob_ahkArg1, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg3 != ""){
-		if(glob_ahkArg4 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg4 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg3 != ""){
 		FileMove, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
 	} else if(glob_ahkArg2 != ""){
 		FileMove, %glob_ahkArg1%, %glob_ahkArg2%
@@ -2331,12 +2331,12 @@ ahkc_FileAppend(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	; `n などを改行に変えるのは、var1 = a`n と var1 := "a`n" の方でのみ実行する
 	;Transform, glob_ahkArg1, Deref, %glob_ahkArg1%
-	if(glob_ahkArg2 != ""){
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != ""){
 		; ファイル名が * だった場合、`n を入れないと、すぐに出力されないので `n を加えて出力する
 		if(glob_ahkArg2 == "*"){
 			FileAppend, %glob_ahkArg1%`n, %glob_ahkArg2%
@@ -2357,12 +2357,12 @@ ahkc_FileAppend(argss, pOut, GuiNum){
 ahkc_FileCreateShortcut(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	glob_ahkArg1 := outs_textOutToAbsolePath(glob_ahkArg1, glob_iniAbsolePathNotFlag, False, A_LineFile, A_LineNumber)
-	if(glob_ahkArg6 != ""){
-		if(glob_ahkArg7 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg7 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg6 != ""){
 		FileCreateShortcut, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%
 	} else if(glob_ahkArg5 != ""){
 		FileCreateShortcut, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
@@ -2383,12 +2383,12 @@ ahkc_FileCreateShortcut(argss, pOut, GuiNum){
 
 ahkc_Drive(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg3 != ""){
-		if(glob_ahkArg4 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg4 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg3 != ""){
 		Drive, %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%
 	} else if(glob_ahkArg2 != ""){
 		Drive, %glob_ahkArg1%, %glob_ahkArg2%
@@ -2405,12 +2405,12 @@ ahkc_Drive(argss, pOut, GuiNum){
 
 ahkc_SetEnv(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg2 != "") {
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != "") {
 		SetEnv, %glob_ahkArg1%, %glob_ahkArg2%
 	} else {
 		str := "SetEnv, Var, Value"
@@ -2423,12 +2423,12 @@ ahkc_SetEnv(argss, pOut, GuiNum){
 
 ahkc_CoordMode(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg2 != "") {
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != "") {
 		CoordMode, %glob_ahkArg1%, %glob_ahkArg2%
 	} else if(glob_ahkArg1 != "") {
 		CoordMode, %glob_ahkArg1%
@@ -2443,12 +2443,12 @@ ahkc_CoordMode(argss, pOut, GuiNum){
 
 ahkc_AutoTrim(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != "") {
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != "") {
 		AutoTrim, %glob_ahkArg1%
 	} else {
 		str := "AutoTrim, On|Off"
@@ -2480,12 +2480,12 @@ ahkc_ClipWait(argss, pOut, GuiNum){
 ahkc_Control(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg6 != "") {
-		if(glob_ahkArg7 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg7 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg6 != "") {
 		Control , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%
 	} else if(glob_ahkArg5 != "") {
 		Control , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
@@ -2509,12 +2509,12 @@ ahkc_Control(argss, pOut, GuiNum){
 ahkc_ControlSend(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg6 != "") {
-		if(glob_ahkArg7 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg7 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg6 != "") {
 		ControlSend , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%
 	} else if(glob_ahkArg5 != "") {
 		ControlSend , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
@@ -2536,12 +2536,12 @@ ahkc_ControlSend(argss, pOut, GuiNum){
 ahkc_ControlFocus(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg5 != "") {
-		if(glob_ahkArg6 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg6 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg5 != "") {
 		ControlFocus , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
 	} else if(glob_ahkArg4 != "") {
 		ControlFocus , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%
@@ -2561,12 +2561,12 @@ ahkc_ControlFocus(argss, pOut, GuiNum){
 ahkc_ControlMove(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg6 != "") {
-		if(glob_ahkArg7 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg7 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg6 != "") {
 		ControlMove , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%
 	} else if(glob_ahkArg5 != "") {
 		ControlMove , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
@@ -2584,12 +2584,12 @@ ahkc_ControlMove(argss, pOut, GuiNum){
 ahkc_ControlSetText(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg6 != "") {
-		if(glob_ahkArg7 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg7 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg6 != "") {
 		ControlSetText , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%
 	} else if(glob_ahkArg5 != "") {
 		ControlSetText , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
@@ -2611,12 +2611,12 @@ ahkc_ControlSetText(argss, pOut, GuiNum){
 ahkc_ControlClick(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
 	ahkc_windowComProvision(GuiNum)
-	if(glob_ahkArg6 != "") {
-		if(glob_ahkArg7 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg7 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg6 != "") {
 		ControlClick , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%
 	} else if(glob_ahkArg5 != "") {
 		ControlClick , %glob_ahkArg1%, %glob_ahkArg2%, %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
@@ -2639,12 +2639,12 @@ ahkc_ControlClick(argss, pOut, GuiNum){
 
 ahkc_URLDownloadToFile(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg2 != "") {
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != "") {
 		URLDownloadToFile , %glob_ahkArg1%, %glob_ahkArg2%
 	} else {
 		str := "URLDownloadToFile, URL, Filename"
@@ -2661,12 +2661,12 @@ ahkc_URLDownloadToFile(argss, pOut, GuiNum){
 
 ahkc_SoundSetWaveVolume(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg2 != "") {
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != "") {
 		SoundSetWaveVolume , %glob_ahkArg1%, %glob_ahkArg2%
 	} else if(glob_ahkArg1 != "") {
 		SoundSetWaveVolume , %glob_ahkArg1%
@@ -2682,12 +2682,12 @@ ahkc_SoundSetWaveVolume(argss, pOut, GuiNum){
 
 ahkc_MouseMove(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg4 != ""){
-		if(glob_ahkArg5 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg5 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg4 != ""){
 		MouseMove, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%
 	} else if(glob_ahkArg3 != ""){
 		MouseMove, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%
@@ -2704,12 +2704,12 @@ ahkc_MouseMove(argss, pOut, GuiNum){
 
 ahkc_MouseClick(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg7 != ""){
-		if(glob_ahkArg8 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg8 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg7 != ""){
 		MouseClick, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%, %glob_ahkArg7%
 	} else if(glob_ahkArg6 != ""){
 		MouseClick, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%
@@ -2732,12 +2732,12 @@ ahkc_MouseClick(argss, pOut, GuiNum){
 
 ahkc_MouseClickDrag(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg6 != ""){
-		if(glob_ahkArg7 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg7 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg6 != ""){
 		MouseClickDrag, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%
 	} else if(glob_ahkArg5 != ""){
 		MouseClickDrag, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
@@ -2752,12 +2752,12 @@ ahkc_MouseClickDrag(argss, pOut, GuiNum){
 
 ahkc_Click(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg6 != ""){
-		if(glob_ahkArg7 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg7 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg6 != ""){
 		Click, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%
 	} else if(glob_ahkArg5 != ""){
 		Click, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%
@@ -2829,12 +2829,12 @@ ahkc_Hotkey(argss, pOut, GuiNum){
 
 ahkc_Sleep(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != ""){
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != ""){
 		Sleep, %glob_ahkArg1%
 	} else {
 		str := "Sleep, Delay（ミリ秒で指定）"
@@ -2847,12 +2847,12 @@ ahkc_Sleep(argss, pOut, GuiNum){
 
 ahkc_Suspend(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != ""){
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != ""){
 		Suspend, %glob_ahkArg1%
 		cen_trayIconChangeFromSuspendOrPause()
 	} else {
@@ -2866,12 +2866,12 @@ ahkc_Suspend(argss, pOut, GuiNum){
 
 ahkc_Exit(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != ""){
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != ""){
 		edi_afterCommandExeLogic()
 		Exit, %glob_ahkArg1%
 	} else {
@@ -2895,12 +2895,12 @@ ahkc_ExitApp(argss, pOut, GuiNum){
 
 ahkc_OnExit(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != ""){
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != ""){
 		if( outs_checkIsLabel(glob_ahkArg1, GuiNum) == False ){
 			return
 		}
@@ -2916,12 +2916,12 @@ ahkc_OnExit(argss, pOut, GuiNum){
 
 ahkc_ListLines(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != ""){
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != ""){
 		ListLines, %glob_ahkArg1%
 	} else {
 		ListLines
@@ -2931,12 +2931,12 @@ ahkc_ListLines(argss, pOut, GuiNum){
 
 ahkc_OutputDebug(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg1 != ""){
-		if(glob_ahkArg2 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg2 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg1 != ""){
 		OutputDebug, %glob_ahkArg1%
 	} else {
 		guit_setExplainPurpose("OutputDebug, Text", GuiNum)
@@ -2947,12 +2947,12 @@ ahkc_OutputDebug(argss, pOut, GuiNum){
 
 ahkc_SetFormat(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg2 != ""){
-		if(glob_ahkArg3 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg3 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg2 != ""){
 		SetFormat, %glob_ahkArg1%, %glob_ahkArg2%
 	} else {
 		str := "SetFormat, float|integer, TotalWidth.DecimalPlaces|hex|d"
@@ -2965,12 +2965,12 @@ ahkc_SetFormat(argss, pOut, GuiNum){
 
 ahkc_SendMessage(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg8 != ""){
-		if(glob_ahkArg9 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg9 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg8 != ""){
 		SendMessage, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%, %glob_ahkArg7%, %glob_ahkArg8%
 	} else if(glob_ahkArg7 != ""){
 		SendMessage, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%, %glob_ahkArg7%
@@ -2997,12 +2997,12 @@ ahkc_SendMessage(argss, pOut, GuiNum){
 
 ahkc_PostMessage(argss, pOut, GuiNum){
 	ahkc_argssSplit(argss)
-	if(glob_ahkArg8 != ""){
-		if(glob_ahkArg9 != ""){
-			if( ahkc_ahkCommAverArgsErrMsg(argss) ){
-				return
-			}
+	if(glob_ahkArg9 != ""){
+		if( ahkc_ahkCommAverArgsErrMsg(argss) ){
+			return
 		}
+	}
+	if(glob_ahkArg8 != ""){
 		PostMessage, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%, %glob_ahkArg7%, %glob_ahkArg8%
 	} else if(glob_ahkArg7 != ""){
 		PostMessage, %glob_ahkArg1%, %glob_ahkArg2% , %glob_ahkArg3%, %glob_ahkArg4%, %glob_ahkArg5%, %glob_ahkArg6%, %glob_ahkArg7%
