@@ -360,10 +360,10 @@ ite_setMultipleObjList(str, maxCount, pControl, GuiNum) {
 }
 
 ite_setItemList(){
-	ite_setPopUpSoftObjList("", 500, "List73_1", 73)
-	ite_setFolderObjList("", 500, "List73_2", 73)
-	ite_setItemCommandObjList("", 500, "List73_3", 73)
-	ite_setMultipleObjList("", 500, "List73_7_1", 73)
+	ite_setPopUpSoftObjList("", 1000, "List73_1", 73)
+	ite_setFolderObjList("", 1000, "List73_2", 73)
+	ite_setItemCommandObjList("", 1000, "List73_3", 73)
+	ite_setMultipleObjList("", 1000, "List73_7_1", 73)
 }
 
 ite_showGui73() {

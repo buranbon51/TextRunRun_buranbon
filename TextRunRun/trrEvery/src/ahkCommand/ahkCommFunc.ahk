@@ -1752,6 +1752,16 @@ ahkc_GoFunc_sub(com2){
 		return  str
 	}
 
+	StringLower, funcArg_1Lower, funcArg_1
+	if( funcArg_1Lower == "regexmatch" ){
+		str := ahkc_RegExMatchFunc(funcArg_2)
+		return  str
+	}
+	if( funcArg_1Lower == "regexreplace" ){
+		str := ahkc_RegExReplaceFunc(funcArg_2)
+		return  str
+	}
+
 	funcArg_2 := RTrim( funcArg_2, ")" )
 	delimitChar := ","
 	explain =
@@ -1820,6 +1830,100 @@ ahkc_GoFunc_sub(com2){
 		explain := funcArg_1 . "( )`n引数   " . arg_1_value . ",  " . arg_2_value . "`nを実行した"
 	} else {
 		guit_errorAppend("引数の数が不明", A_LineFile, A_LineNumber)
+	}
+	if(str != ""){
+		explain := "返り値   " . str . "`n" . explain
+	}
+	cen_easyCheckAppendNotShow(explain . "`n" . A_ThisFunc . "`nA_LineNumber  " . A_LineNumber)
+	return  str
+}
+
+ahkc_RegExMatchFunc(funcArg_2){
+	str =
+
+	funcArg_2 := RTrim( funcArg_2, ")" )
+	delimitChar := ","
+	explain =
+
+	; 引数が０か１つかの場合はここを通過しないので確認はしない
+	;IfNotInString, funcArg_2, %delimitChar%
+	;{
+	;	guit_errorAppend("RegExMatch() のエラー`n引数が少ない")
+	;	return  str
+	;}
+
+	; 引数が２つ以上の関数の場合
+	StringSplit, arg_ , funcArg_2 , %delimitChar%, %A_Space%
+	arg_1_value := ifco_answerFromEnyCalcOrStringUseFunc(arg_1, funcArg_1, com2, True)
+	arg_2_value := ifco_answerFromEnyCalcOrStringUseFunc(arg_2, funcArg_1, com2, False)
+	;引数３のみ値は必要ない
+	;arg_3_value := ifco_answerFromEnyCalcOrStringUseFunc(arg_3, funcArg_1, com2, False)
+	arg_4_value := ifco_answerFromEnyCalcOrStringUseFunc(arg_4, funcArg_1, com2, False)
+
+	if(arg_5 != ""){
+		guit_errorAppend("RegExMatch() のエラー`n引数が多い")
+	} else if(arg_4 != ""){
+		str := RegExMatch(arg_1_value, arg_2_value, %arg_3%, arg_4_value)
+		explain := "RegExMatch( )`n引数   " . arg_1_value . ",  " . arg_2_value . ",  " . arg_3 . ",  " . arg_4_value . "`nを実行した"
+	} else if(arg_3 != ""){
+		str := RegExMatch(arg_1_value, arg_2_value, %arg_3%)
+		explain := "RegExMatch( )`n引数   " . arg_1_value . ",  " . arg_2_value . ",  " . arg_3 . "`nを実行した"
+	} else if(arg_2 != ""){
+		str := RegExMatch(arg_1_value, arg_2_value)
+		explain := "RegExMatch( )`n引数   " . arg_1_value . ",  " . arg_2_value . "`nを実行した"
+	} else {
+		guit_errorAppend("RegExMatch() のエラー`n引数の数が不明", A_LineFile, A_LineNumber)
+	}
+	if(str != ""){
+		explain := "返り値   " . str . "`n" . explain
+	}
+	cen_easyCheckAppendNotShow(explain . "`n" . A_ThisFunc . "`nA_LineNumber  " . A_LineNumber)
+	return  str
+}
+
+ahkc_RegExReplaceFunc(funcArg_2){
+	str =
+
+	funcArg_2 := RTrim( funcArg_2, ")" )
+	delimitChar := ","
+	explain =
+
+	; 引数が０か１つかの場合はここを通過しないので確認はしない
+	;IfNotInString, funcArg_2, %delimitChar%
+	;{
+	;	guit_errorAppend("RegExReplace() のエラー`n引数が少ない")
+	;	return  str
+	;}
+
+	; 引数が２つ以上の関数の場合
+	StringSplit, arg_ , funcArg_2 , %delimitChar%, %A_Space%
+	arg_1_value := ifco_answerFromEnyCalcOrStringUseFunc(arg_1, funcArg_1, com2, True)
+	arg_2_value := ifco_answerFromEnyCalcOrStringUseFunc(arg_2, funcArg_1, com2, False)
+	arg_3_value := ifco_answerFromEnyCalcOrStringUseFunc(arg_3, funcArg_1, com2, False)
+	;引数４のみ値は必要ない
+	;arg_4_value := ifco_answerFromEnyCalcOrStringUseFunc(arg_4, funcArg_1, com2, False)
+	arg_5_value := ifco_answerFromEnyCalcOrStringUseFunc(arg_5, funcArg_1, com2, False)
+	arg_6_value := ifco_answerFromEnyCalcOrStringUseFunc(arg_6, funcArg_1, com2, False)
+
+	if(arg_7 != ""){
+		guit_errorAppend("RegExReplace() のエラー`n引数が多い")
+	} else if(arg_6 != ""){
+		str := RegExReplace(arg_1_value, arg_2_value, arg_3_value, %arg_4%, arg_5_value, arg_6_value)
+		explain := "RegExReplace( )`n引数   " . arg_1_value . ",  " . arg_2_value . ",  " . arg_3_value . ",  " . arg_4 . ",  " . arg_5_value . ",  " . arg_6_value . "`nを実行した"
+	} else if(arg_5 != ""){
+		str := RegExReplace(arg_1_value, arg_2_value, arg_3_value, %arg_4%, arg_5_value)
+		explain := "RegExReplace( )`n引数   " . arg_1_value . ",  " . arg_2_value . ",  " . arg_3_value . ",  " . arg_4 . ",  " . arg_5_value . "`nを実行した"
+	} else if(arg_4 != ""){
+		str := RegExReplace(arg_1_value, arg_2_value, arg_3_value, %arg_4%)
+		explain := "RegExReplace( )`n引数   " . arg_1_value . ",  " . arg_2_value . ",  " . arg_3_value . ",  " . arg_4 . "`nを実行した"
+	} else if(arg_3 != ""){
+		str := RegExReplace(arg_1_value, arg_2_value, arg_3_value)
+		explain := "RegExReplace( )`n引数   " . arg_1_value . ",  " . arg_2_value . ",  " . arg_3_value . "`nを実行した"
+	} else if(arg_2 != ""){
+		str := RegExReplace(arg_1_value, arg_2_value)
+		explain := "RegExReplace( )`n引数   " . arg_1_value . ",  " . arg_2_value . "`nを実行した"
+	} else {
+		guit_errorAppend("RegExReplace() のエラー`n引数の数が不明", A_LineFile, A_LineNumber)
 	}
 	if(str != ""){
 		explain := "返り値   " . str . "`n" . explain

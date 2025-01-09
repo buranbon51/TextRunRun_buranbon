@@ -398,7 +398,7 @@ guf_guiFontFromSizeAndName(fontNum, StO_fontNameAll, 82)
 ;guf_Gui("Font", 82, glob_needReloadIniExplainFontOption, glob_needReloadIniExplainFontName)
 outs_bgPictureAddEnyExtFile(gloco_docDir . glob_multipleComm1BackgName, "X0 Y0", 82)
 
-Gui, 82:Add, Text,   X20  Y10, 二行以上のスクリプト
+Gui, 82:Add, Text,   X20  Y10, 二行以上のテキスト
 Gui, 82:Add, Edit, X10 y+5  w300 h220 vBoxEdit82_1 Multi T16 -Wrap VScroll HScroll HwndgGlob_hwndBoxEdit82_1
 tmpNumW := cen_anyOfNumFromDpiAndFontSize(5, 7, 70, 90, 110)
 Gui, 82:Add, Button, X20 y+10 w%tmpNumW%  vButton82_1  gSubButton82_1, 実行(&O)

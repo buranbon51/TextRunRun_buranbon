@@ -9,3 +9,11 @@ F_conversion16To10(hex)
 F_conversion10To16(number, trim0xFlag=False)
 F_trim0xFrom16(hex)
 F_sendToWindow(key, winTitle)を加えた
+&ls でフォルダを指定する際、最後に\をつけてもつけなくてもよくした
+ファイル名の文字をファイルパスに変えた
+二行以上のスクリプトの文字を二行以上のテキストに変えた
+2025年1月9日
+RegExMatch()の引数３を指定しても意味をなさなかったが、使える様にした。
+RegExReplace()の引数４を指定しても意味をなさなかったが、使える様にした。
+fromFileNameのアイテム登録上限を500から1000に変えた
+アイテムの一覧の表示上限を500から1000に変えた。種類ごとに

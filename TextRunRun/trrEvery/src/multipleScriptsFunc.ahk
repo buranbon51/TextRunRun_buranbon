@@ -615,7 +615,7 @@ musc_multiplelineExe(rightStr, pOut, GuiNum, outPutSucceedFlag){
 }
 
 musc_multiplelineExeFromFile(rightStr, pOut, GuiNum){
-	str := "二行以上のスクリプトを実行する。`n引数にファイル名を指定する。`nファイルの中に記入されている文字を、二行以上のスクリプトとして実行する。"
+	str := "二行以上のスクリプトを実行する。`n引数にファイルパスを指定する。`nファイルの中に記入されている文字を、二行以上のスクリプトとして実行する。"
 	if( edc_helpViewIfHyphenH(str, rightStr, GuiNum) ){
 		return
 	}
@@ -629,7 +629,7 @@ musc_multiplelineExeFromFile(rightStr, pOut, GuiNum){
 
 	str := Trim(str)
 	if(str == ""){
-		guit_errorAppend("&multiplelineExeFromFile のエラー`nファイルの中身に実行する内容が記入されていない`nファイル名`n" . rightStr)
+		guit_errorAppend("&multiplelineExeFromFile のエラー`nファイルの中身に実行する内容が記入されていない`nファイルパス`n" . rightStr)
 		return
 	}
 
@@ -937,7 +937,7 @@ musc_newItemFromCommand(radioNum, itemName, script, args, workDir, dbQuoutFlag, 
 
 引数６は true false や on off の指定でも可
 
-半角スペースがあるファイル名などはダブルクオーテで囲むと１つの引数扱いになるのでそれを利用するとよい。
+半角スペースがあるファイルパスなどはダブルクオーテで囲むと１つの引数扱いになるのでそれを利用するとよい。
 )
 	if( edc_helpViewIfHyphenH(str, itemName, GuiNum) ){
 		return

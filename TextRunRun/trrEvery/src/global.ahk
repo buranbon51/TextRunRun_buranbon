@@ -176,20 +176,20 @@ global glob_hotkeyOnTextFfnDirName := "\hotkeyOnText"
 
 global glob_firstFfnDirNameOnly := "first"
 
-global glob_categoryFfnMax = 100
-global glob_itemFfnMax = 500
-global glob_snippetFfnMax = 300
-global glob_onTextFfnMax = 51
-global glob_allGFfnMax = 51
-global glob_allGWindowFfnMax = 30
-global glob_startupFfnMax = 200
+global glob_categoryFfnMax := 100
+global glob_itemFfnMax := 1000
+global glob_snippetFfnMax := 300
+global glob_onTextFfnMax := 51
+global glob_allGFfnMax := 51
+global glob_allGWindowFfnMax := 30
+global glob_startupFfnMax := 200
 
-global glob_itemFfnCount = 1
-global glob_snippetFfnCount = 1
-global glob_onTextFfnCount = 1
-global glob_allGFfnCount = 1
-global glob_allGWindowFfnCount = 1
-global glob_startupFfnCount = 1
+global glob_itemFfnCount := 1
+global glob_snippetFfnCount := 1
+global glob_onTextFfnCount := 1
+global glob_allGFfnCount := 1
+global glob_allGWindowFfnCount := 1
+global glob_startupFfnCount := 1
 
 
 ; userMakeScriptフォルダ関係

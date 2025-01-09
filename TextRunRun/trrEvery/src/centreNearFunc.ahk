@@ -343,7 +343,7 @@ cen_showEverInputGui(){
 }
 
 cen_sysCommandeditCommand(argss, pControl, GuiNum) {
-	str := "登録した物を一覧表示する。引数にアイテム名があると、そのアイテムを編集する状態になる。`n引数が  -e  なら、入力補完の一覧のウインドウを表示する。`nおまけで、ファイル名だった場合はファイルのプロパティを表示するようにしている"
+	str := "登録した物を一覧表示する。引数にアイテム名があると、そのアイテムを編集する状態になる。`n引数が  -e  なら、入力補完の一覧のウインドウを表示する。`nおまけで、ファイルパスだった場合はファイルのプロパティを表示するようにしている"
 	if( edc_helpViewIfHyphenH(str, argss, GuiNum) ){
 		return
 	}

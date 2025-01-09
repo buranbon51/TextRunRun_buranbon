@@ -130,7 +130,7 @@ excof_itemExecute(key, rightStr, otherArgss, pOut, GuiNum, hwnd, historyStr, and
 			changeFlag := True
 		}
 		if( changeFlag ){
-			; ソフトのパスの返り値(pathStr)が、元のファイル名(tmpRunPath)だった場合、引数は無しにする
+			; ソフトのパスの返り値(pathStr)が、元のファイルパス(tmpRunPath)だった場合、引数は無しにする
 			if(tmpRunPath == pathStr){
 				argss =
 			}
@@ -139,7 +139,7 @@ excof_itemExecute(key, rightStr, otherArgss, pOut, GuiNum, hwnd, historyStr, and
 		}
 
 		if(openNum == 1){
-			if( outs_isNotFile(pathStr, "ソフト・ファイルのアイテムの実行時のエラー`nファイル名ではないので実行できない`n" . pathStr) ) {
+			if( outs_isNotFile(pathStr, "ソフト・ファイルのアイテムの実行時のエラー`nファイルパスではないので実行できない`n" . pathStr) ) {
 				return True
 			}
 			outs_workDirCheck(workDir, "作業フォルダが不明`n" . workDir)
@@ -169,7 +169,7 @@ excof_itemExecute(key, rightStr, otherArgss, pOut, GuiNum, hwnd, historyStr, and
 			argss := cen_getArgssBeforeExeSoftItem(O_folderOpenSoftItem, runPath)
 			workDir := cen_getWorkDirBeforeExeSoftItem(O_folderOpenSoftItem)
 
-			; ソフトのパスの返り値(pathStr)が、元のファイル名(runPath)だった場合、引数は無しにする
+			; ソフトのパスの返り値(pathStr)が、元のファイルパス(runPath)だった場合、引数は無しにする
 			if(runPath == pathStr){
 				argss =
 			}

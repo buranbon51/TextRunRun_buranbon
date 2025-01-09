@@ -73,7 +73,7 @@ syf_OutTmpOutGuiToOutGui(rightStr, pOut, GuiNum){
 }
 
 syf_OutTextToFileAssign(rightStr, GuiNum, textOutFlag){
-	str := "引数１にファイル名を指定する。`n引数２以降の文字を指定したファイルに書き出す。`n例`n&outArgsToFileAssign #itemName#\file.txt 記入する文字`n引数１はtextOutされる"
+	str := "引数１にファイルパスを指定する。`n引数２以降の文字を指定したファイルに書き出す。`n例`n&outArgsToFileAssign #itemName#\file.txt 記入する文字`n引数１はtextOutされる"
 	if( edc_helpViewIfHyphenH(str, rightStr, GuiNum) ){
 		return
 	}
@@ -355,6 +355,11 @@ syf_sysCommandls(arg1, GuiNum){
 		type := func_myFileExistReturnType(arg1)
 		IfInString, type, D
 		{
+			StringRight, arg1Char, arg1, 1
+			if(arg1Char == "\"){
+				StringTrimRight, arg1, arg1, 1
+			}
+			arg1 .= "\"
 			listFiless := func_getListFiles( arg1 )
 			listFiless := RTrim(listFiless, "`n")
 			guit_setExplainPurpose(listFiless, GuiNum)
@@ -363,7 +368,6 @@ syf_sysCommandls(arg1, GuiNum){
 		}
 	}
 }
-
 
 syf_myAsc(com2, com3, pControl, GuiNum=1) {
 	if(com2 == "-hex") {

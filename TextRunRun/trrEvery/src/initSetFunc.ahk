@@ -558,7 +558,7 @@ init_commWinTitleSet(){
 	gGlob_Gui85Title := "再起動が必要な設定" . gGlob_GuiAllTitle
 	gGlob_Gui79Title := "テキスト上のショートカットキー登録" . gGlob_GuiAllTitle
 	gGlob_Gui80Title := "ショートカットキーの一覧" . gGlob_GuiAllTitle
-	gGlob_Gui82Title := "二行以上のスクリプト" . gGlob_GuiAllTitle
+	gGlob_Gui82Title := "二行以上のテキスト" . gGlob_GuiAllTitle
 	gGlob_Gui83Title := "二行以上のスクリプトの登録" . gGlob_GuiAllTitle
 	gGlob_Gui70Title := "入力補完" . gGlob_GuiAllTitle
 	gGlob_Gui89Title := "入力補完の一覧" . gGlob_GuiAllTitle

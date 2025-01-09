@@ -10,7 +10,7 @@ syfl_systemHotkeyObjInsert(){
 	glob_systemHotkeyObj.Insert("Alt+F", "絶対パスにする`n&fullPath")
 	glob_systemHotkeyObj.Insert("Alt+R", "相対パスにする`n&relativePath")
 	glob_systemHotkeyObj.Insert("Alt+Semicolon", "最後の単語を先頭にする`n&lastAsHead")
-	glob_systemHotkeyObj.Insert("Alt+2", "ファイル名をダブルクウォーテで囲む`n&doubleQuouteCustom")
+	glob_systemHotkeyObj.Insert("Alt+2", "ファイルパスをダブルクウォーテで囲む`n&doubleQuouteCustom")
 	glob_systemHotkeyObj.Insert("Alt+3", "文字を##で囲み、￥をつける`n&sharpssCustom")
 	glob_systemHotkeyObj.Insert("Alt+5", "文字を%%で囲む`n&parsentss")
 	glob_systemHotkeyObj.Insert("Ctrl+N", "アイテムの新規登録のＧＵＩを表示`n&newItem")
