@@ -418,10 +418,32 @@ F_linefeedReplaceOnEscapeCharacter(str){
 	return str
 }
 
-F_sendToWindow(key, winTitle){
+F_sendToWindow(key, winTitle, beforeWinDelay=100, afterSleepDelay=0){
+	If beforeWinDelay is not integer
+	{
+		guit_errorAppend(A_ThisFunc . "() のエラー。`nbeforeWinDelay に整数以外の値を指定している")
+		return
+	}
+	If afterSleepDelay is not integer
+	{
+		guit_errorAppend(A_ThisFunc . "() のエラー。`nafterSleepDelay に整数以外の値を指定している")
+		return
+	}
+	if(beforeWinDelay <= -1){
+		guit_errorAppend(A_ThisFunc . "() のエラー。`nbeforeWinDelay にマイナスの値を指定している")
+		return
+	}
+	if(afterSleepDelay <= -1){
+		guit_errorAppend(A_ThisFunc . "() のエラー。`nafterSleepDelay にマイナスの値を指定している")
+		return
+	}
+	SetWinDelay, %beforeWinDelay%
 	WinGetClass, exeClass , A
 	F_winActiveAndWait(winTitle)
 	Send, %key%
+	if( afterSleepDelay != 0){
+		Sleep, %afterSleepDelay%
+	}
 	WinActivate , ahk_class %exeClass%
 }
 
