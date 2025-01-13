@@ -3,7 +3,7 @@
 
 
 ³Ž®–¼FTextRunRun  iƒeƒLƒXƒgƒ‰ƒ“ƒ‰ƒ“j
-ƒo[ƒWƒ‡ƒ“F2.02
+ƒo[ƒWƒ‡ƒ“F2.00.03
 ”z•zƒtƒ@ƒCƒ‹–¼FTextRunRun_buranbon.zip
 ìŽÒFƒuƒ‰ƒ“ƒ{ƒ“
 WebFhttps://textrunrunburanbon.com
@@ -90,7 +90,7 @@ AutoHotkey 2.xx ‚Ìƒo[ƒWƒ‡ƒ“‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
 AutoHotkey_L ‚ðŽg‚Á‚Ä“®ì‚³‚¹‚é‚Æ‘‚«‚Ü‚µ‚½‚ªA
 AutoHotkey ‚ðƒCƒ“ƒXƒg[ƒ‹‚·‚é•K—v‚Í‚ ‚è‚Ü‚¹‚ñB
 
-AutoHotkey_L  ‚ªŽg—p‰Â”\‚Èƒpƒ\ƒRƒ“‚È‚çA TextRunRun ‚àŽg—p‰Â”\‚Å‚ ‚é‚Æ‚¢‚¤Ž–‚ªŒ¾‚¢‚½‚©‚Á‚½‚¾‚¯‚Å‚·B
+AutoHotkey_L  ‚ªŽg—p‰Â”\‚Èƒpƒ\ƒRƒ“‚È‚çA TextRunRun ‚àŽg—p‰Â”\‚¾‚ÆŽv‚¢‚Ü‚·B
 
 ‚±‚±‚ÅŒöŠJ‚µ‚½‚à‚Ì‚ÍƒRƒ“ƒpƒCƒ‹”Å‚Å‚·‚Ì‚ÅA
 TextRunRun.exe  ‚ðŠJ‚¯‚Î‹N“®‚µ‚Ü‚·B
@@ -156,17 +156,17 @@ AutoHotkey.exe  ‚³‚¦‚ ‚ê‚Îƒ\[ƒXƒR[ƒh”Å‚àŽg‚¦‚Ü‚·B
 
 
 
-TextRunRun_buranbon --- TextRunRun_32bit --- TextRunRun --- TextRunRun.exe
+TextRunRun_buranbon --- 32bit --- TextRunRun --- TextRunRun.exe
                      |
-                     |- TextRunRun_64bit --- TextRunRun --- TextRunRun.exe
+                     |- 64bit --- TextRunRun --- TextRunRun.exe
 
 
 
-TextRunRun_32bit ˆÈ‰º‚Ì‚à‚Ì ‚Æ TextRunRun_64bit ˆÈ‰º‚Ì‚à‚Ì‚ÍˆË‘¶ŠÖŒW‚É‚ ‚è‚Ü‚¹‚ñB
+32bit ‚ÌƒtƒHƒ‹ƒ_ˆÈ‰º‚Ì‚à‚Ì ‚Æ 64bit ‚ÌƒtƒHƒ‹ƒ_ˆÈ‰º‚Ì‚à‚Ì‚ÍˆË‘¶ŠÖŒW‚É‚ ‚è‚Ü‚¹‚ñB
 ‚Ç‚¿‚ç‚©‚¾‚¯‚ðŽg‚¢‚Ü‚·B
 
 
-TextRunRun_32bit ‚© TextRunRun_64bit ˆÈ‰º‚É‚ ‚éA
+32bit ‚ÌƒtƒHƒ‹ƒ_‚© 64bit ‚ÌƒtƒHƒ‹ƒ_ˆÈ‰º‚É‚ ‚éA
 TextRunRun ‚ÌƒtƒHƒ‹ƒ_‚ðŽ©•ª—p‚ÌƒvƒƒOƒ‰ƒ€ƒtƒHƒ‹ƒ_‚È‚Ç‚É”z’u‚µ‚Ä‚­‚¾‚³‚¢B
 
 ----------------------------------------------------
@@ -227,11 +227,12 @@ TextRunRun.exe ‚ðŽÀs‚·‚é‚ÆAŽ©“®“I‚Éì¬‚·‚é‚æ‚¤‚É‚È‚Á‚Ä‚¢‚Ü‚·B
 ----------------------------------------------------
 
 ¦  æ‚Ù‚Ç‚É‘‚¢‚Ä‚¢‚½‚±‚Æ‚Å‚·‚ªAƒtƒHƒ‹ƒ_‚Ì\¬‚ª“Æ“Á‚É‚È‚Á‚Ä‚¢‚Ü‚·B
-TextRunRun_32bit ‚© TextRunRun_64bit ˆÈ‰º‚É‚ ‚éA
+32bit ‚ÌƒtƒHƒ‹ƒ_‚© 64bit ‚ÌƒtƒHƒ‹ƒ_ˆÈ‰º‚É‚ ‚éA
 TextRunRun ‚ÌƒtƒHƒ‹ƒ_‚ðŽ©•ª—p‚ÌƒvƒƒOƒ‰ƒ€ƒtƒHƒ‹ƒ_‚È‚Ç‚É”z’u‚µ‚Ä‚­‚¾‚³‚¢B
 
 ----------------------------------------------------
 
+¦  ‚±‚ê‚àæ‚Ù‚Ç‚É‘‚¢‚Ä‚¢‚½‚±‚Æ‚Å‚·‚ªA
 Program Files  ‚È‚Ç‚Ì UACŠÇ—‰º‚ÌƒtƒHƒ‹ƒ_‚Ì’†‚Å‚Í  
 ‚±‚Ìƒ\ƒtƒg‚ÍŽg—p‚Å‚«‚Ü‚¹‚ñB
 
@@ -413,6 +414,24 @@ TextRunRun ‚ªŽg—p‚µ‚Ä‚¢‚éƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚Ìƒ‰ƒCƒZƒ“ƒXA‚Â‚Ü‚è AutoHotkey_L ‚ªÌ—
 
   XV—š—ð
 
+
+[[[[[[[[[[[[[[[[[[[[[[[[[[
+  2.00.03
+[[[[[[[[[[[[[[[[[[[[[[[[[[
+ - F_sendToWindow( ) ‚ÌŠÖ”‚ð‰Á‚¦‚½
+ - F_conversion10To16( )
+   F_conversion16To10( )
+   F_trim0xFrom16( ) ‚ÌŠÖ” ‚ð‰Á‚¦‚½ 
+ - RegExMatch( ) ‚ÌŠÖ”‚ðŽg‚¤ê‡Aˆø”3 ‚É•Ï”‚ðŽw’è‚µ‚Ä‚à‚¤‚Ü‚­“®ì‚µ‚È‚©‚Á‚½‚Ì‚Å’¼‚µ‚½B
+ - RegExReplace( ) ‚ÌŠÖ”‚àAˆø”4 ‚É•Ï”‚ðŽw’è‚µ‚Ä‚à‚¤‚Ü‚­“®ì‚µ‚È‚©‚Á‚½‚Ì‚Å’¼‚µ‚½B
+ - TextRunRun‚ÌƒXƒNƒŠƒvƒg“à‚Å
+   SetFormat, integer, H ‚ðŽg‚Á‚½ê‡A F_output( ) ‚È‚Ç‚ðŽg‚Á‚Äo—Í‚µ‚æ‚¤‚Æ‚·‚é‚Æ
+   •Ï”‚Ì’l‚ª 16i”‚É‚È‚Á‚Ä‚µ‚Ü‚¤Ž–‚©‚çŽg—p‚Å‚«‚È‚©‚Á‚½‚ªAˆê‰ž F_output( ) ‚È‚Ç‚Åo—Í‚Å‚«‚é—l‚É‚µ‚½
+   i  ‚½‚¾‚µA TextRunRun‚ÌƒXƒNƒŠƒvƒg“à‚ÅASetFormat, integer, H ‚ÍA‚ ‚Ü‚èŽg‚í‚È‚¢•û‚ª‚æ‚¢Ž–‚É•Ï‚í‚è‚Í‚È‚¢B  j
+ - &ls ‚Ì‹K’è‚ÌƒRƒ}ƒ“ƒh‚ÍAƒtƒHƒ‹ƒ_ƒpƒX‚ðŽw’è‚·‚éê‡ \ ‚ðÅŒã‚É•t‚¯‚È‚¢‚Æ‚¢‚¯‚È‚©‚Á‚½‚ªA‚Â‚¯‚È‚­‚Ä‚à‚¢‚¢‚æ‚¤‚É‚µ‚½B
+ - ƒAƒCƒeƒ€ ‚Ì“o˜^ãŒÀ”‚ð 500 ‚©‚ç 1000 ‚É‚µ‚½B
+ - AHKƒRƒ}ƒ“ƒh ‚Ìˆø”‚ª‘½‚©‚Á‚½ê‡‚ÍƒGƒ‰[‚ªo—Í‚³‚ê‚é‚ªA‚»‚Ìƒ‹[ƒ‹‚ð­‚µ’¼‚µ‚½B
+ - “ü—Í•âŠ®‚Ìˆê—— ‚Ì “ÁŽê‚È’PŒê ‚ÌŽí—Þ‚ª‘S‚Ä•\Ž¦‚Å‚«‚Ä‚È‚©‚Á‚½‚Ì‚Å’¼‚µ‚½B
 
 [[[[[[[[[[[[[[[[[[[[[[[[[[
   2.00.02

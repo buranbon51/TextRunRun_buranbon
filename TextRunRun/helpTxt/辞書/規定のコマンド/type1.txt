@@ -14,25 +14,25 @@
 少し細かくいうと、 テキスト の文字列の最後の半角スペースの右の文字列のみ参考にする。
 ここでは、 最後の文字 とだけ表現する。
 
-## タイプ 1 の特徴
-### <<< の動作
+ タイプ 1 の特徴
+ <<< の動作
 無視する
-### 履歴に残すか
+ 履歴に残すか
 残さない
-### &&& の動作
+ &&& の動作
 無視する
-### >>> の動作
+ >>> の動作
 無視する
-### %% と ## を展開するかどうか
+ %% と ## を展開するかどうか
 しない
-### " " があった場合
+ " " があった場合
 無視する
-### 分割テキストでの動作
+ 分割テキストでの動作
 フォーカスされた位置の文字のみを受け取り、
 フォーカスされた位置で動作する。
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-## &hideInputList
+ &hideInputList
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 タイプ1
@@ -49,7 +49,7 @@
 
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-## &hideInputListExecutor
+ &hideInputListExecutor
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 タイプ1
@@ -70,7 +70,7 @@
 
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-## &inputListSelectOnly
+ &inputListSelectOnly
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 タイプ1
@@ -87,7 +87,7 @@
 
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-## &outArgsTestType1
+ &outArgsTestType1
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 タイプ1
@@ -106,7 +106,7 @@
 
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-## &popAddWordFilterList
+ &popAddWordFilterList
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 タイプ1
@@ -140,7 +140,7 @@ trrEvery\addList\addWordList.txt
 
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-## &popFileList
+ &popFileList
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 タイプ1
@@ -161,7 +161,7 @@ trrEvery\addList\addWordList.txt
 
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-## &popHistoryFilterList
+ &popHistoryFilterList
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 タイプ1
@@ -183,7 +183,7 @@ trrEvery\addList\addWordList.txt
 
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-## &popHistoryList
+ &popHistoryList
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 タイプ1
@@ -204,7 +204,7 @@ trrEvery\addList\addWordList.txt
 
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-## &popItemFolderList
+ &popItemFolderList
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 タイプ1
@@ -225,7 +225,7 @@ trrEvery\addList\addWordList.txt
 
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-## &popItemScriptList
+ &popItemScriptList
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 タイプ1
@@ -246,7 +246,7 @@ trrEvery\addList\addWordList.txt
 
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-## &popItemSoftList
+ &popItemSoftList
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 タイプ1
@@ -267,7 +267,7 @@ trrEvery\addList\addWordList.txt
 
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-## &popList
+ &popList
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 タイプ1
@@ -289,7 +289,7 @@ Ctrl+Space
 
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-## &popSpecialWordList
+ &popSpecialWordList
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 タイプ1

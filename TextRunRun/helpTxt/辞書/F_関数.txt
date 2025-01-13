@@ -3,7 +3,7 @@
 
 
 
-## F_confirmDateTime6Char( str )
+ F_confirmDateTime6Char( str )
 
 
 •Ô‚è’l
@@ -24,7 +24,7 @@ True‚©False
 
 
 
-## F_confirmHMSSentence( str )
+ F_confirmHMSSentence( str )
 
 
 •Ô‚è’l
@@ -44,9 +44,115 @@ True‚©False
 
     ˆø”‚Ì’l‚ª &wait ‚Ì [Žw’è‚·‚éŽžŠÔ] ‚Ì‘Ž®’Ê‚è‚Ì•¶Žš‚È‚ç True ‚ð•Ô‚·B
 
+
+ F_conversion10To16( number, trim0xFlag=False )
+
+
+•Ô‚è’l
+16i”‚É•ÏŠ·‚³‚ê‚½”Žš
+‚Ü‚½‚ÍA error ‚Ì•¶Žš—ñ
+
+-----------------------------------------------------
+
+ƒo[ƒWƒ‡ƒ“ 2.00.03 ‚©‚ç
+
+-----------------------------------------------------
+
+10i”‚Ì”Žš‚ð 16i”‚É•ÏŠ·‚·‚éŠÖ”B
+
+ˆø”1 ‚É 10i”‚Ì”Žš‚ðŽw’è‚·‚éB
+
+•Ô‚è’l‚Í 16i”‚É•ÏŠ·‚µ‚½”Žš‚É‚È‚éB
+
+0x1 ‚Æ‚¢‚Á‚½A 0x ‚ªæ“ª‚É‚Â‚¢‚½”Žš‚É‚È‚éB
+
+trim0xFlag ‚Ìˆø”‚É True ‚ðŽw’è‚µ‚½ê‡A•Ô‚è’l‚ª 0x ‚ðŽæ‚èœ‚¢‚½”Žš‚É‚È‚éB
+
+‰½‚ç‚©‚ÌƒGƒ‰[‚ª‚ ‚Á‚½ê‡‚ÍA•Ô‚è’l‚Í
+error ‚Ì•¶Žš—ñ‚É‚È‚éB
+
+Žc”O‚¾‚ªAˆø”‚ðˆÈ‰º‚ÌŽw’è‚É‚µ‚½ê‡‚ÍƒGƒ‰[‚É‚È‚éB
+
+    ƒ}ƒCƒiƒX‚Ì”Žš‚ÍƒGƒ‰[‚É‚È‚éB
+    ¬”“_‚ª‚ ‚é”Žš‚àƒGƒ‰[‚É‚È‚éB
+
+•â‘«
+
+ˆø”1 ‚É 0x ‚ªæ“ª‚É‚Â‚¢‚½”Žš‚ðŽw’è‚µ‚½ê‡‚ÍA 16i”‚Ì”Žš‚Æ‰ðŽß‚³‚ê‚é‚Ì‚Å•ÏŠ·‚³‚ê‚È‚¢”Žš‚ª•Ô‚è’l‚É‚È‚éB
+
+‚±‚ê‚ð—˜—p‚·‚éŽ–‚Å trim0xFlag ‚Ìˆø”‚É True ‚ðŽw’è‚·‚éŽ–‚Å 0x ‚ðŽæ‚èœ‚­ŠÖ”‚Æ‚µ‚ÄŽg‚¤Ž–‚Í‚Å‚«‚éB
+
+‚µ‚©‚µA‚»‚ê‚ð‚·‚é‚È‚ç 0x ‚ðŽæ‚èœ‚­ŠÖ”‚Æ‚µ‚Ä
+F_trim0xFrom16( hex ) ‚ÌŠÖ”‚ª‚ ‚é‚Ì‚ÅA‚»‚ê‚ðŽg‚¤•û‚ð‘E‚ß‚éB
+
+‚±‚ÌŠÖ”‚Ì“à•”‚Ì“®ì‚Ì’†‚Å
+SetFormat, integer, H ‚ðŽg‚¢A‚»‚ÌŒã‚Å
+SetFormat, integer, D ‚ðŽg‚Á‚Ä‚¢‚éB
+
+‚±‚ÌŠÖ”‚ðŽg‚¤‚ÆA
+SetFormat, integer, D ‚Í•K‚¸ÅŒã‚ÉŽÀs‚³‚ê‚é—l‚É‚È‚Á‚Ä‚¢‚éB
+
+‚æ‚Á‚ÄA 10i”‚Ìƒ‹[ƒ‹‚É•K‚¸–ß‚éŽ–‚É‚È‚éB
+i‚»‚ÌƒXƒŒƒbƒh“à‚Åj
+
+-----------------------------------------------------
+
+ˆø”1
+
+    10i”‚Ì”Žš‚ðŽw’è‚·‚éB
+    ‚»‚Ì”‚ª•ÏŠ·‚³‚ê‚ÄA 16i”‚Ì”Žš‚ª•Ô‚è’l‚É‚È‚éB
+ˆø”2
+
+    True ‚© False ‚ðŽw’è‚·‚éB
+    True ‚Ìê‡A•Ô‚è’l‚Í 0x ‚ðŽæ‚èœ‚¢‚½”Žš‚É‚È‚èA
+    False ‚Ìê‡A•Ô‚è’l‚Í 0x ‚ªæ“ª‚É‚Â‚¢‚½”Žš‚É‚È‚éB
 
 
-## F_dateAndTimeNow( )
+ F_conversion16To10( hex )
+
+
+•Ô‚è’l
+10i”‚É•ÏŠ·‚³‚ê‚½”Žš
+‚Ü‚½‚ÍA error ‚Ì•¶Žš—ñ
+
+-----------------------------------------------------
+
+ƒo[ƒWƒ‡ƒ“ 2.00.03 ‚©‚ç
+
+-----------------------------------------------------
+
+16i”‚Ì”Žš‚ð 10i”‚É•ÏŠ·‚·‚éŠÖ”B
+
+ˆø”‚É 16i”‚Ì”Žš‚ðŽw’è‚·‚éB
+
+•Ô‚è’l‚Í 10i”‚É•ÏŠ·‚µ‚½”Žš‚É‚È‚éB
+
+ˆø”‚ÉŽw’è‚·‚é”Žš‚Í 0x ‚ªæ“ª‚É•t‚¢‚Ä‚¢‚Ä‚àA•t‚¢‚Ä‚¢‚È‚­‚Ä‚à‚Ç‚¿‚ç‚Å‚à‚æ‚¢B
+
+‰½‚ç‚©‚ÌƒGƒ‰[‚ª‚ ‚Á‚½ê‡‚ÍA•Ô‚è’l‚Í
+error ‚Ì•¶Žš—ñ‚É‚È‚éB
+
+Žc”O‚¾‚ªAˆø”‚ðˆÈ‰º‚ÌŽw’è‚É‚µ‚½ê‡‚ÍƒGƒ‰[‚É‚È‚éB
+
+    ƒ}ƒCƒiƒX‚Ì”Žš‚ÍƒGƒ‰[‚É‚È‚éB
+    ¬”“_‚ª‚ ‚é”Žš‚àƒGƒ‰[‚É‚È‚éB
+
+‚±‚ÌŠÖ”‚Ì“à•”‚Ì“®ì‚Ì’†‚Å SetFormat, integer, D ‚ðŽg‚Á‚Ä‚¢‚éB
+
+10i”‚É•ÏŠ·‚·‚éŽž‚É‚±‚ê‚ªŽg—p‚³‚ê‚éB
+
+‚æ‚Á‚ÄA‚»‚ÌŒã‚Í 10i”‚Ìƒ‹[ƒ‹‚É–ß‚éŽ–‚É‚È‚éB
+i‚»‚ÌƒXƒŒƒbƒh“à‚Åj
+
+-----------------------------------------------------
+
+ˆø”1
+
+    16i”‚Ì”Žš‚ðŽw’è‚·‚éB
+    ‚»‚Ì”‚ª•ÏŠ·‚³‚ê‚ÄA 10i”‚Ì”Žš‚ª•Ô‚è’l‚É‚È‚éB
+
+
+ F_dateAndTimeNow( )
 
 
 •Ô‚è’l
@@ -67,7 +173,7 @@ FormatTime, [•Ï”–¼], %A_Now%, yyyy”NMMŒŽdd“ú HHŽžmm•ªss•b
 “–‘RAƒpƒ\ƒRƒ“‚Ì“ú•t‚ÆŽžŠÔ‚ÉˆË‘¶‚·‚éB
 
 
-## F_ErrorLevel_TextRunRunCheck( errorMessage )
+ F_ErrorLevel_TextRunRunCheck( errorMessage )
 
 
 •Ô‚è’l
@@ -88,7 +194,7 @@ ErrorLevel_TextRunRun ‚Ì•Ï”‚Ì’l‚ª 1 ˆÈã‚È‚çA errorMessage ‚Ì•¶Žš‚ðƒGƒ‰[•\Ž¦‚
 
 
 
-## F_ErrorLevel_TextRunRunRestore( )
+ F_ErrorLevel_TextRunRunRestore( )
 
 
 •Ô‚è’l
@@ -114,7 +220,7 @@ ErrorLevel_TextRunRun ‚ÍAŽ©“®“I‚É‰Šú‰»‚³‚ê‚½‚è‚µ‚È‚¢B
 ‚æ‚Á‚ÄA ErrorLevel_TextRunRun ‚ðŽg‚¤ˆ—‚ð‹Lq‚·‚éê‡‚ÍA‚©‚È‚ç‚¸Aˆ—‚Ì‘OŒã‚É‚±‚ÌŠÖ”‚ð’u‚­‚È‚Ç‚ÌH•v‚ð‚µ‚È‚¯‚ê‚Î‚¢‚¯‚È‚¢‚±‚Æ‚É‚È‚éB
 
 
-## F_errorOutput( append )
+ F_errorOutput( append )
 
 
 •Ô‚è’l
@@ -134,7 +240,7 @@ ErrorLevel_TextRunRun ‚ÍAŽ©“®“I‚É‰Šú‰»‚³‚ê‚½‚è‚µ‚È‚¢B
 
 
 
-## F_getControl( GuiNum,  controlVar )
+ F_getControl( GuiNum,  controlVar )
 
 
 •Ô‚è’l
@@ -177,7 +283,7 @@ V_var1 := F_getControl(B_GuiNumText1, B_conText1_Edit1)
 
 
 
-## F_getConvertCollabTextWord( str )
+ F_getConvertCollabTextWord( str )
 
 
 •Ô‚è’l
@@ -205,7 +311,7 @@ D_stockBlue_1$$ ‚È‚Ç‚Ì•¶Žš‚É‚Â‚¢‚Ä‚Ìà–¾‚Í•Ê‚Ìƒy[ƒW‚Å‚·‚é
 
 
 
-## F_getDateTime6CharFromKanji( sentence="“ñ\ŽOŽžŽO•ªŽO\•b", errorNotViewFlag=False )
+ F_getDateTime6CharFromKanji( sentence="“ñ\ŽOŽžŽO•ªŽO\•b", errorNotViewFlag=False )
 
 
 •Ô‚è’l
@@ -273,7 +379,7 @@ errorNotViewFlag ‚Ìˆø”‚ª‚ ‚é‚ªA‚±‚ê‚É True ‚ð‘ã“ü‚µ‚Ä‚¢‚½ê‡AƒGƒ‰[‚ª‚ ‚Á‚Ä‚
 
 
 
-## F_getHMSSentenceFromKanji( sentence="ŽO•ªŽO\•b", errorNotViewFlag=False )
+ F_getHMSSentenceFromKanji( sentence="ŽO•ªŽO\•b", errorNotViewFlag=False )
 
 
 •Ô‚è’l
@@ -332,7 +438,7 @@ errorNotViewFlag ‚Ìˆø”‚ª‚ ‚é‚ªA‚±‚ê‚É True ‚ð‘ã“ü‚µ‚Ä‚¢‚½ê‡AƒGƒ‰[‚ª‚ ‚Á‚Ä‚
 
 
 
-## F_getItemArgument( itemName )
+ F_getItemArgument( itemName )
 
 
 •Ô‚è’l
@@ -356,7 +462,7 @@ errorNotViewFlag ‚Ìˆø”‚ª‚ ‚é‚ªA‚±‚ê‚É True ‚ð‘ã“ü‚µ‚Ä‚¢‚½ê‡AƒGƒ‰[‚ª‚ ‚Á‚Ä‚
 
 
 
-## F_getItemType( itemName )
+ F_getItemType( itemName )
 
 
 •Ô‚è’l
@@ -386,7 +492,7 @@ errorNotViewFlag ‚Ìˆø”‚ª‚ ‚é‚ªA‚±‚ê‚É True ‚ð‘ã“ü‚µ‚Ä‚¢‚½ê‡AƒGƒ‰[‚ª‚ ‚Á‚Ä‚
 
 
 
-## F_getItemScript( itemName )
+ F_getItemScript( itemName )
 
 
 •Ô‚è’l
@@ -408,7 +514,7 @@ errorNotViewFlag ‚Ìˆø”‚ª‚ ‚é‚ªA‚±‚ê‚É True ‚ð‘ã“ü‚µ‚Ä‚¢‚½ê‡AƒGƒ‰[‚ª‚ ‚Á‚Ä‚
 
 
 
-## F_getItemWorkingFolder( itemName )
+ F_getItemWorkingFolder( itemName )
 
 
 •Ô‚è’l
@@ -432,7 +538,7 @@ errorNotViewFlag ‚Ìˆø”‚ª‚ ‚é‚ªA‚±‚ê‚É True ‚ð‘ã“ü‚µ‚Ä‚¢‚½ê‡AƒGƒ‰[‚ª‚ ‚Á‚Ä‚
 
 
 
-## F_getParentFolder( file, textOutFlag=False )
+ F_getParentFolder( file, textOutFlag=False )
 
 
 •Ô‚è’l
@@ -472,7 +578,7 @@ True ‚Å‚à False ‚Å‚àA file ‚Ì’l‚Ìƒtƒ@ƒCƒ‹ƒpƒX‚ª‘¶Ý‚·‚é‚©‚Ç‚¤‚©‚ÍA ## ‚â %% ‚ð
 
 
 
-## F_getShortcutPath( shortcutFile )
+ F_getShortcutPath( shortcutFile )
 
 
 •Ô‚è’l
@@ -502,7 +608,7 @@ Alt+Shift+P &shortCutPath
 
 
 
-## F_getShortcutPathAndArgs( shortcutFile )
+ F_getShortcutPathAndArgs( shortcutFile )
 
 
 •Ô‚è’l
@@ -533,7 +639,7 @@ F_getShortcutPath( shortcutFile ) ‚Æ‚Ìˆá‚¢‚ÍA
 
 
 
-## F_getTextEditExecutor( trimFlag=True )
+ F_getTextEditExecutor( trimFlag=True )
 
 
 •Ô‚è’l
@@ -569,7 +675,7 @@ True ‚©ˆø”‚ðÈ—ª‚µ‚½‚È‚çA‘OŒã‚ÌƒXƒy[ƒX‚Æƒ^ƒu‚Ì•¶Žš‚ªŽæ‚èœ‚©‚ê‚éB
 
 
 
-## F_getTextGuiAssign( GuiNum, number=1, trimFlag=True )
+ F_getTextGuiAssign( GuiNum, number=1, trimFlag=True )
 
 
 •Ô‚è’l
@@ -608,7 +714,7 @@ True ‚©ˆø”‚ðÈ—ª‚µ‚½‚È‚çA‘OŒã‚ÌƒXƒy[ƒX‚Æƒ^ƒu‚Ì•¶Žš‚ªŽæ‚èœ‚©‚ê‚éB
 
 
 
-## F_getTimerInformation( listNumber, inforNumber=1 )
+ F_getTimerInformation( listNumber, inforNumber=1 )
 
 
 •Ô‚è’l
@@ -656,7 +762,7 @@ listNumber ‚ÉŽw’è‚µ‚½”Ô†‚Ìƒ^ƒCƒ}[‚ªŽÀs’†‚Å‚È‚¢ê‡‚àƒGƒ‰[‚Æ‚µ‚Äˆµ‚¤B
 
 
 
-## F_Gui( GuiNum, option, value1="_", value2="_", value3="_" )
+ F_Gui( GuiNum, option, value1="_", value2="_", value3="_" )
 
 
 •Ô‚è’l
@@ -708,7 +814,7 @@ F_Gui( B_GuiNumText1, "Show", "h90" )
 
 
 
-## F_GuiAddPictureFileExist( GuiNum, file, option )
+ F_GuiAddPictureFileExist( GuiNum, file, option )
 
 
 •Ô‚è’l
@@ -744,7 +850,7 @@ F_Gui( B_GuiNumText1, "Show", "h90" )
 
 
 
-## F_GuiAddPictureNoExtFile( GuiNum, noExtFile, option )
+ F_GuiAddPictureNoExtFile( GuiNum, noExtFile, option )
 
 
 •Ô‚è’l
@@ -802,7 +908,7 @@ F_Gui( B_GuiNumText1, "Show", "h120" )
 
 
 
-## F_GuiControl( GuiNum, controlVar, option, value ="_" )
+ F_GuiControl( GuiNum, controlVar, option, value ="_" )
 
 
 •Ô‚è’l
@@ -846,7 +952,7 @@ F_GuiControl( B_GuiNumText1, B_conText1_Edit1, "", "•¶Žš—ñ" )
 
 
 
-## F_GuiControlGet( GuiNum, controlVar, option="_", value="_")
+ F_GuiControlGet( GuiNum, controlVar, option="_", value="_")
 
 
 •Ô‚è’l
@@ -901,7 +1007,7 @@ _ ƒAƒ“ƒ_[ƒo[ ‚Ì•¶Žš‚ð“ü‚ê‚éB
 
 
 
-## F_hideGuiTextAndWaitActiveAny( )
+ F_hideGuiTextAndWaitActiveAny( )
 
 
 •Ô‚è’l
@@ -919,7 +1025,7 @@ WinWaitActive, A, , 1
 Ý’è ‚Ì ƒeƒLƒXƒg‚ð•Â‚¶‚é‚Ì‚Å‚Í‚È‚­AÅ¬‰»‚³‚¹‚é‚æ‚¤‚É‚·‚é ‚Ìƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚Ì‰e‹¿‚ðŽó‚¯‚éB
 
 
-## F_hideGuiTextAndWaitActiveIfA( winTitle="A" )
+ F_hideGuiTextAndWaitActiveIfA( winTitle="A" )
 
 
 •Ô‚è’l
@@ -948,7 +1054,7 @@ WinWaitActive, A, , 1
 
 
 
-## F_hideGuiTextPattern( GuiNum )
+ F_hideGuiTextPattern( GuiNum )
 
 
 •Ô‚è’l
@@ -981,7 +1087,7 @@ F_hideGuiTextPattern( B_GuiNumText1 )
 
 
 
-## F_hideGuiTextPatternOption( GuiNum, outGuiHideFlag="1", minimizeOption="1" )
+ F_hideGuiTextPatternOption( GuiNum, outGuiHideFlag="1", minimizeOption="1" )
 
 
 •Ô‚è’l
@@ -1042,7 +1148,7 @@ F_minimizeGui( GuiNum ) ‚ðŽg‚¤B
 
 
 
-## F_imeGet( )
+ F_imeGet( )
 
 
 •Ô‚è’l
@@ -1060,7 +1166,7 @@ F_minimizeGui( GuiNum ) ‚ðŽg‚¤B
 ‚ð•Ô‚·B
 
 
-## F_imeSet( flag=1 )
+ F_imeSet( flag=1 )
 
 
 •Ô‚è’l
@@ -1084,7 +1190,7 @@ F_minimizeGui( GuiNum ) ‚ðŽg‚¤B
 
 
 
-## F_inputListSelectOutputAssign( GuiNum )
+ F_inputListSelectOutputAssign( GuiNum )
 
 
 •Ô‚è’l
@@ -1138,7 +1244,7 @@ edi_pushEnterFromListEditAnotherGui( ) ‚ÌŠÖ”‚ðŽg—p‚µ‚½‚ªA‚»‚ê‚Ì‘ã‘Ö‚¦‚Æ‚µ‚Ä—pˆ
 
 
 
-## F_inputListUpDownKey( number )
+ F_inputListUpDownKey( number )
 
 
 •Ô‚è’l
@@ -1185,7 +1291,7 @@ edi_pushEnterFromListEditAnotherGui( ) ‚ÌŠÖ”‚ðŽg—p‚µ‚½‚ªA‚»‚ê‚Ì‘ã‘Ö‚¦‚Æ‚µ‚Ä—pˆ
 
 
 
-## F_itemExe( itemName, args="" )
+ F_itemExe( itemName, args="" )
 
 
 •Ô‚è’l
@@ -1218,7 +1324,7 @@ F_textExe( command )
 
 
 
-## F_itemReloadOneFromFileName( itemName, itemCategoryDir="", categoryDir="" )
+ F_itemReloadOneFromFileName( itemName, itemCategoryDir="", categoryDir="" )
 
 
 •Ô‚è’l
@@ -1291,7 +1397,7 @@ categoryDir ‚Ìˆø”‚É‚ÍA
 
 
 
-## F_kanjiAndFullNumeralReplaceInteger( sentence, errorNotViewFlag=False )
+ F_kanjiAndFullNumeralReplaceInteger( sentence, errorNotViewFlag=False )
 
 
 •Ô‚è’l
@@ -1331,7 +1437,7 @@ errorNotViewFlag ‚Ìˆø”‚ª‚ ‚é‚ªA‚±‚ê‚É True ‚ð‘ã“ü‚µ‚Ä‚¢‚½ê‡AƒGƒ‰[‚ª‚ ‚Á‚Ä‚
     True ‚Ìê‡AƒGƒ‰[‚ª‚ ‚Á‚Ä‚àƒGƒ‰[‚ðo—Í‚µ‚È‚¢‚æ‚¤‚É‚·‚éB
 
 
-## F_lastWordSetFirstNumAllFromAllLineStr( firstNum
+ F_lastWordSetFirstNumAllFromAllLineStr( firstNum
 , allLineStr
 , blankComment="#"
 , passComment="["
@@ -1381,7 +1487,7 @@ errorNotViewFlag ‚Ìˆø”‚ª‚ ‚é‚ªA‚±‚ê‚É True ‚ð‘ã“ü‚µ‚Ä‚¢‚½ê‡AƒGƒ‰[‚ª‚ ‚Á‚Ä‚
     ‰E‘¤‚É”¼ŠpƒXƒy[ƒX‚ð’u‚«‚½‚¢Žž‚Ì‚½‚ß‚ÉŽg—p‚·‚é•¶ŽšB
 
 
-## F_lastWordSetOneFromAllLineStr( firstNum
+ F_lastWordSetOneFromAllLineStr( firstNum
 , secondNum
 , allLineStr
 , blankComment="#"
@@ -1446,7 +1552,7 @@ F_lastWordSetFirstNumAllFromAllLineStr() “à‚ÅŽg‚í‚ê‚éŠÖ”B
     ‰E‘¤‚É”¼ŠpƒXƒy[ƒX‚ð’u‚«‚½‚¢Žž‚Ì‚½‚ß‚ÉŽg—p‚·‚é•¶ŽšB
 
 
-## F_lastWordSetOneLineStr( firstNum
+ F_lastWordSetOneLineStr( firstNum
 , secondNum
 , oneLineStr
 , blankComment="#"
@@ -1508,7 +1614,7 @@ F_lastWordSetFirstNumAllFromAllLineStr() “à‚ÅŽg‚í‚ê‚éŠÖ”B
 
 
 
-## F_lastWordTabChange( number=1 )
+ F_lastWordTabChange( number=1 )
 
 
 •Ô‚è’l
@@ -1528,7 +1634,7 @@ F_lastWordSetFirstNumAllFromAllLineStr() “à‚ÅŽg‚í‚ê‚éŠÖ”B
 
 
 
-## F_linefeedReplace( str )
+ F_linefeedReplace( str )
 
 
 •Ô‚è’l
@@ -1564,7 +1670,7 @@ TRRã‚Å `n ‚Ì•¶Žš‚ð‰üs‚Æ‚µ‚ÄŽg‚¢‚½‚¢ê‡‚ÍA‚±‚ÌŠÖ”‚ðŽg‚Á‚Ä•ÏŠ·‚³‚¹‚é•K—v‚ª‚ ‚
 
 
 
-## F_linefeedReplaceOnEscapeCharacter( str )
+ F_linefeedReplaceOnEscapeCharacter( str )
 
 
 •Ô‚è’l
@@ -1592,7 +1698,7 @@ F_linefeedReplace( str ) ‚Æ‹t‚Å‚ ‚éB
 
 
 
-## F_minimizeGui( GuiNum )
+ F_minimizeGui( GuiNum )
 
 
 •Ô‚è’l
@@ -1619,7 +1725,7 @@ TRRã‚Ì‚f‚•‚‰‚È‚çŽ©ì‚µ‚½‚f‚•‚‰‚Å‚àŽg—p‚Å‚«‚éB
 
 
 
-## F_multiplelineExe( command )
+ F_multiplelineExe( command )
 
 
 •Ô‚è’l
@@ -1642,7 +1748,7 @@ F_multiplelineExe( command ) ‚Í ‚»‚ê‚Í‚â‚ç‚È‚¢B
 
 
 
-##  F_newItemFromCommand( radioNum
+  F_newItemFromCommand( radioNum
 , itemName
 , script
 , args=""
@@ -1780,7 +1886,7 @@ True ‚© False ‚Ü‚½‚Í 1 ‚© 0 ‚ÅŽw’è‚·‚éB
 
 
 
-## F_output( append )
+ F_output( append )
 
 
 •Ô‚è’l
@@ -1799,7 +1905,127 @@ True ‚© False ‚Ü‚½‚Í 1 ‚© 0 ‚ÅŽw’è‚·‚éB
 
 
 
-## F_setControl( GuiNum, controlVar, value )
+ F_sendToWindow( key, winTitle, beforeWinDelay=100, afterSleepDelay=0 )
+
+
+•Ô‚è’l
+‚È‚µ
+
+-----------------------------------------------------
+
+ƒo[ƒWƒ‡ƒ“ 2.00.03 ‚©‚ç
+
+-----------------------------------------------------
+
+Žw’è‚µ‚½ƒEƒCƒ“ƒhƒE‚ðƒAƒNƒeƒBƒu‚É‚µ‚ÄƒL[‚ð‘—M‚µA‚»‚ÌŒã‚ÉŒ³‚ÌƒEƒCƒ“ƒhƒE‚ðƒAƒNƒeƒBƒu‚É‚·‚é‚½‚¾‚»‚ê‚¾‚¯‚ÌŠÖ”B
+
+key ‚Ìˆø”‚É‘—M‚·‚éƒL[‚ðŽw’è‚·‚éB
+
+Send ‚Ì AHKƒRƒ}ƒ“ƒh ‚ÉŽw’è‚·‚éê‡‚Æ“¯‚¶‘Ž®‚ðŽw’è‚·‚éB
+—á
+
+^{Space} ‚È‚Ç
+
+winTitle ‚Ìˆø”‚ÉƒL[‚ð‘—M‚³‚¹‚½‚¢ƒEƒCƒ“ƒhƒE‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŽw’è‚·‚éB
+
+ƒEƒCƒ“ƒhƒEƒNƒ‰ƒX‚ðŽw’è‚µ‚½‚¢ê‡‚ÍA ahk_class ‚ÌŽw’è‚ÌŒã‚É‚»‚ê‚ðŽw’è‚·‚éB
+
+‚Â‚Ü‚èAƒEƒCƒ“ƒhƒEŠÖ˜A‚Ì AHKƒRƒ}ƒ“ƒh ‚ÌƒEƒCƒ“ƒhƒE‚ÌŽw’è‚Æ“¯‚¶B
+—á
+
+ahk_exe TextRunRun.exe ‚È‚Ç
+
+‚±‚ÌŠÖ”‚ðŽg‚¤Žž‚ÍŠî–{“I‚É‚ÍˆÈã‚Ì‚Q‚Â‚Ìˆø”‚ÌŽw’è‚Å\•ª‚¾‚ªAŽÀÛ‚É‚Í‚à‚½‚Â‚­Š´‚¶‚ª‚·‚é‚ÆŽv‚í‚ê‚éB
+
+‚±‚ÌŠÖ”‚ÍAƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ÅŽw’è‚µ‚½ƒEƒCƒ“ƒhƒE‚ÉØ‚è‘Ö‚¦‚é‘O‚É
+SetWinDelay ‚Ì AHKƒRƒ}ƒ“ƒh ‚ðŽg‚Á‚ÄAƒEƒCƒ“ƒhƒE‚ðØ‚è‘Ö‚¦‚éÛ‚É”­¶‚·‚é‘Ò‹@ŽžŠÔ‚ðŽw’è‚·‚é—l‚É‚È‚Á‚Ä‚¢‚éB
+
+beforeWinDelay ‚Ìˆø”‚ÉŽw’è‚·‚é‚ÆA‚»‚Ì‘Ò‹@ŽžŠÔ‚ð•ÏX‚·‚éŽ–‚ª‚Å‚«‚éB
+
+SetWinDelay ‚ÉŽw’è‚·‚é‚à‚Ì‚È‚Ì‚ÅAŽw’è‚Íƒ~ƒŠ•b‚ðŽw’è‚·‚éB
+•â‘«
+
+‰Šú’l‚Í 100 ‚Å‚ ‚èA ‚±‚Ìƒ\ƒtƒg‚Ì‰Šú’l‚Ì SetWinDelay ‚Ìó‘Ô‚Æ“¯‚¶B
+
+i A_WinDelay ‚Ì‘g‚Ýž‚Ý•Ï”‚©‚çŠm”F‰Â”\B j
+
+‚±‚ÌŠÖ”‚ðŽg‚Á‚½Û‚Ì“®ì‚ª‚à‚½‚Â‚­‚ÆŠ´‚¶‚é‚Ì‚Å‚ ‚ê‚ÎA beforeWinDelay‚Ìˆø”‚ðŽw’è‚µ‚ÄŠÔŠu‚ð’Z‚­‚·‚é‚Æ‚æ‚¢‚ÆŽv‚í‚ê‚éB
+
+20 ƒ~ƒŠ•b‚ ‚½‚è‚ÅÝ’è‚·‚ê‚ÎA’x‚­Š´‚¶‚éŽ–‚à‚È‚¢‚ÆŽv‚í‚ê‚éB
+i ‚½‚¾‚µA‚±‚ÌŠ´Šo‚ª’Z‚¢‚ÆƒL[‚ªŽw’è‚ÌƒEƒCƒ“ƒhƒE“à‚Å”½‰f‚³‚ê‚È‚¢Ž–‚ª‘½‚­‚È‚é‚©‚à‚µ‚ê‚È‚¢B j
+—á
+F_sendToWindow("{PGDN}", "ahk_class Chrome_WidgetWin_1", 20)
+
+i ‚¿‚È‚Ý‚ÉA Chrome_WidgetWin_1 ‚Í Edge ‚ÌƒEƒCƒ“ƒhƒEƒNƒ‰ƒX–¼B j
+
+ŽŸ‚ÍA afterSleepDelay ‚Ìˆø”‚É‚Â‚¢‚Ä‚Ìà–¾‚É‚È‚éB
+
+AHK ‚Å‚ÍAƒL[‚ÌŽw’è‚Ìê‡
+{a 2} ‚È‚Ç‚ÌŽw’è‚ð‚·‚é‚±‚Æ‚ÅA 2‰ñ‚Ì˜A‘±‚µ‚½ƒL[‚ð‘—‚éŽ–‚È‚Ç‚ª‚Å‚«‚éB
+—á
+F_sendToWindow("{WheelDown 2}", "ahk_class Chrome_WidgetWin_1", 20)
+
+‚½‚¾‚µA‚±‚Ì F_sendToWindow( ) ‚ÌŠÖ”‚ÌŽd—lãAŽw’è‚µ‚½ƒEƒCƒ“ƒhƒE‚ÅƒL[‚ð‘—M‚µ‚½Œã‚É‚·‚®‚³‚ÜŒ³‚ÌƒEƒCƒ“ƒhƒE‚ªƒAƒNƒeƒBƒu‚É‚È‚é—l‚É‚È‚Á‚Ä‚¢‚éB
+
+‚»‚Ì‚½‚ßA‚±‚Ì‚Ü‚Ü‚Å‚Í 2‰ñ–ÚˆÈã‚ÌƒL[‚Í‘—M‚³‚ê‚¸A 1‰ñ–Ú‚ÌƒL[‚¾‚¯‚ª”½‰f‚³‚ê‚éŽ–‚É‚È‚Á‚½‚è‚·‚éB
+
+afterSleepDelay ‚Ìˆø”‚ÉŽw’è‚·‚éŽ–‚ÅAƒL[‚ð‘—M‚µ‚½Œã‚Ì uŒ³‚ÌƒEƒCƒ“ƒhƒE‚ªƒAƒNƒeƒBƒu‚É‚È‚éŽžŠÔv‚ð’x‚ç‚¹‚éŽ–‚ª‚Å‚«‚éB
+
+‚±‚Ìˆø”‚É 0 ˆÈŠO‚Ìƒ~ƒŠ•b‚Ì”Žš‚ðŽw’è‚·‚éŽ–‚ÅAƒL[‚ð‘—M‚µ‚½Œã‚É Sleep ‚ðŽg‚Á‚½‘Ò‹@ŽžŠÔ‚ª”­¶‚·‚é—l‚É‚È‚Á‚Ä‚¢‚éB
+
+i “–‘R‚È‚ª‚çA afterSleepDelay ‚ÉŽw’è‚·‚é”Žš‚Í‚»‚Ì Sleep ‚ÉŽg‚í‚ê‚é”Žš‚Æ“¯‚¶‚Å‚ ‚éB j
+
+2‰ñˆÈã‚Ì˜A‘±‚µ‚½ƒL[‚ð‘—M‚·‚éê‡‚ÍA‚±‚Ìˆø”‚ÉŽw’è‚·‚éŽ–‚Å‚»‚Ì˜A‘±‚µ‚½ƒL[‚ð“®ì‚³‚¹‚éŽ–‚ª‚Å‚«‚éB
+—á
+F_sendToWindow("{WheelDown 2}", "ahk_class Chrome_WidgetWin_1", 20 , 200)
+
+‚±‚Ì‚æ‚¤‚ÉA‚±‚Ì afterSleepDelay ‚Í 2‰ñˆÈã‚Ì˜A‘±‚µ‚½ƒL[‚ðŽw’è‚·‚éê‡‚ÉŽg‚¤B
+
+‹t‚ÉŒ¾‚¦‚ÎA 2‰ñˆÈã‚Ì˜A‘±‚µ‚½ƒL[‚ðŽw’è‚·‚éê‡‚Å‚È‚¢ŒÀ‚èŽw’è‚·‚é•K—v‚Í‚È‚¢‚Ì‚Å‚Í‚È‚¢‚©‚ÆŽv‚¤B
+
+ƒL[‚ð‘—M‚·‚é‘O‚Ì‘Ò‹@ŽžŠÔ‚ª beforeWinDelay ‚ÌŽw’è‚ÅAƒL[‚ð‘—M‚µ‚½Œã‚Ì‘Ò‹@ŽžŠÔ‚ª afterSleepDelay ‚ÌŽw’è‚ÆŽv‚¦‚Î‚æ‚¢B
+
+‘O‚Éà–¾‚µ‚Ä‚¨‚¢‚½Ž–‚¾‚ªA‚±‚ÌŠÖ”“à‚Å‚Í
+SetWinDelay, [ŽžŠÔ] ‚ðŽg—p‚µ‚Ä‚¢‚éB
+
+‚æ‚Á‚ÄA‚±‚ÌŠÖ”‚ðŽg‚Á‚½ƒXƒŒƒbƒh“à‚Ì SetWinDelay ‚ÌÝ’è’l‚ª•Ï‚í‚éŽ–‚É‚È‚éB
+
+‚È‚Ì‚ÅA Auto-execute ƒZƒNƒVƒ‡ƒ“ “à‚ÅŽg‚¤ê‡‚Í
+i  ‹N“®Žž‚ÉŽÀs‚·‚éˆ—“à‚ÅŽg‚¤ê‡‚Í  j ’ˆÓ‚ª•K—v‚Å‚ ‚éB
+
+-----------------------------------------------------
+
+ˆø”1
+
+    ‘—M‚·‚éƒL[B
+    Send ‚ÉŽw’è‚·‚éê‡‚Æ“¯‚¶‘Ž®‚ðŽw’è‚·‚éB
+ˆø”2
+
+    ƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹B
+    ƒL[‚ð‘—M‚³‚¹‚½‚¢ƒEƒCƒ“ƒhƒE‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŽw’è‚·‚éB
+    ƒEƒCƒ“ƒhƒEŠÖ˜A‚Ì AHKƒRƒ}ƒ“ƒh ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ÌŽw’è‚Æ“¯‚¶B
+
+    [ —á ]
+    ahk_class Chrome_WidgetWin_1 ‚È‚Ç
+ˆø”3
+
+    Žw’è‚µ‚½ƒEƒCƒ“ƒhƒE‚ÉØ‚è‘Ö‚í‚éŽž‚Ì‘Ò‹@ŽžŠÔB
+    ƒ~ƒŠ•b‚ÅŽw’è‚·‚éB
+
+    ‚±‚ÌŠÖ”‚ðŽg‚Á‚½“®ì‚ª‚à‚½‚Â‚­‚ÆŠ´‚¶‚é‚Ì‚Å‚ ‚ê‚ÎA‚±‚ÌŽw’è‚ð 20 ‚ ‚½‚è‚ÅŽw’è‚·‚ê‚ÎA‚»‚Ì‚à‚½‚Â‚«‚àŠ´‚¶‚È‚­‚È‚é‚Ì‚Å‚Í‚È‚¢‚©‚ÆŽv‚í‚ê‚éB
+ˆø”4
+
+    ƒL[‚ð‘—M‚µ‚Ä‚©‚çŒ³‚ÌƒEƒCƒ“ƒhƒE‚É–ß‚éŽž‚Ì‘Ò‹@ŽžŠÔB
+    ƒ~ƒŠ•b‚ÅŽw’è‚·‚éB
+
+    ƒL[‚ð˜A‘±‚Å‘—M‚·‚éê‡‚È‚Ç‚ÍA‚±‚Ìˆø”‚É‘Ò‹@ŽžŠÔ‚ðŽw’è‚·‚é•K—v‚ª‚ ‚éB
+
+    [ —á ]
+    {Space 5} ‚ÌŽw’è‚È‚Ç‚ÌŽž
+
+
+
+ F_setControl( GuiNum, controlVar, value )
 
 
 •Ô‚è’l
@@ -1846,7 +2072,7 @@ value ‚Ìˆø”‚É‚ÍA
 
 
 
-## F_setTextGuiAssign( value, GuiNum, number=1, textOutFlag=True, addFlag=False )
+ F_setTextGuiAssign( value, GuiNum, number=1, textOutFlag=True, addFlag=False )
 
 
 •Ô‚è’l
@@ -1885,7 +2111,7 @@ value ‚Ìˆø”‚É‚ÍA
 
 
 
-## F_showLastWord( option="_", toggleFlag=True, sleepFlag=False )
+ F_showLastWord( option="_", toggleFlag=True, sleepFlag=False )
 
 
 •Ô‚è’l
@@ -1933,7 +2159,7 @@ sleepFlag
 
 
 
-## F_showToggleGui( GuiNum, option="_" )
+ F_showToggleGui( GuiNum, option="_" )
 
 
 •Ô‚è’l
@@ -1979,7 +2205,7 @@ Gui, GuiNum:Show, [‚±‚Ì•”•ª]
 
 
 
-## F_showToggleGuiTextPattern( GuiNum, option="_" )
+ F_showToggleGuiTextPattern( GuiNum, option="_" )
 
 
 •Ô‚è’l
@@ -2028,7 +2254,7 @@ Gui, GuiNum:Show, [‚±‚Ì•”•ª]
 
 
 
-## F_showToggleGuiTextPatternOption( GuiNum, outGuiHideFlag=1, minimizeOption=1, option="_" )
+ F_showToggleGuiTextPatternOption( GuiNum, outGuiHideFlag=1, minimizeOption=1, option="_" )
 
 
 •Ô‚è’l
@@ -2111,7 +2337,7 @@ Gui, GuiNum:Show, [‚±‚Ì•”•ª]
 
 
 
-## F_showToggleGuiWinTitle( GuiNum, winTitle, option="_" )
+ F_showToggleGuiWinTitle( GuiNum, winTitle, option="_" )
 
 
 •Ô‚è’l
@@ -2163,7 +2389,7 @@ Gui, GuiNum:Show, [‚±‚Ì•”•ª]
 
 
 
-## F_snippetAdd( key, sentence, spaceFlag=False )
+ F_snippetAdd( key, sentence, spaceFlag=False )
 
 
 •Ô‚è’l
@@ -2195,7 +2421,7 @@ Gui, GuiNum:Show, [‚±‚Ì•”•ª]
 
 
 
-## F_stringReplace( str, searchText, replaceText, allFlag=False )
+ F_stringReplace( str, searchText, replaceText, allFlag=False )
 
 
 •Ô‚è’l
@@ -2236,7 +2462,7 @@ IfInString ‚ÅŽw’è‚Ì•¶Žš‚ª‚ ‚é‚©Šm”F‚µ‚Ä‚©‚çŽg‚¤B
 
 
 
-## F_textExe( command )
+ F_textExe( command )
 
 
 •Ô‚è’l
@@ -2255,7 +2481,7 @@ IfInString ‚ÅŽw’è‚Ì•¶Žš‚ª‚ ‚é‚©Šm”F‚µ‚Ä‚©‚çŽg‚¤B
     ƒXƒNƒŠƒvƒg‚ðŽw’è‚·‚éB
 
 
-## F_textExeTextSplit( text1
+ F_textExeTextSplit( text1
 , text2
 , text3
 , workFolder
@@ -2318,7 +2544,7 @@ True ‚È‚çAƒ`ƒFƒbƒN‚ð‚µ‚Ä‚¢‚éŽž‚Æ“¯‚¶“®ì‚ð‚·‚éB
 
 
 
-## F_textOut( str )
+ F_textOut( str )
 
 
 •Ô‚è’l
@@ -2348,7 +2574,7 @@ True ‚È‚çAƒ`ƒFƒbƒN‚ð‚µ‚Ä‚¢‚éŽž‚Æ“¯‚¶“®ì‚ð‚·‚éB
 
 
 
-## F_tmpOutput( str )
+ F_tmpOutput( str )
 
 
 •Ô‚è’l
@@ -2368,7 +2594,7 @@ True ‚È‚çAƒ`ƒFƒbƒN‚ð‚µ‚Ä‚¢‚éŽž‚Æ“¯‚¶“®ì‚ð‚·‚éB
 
 
 
-## F_toolTipOutput( str )
+ F_toolTipOutput( str )
 
 
 •Ô‚è’l
@@ -2392,7 +2618,7 @@ O_toolTipSecond
 
 
 
-## F_toolTipOutputAssign( str, posX, posY, sec=3 )
+ F_toolTipOutputAssign( str, posX, posY, sec=3 )
 
 
 •Ô‚è’l
@@ -2427,7 +2653,7 @@ O_toolTipSecond
 
 
 
-## F_toolTipOutputAssignNumber2( str, posX, posY, sec=3 )
+ F_toolTipOutputAssignNumber2( str, posX, posY, sec=3 )
 
 
 •Ô‚è’l
@@ -2470,7 +2696,7 @@ O_toolTipSecond
 
 
 
-## F_transformDeref( str )
+ F_transformDeref( str )
 
 
 •Ô‚è’l
@@ -2513,7 +2739,44 @@ TRRã‚ÌƒXƒNƒŠƒvƒg‚Å‚ÍA
 
 
 
-## F_winActiveAndWait( winTitle="A" )
+ F_trim0xFrom16( hex )
+
+
+•Ô‚è’l
+0x‚ðŽæ‚èœ‚¢‚½ 16i”‚Ì”Žš
+‚Ü‚½‚ÍAŒ³‚Ì•¶Žš—ñ
+
+-----------------------------------------------------
+
+ƒo[ƒWƒ‡ƒ“ 2.00.03 ‚©‚ç
+
+-----------------------------------------------------
+
+16i”‚Ì”Žš‚Ìæ“ª‚É 0x ‚ª•t‚¢‚Ä‚¢‚½ê‡A‚»‚ê‚ðŽæ‚èœ‚¢‚½•¶Žš‚ð•Ô‚·‚½‚¾‚»‚ê‚¾‚¯‚ÌŠÖ”B
+
+ˆø”1 ‚É 16i”‚Ì”Žš‚ðŽw’è‚·‚éB
+
+16i”ˆÈŠO‚Ì”Žš‚ªŽw’è‚³‚ê‚½ê‡‚ÍƒGƒ‰[‚É‚È‚éB
+
+‰½‚ç‚©‚ÌƒGƒ‰[‚ª‚ ‚Á‚½ê‡‚ÍAŒ³‚Ì•¶Žš—ñ‚ª•Ô‚è’l‚É‚È‚éB
+
+Žc”O‚¾‚ªAˆø”‚ðˆÈ‰º‚ÌŽw’è‚É‚µ‚½ê‡‚ÍƒGƒ‰[‚É‚È‚éB
+
+    ƒ}ƒCƒiƒX‚Ì”Žš‚ÍƒGƒ‰[‚É‚È‚éB
+    ¬”“_‚ª‚ ‚é”Žš‚àƒGƒ‰[‚É‚È‚éB
+
+‚¿‚È‚Ý‚ÉA 0x ‚ª‚Â‚¢‚Ä‚¢‚È‚¢ 16i”‚Ì”Žš‚ðŽw’è‚µ‚Ä‚àAŒ³‚Ì•¶Žš—ñ‚ª•Ô‚Á‚Ä‚­‚é‚¾‚¯‚Å‚ ‚éB
+
+-----------------------------------------------------
+
+ˆø”1
+
+    16i”‚Ì”Žš‚ðŽw’è‚·‚éB
+    0x ‚ªæ“ª‚É•t‚¢‚Ä‚¢‚½ê‡A‚»‚ê‚ðŽæ‚èœ‚¢‚½•¶Žš‚ª•Ô‚è’l‚É‚È‚éB
+
+
+
+ F_winActiveAndWait( winTitle="A" )
 
 
 •Ô‚è’l
@@ -2537,7 +2800,7 @@ WinWaitActive, %winTitle%, , 1
 
 
 
-## F_winWaitActive( winTitle="A" )
+ F_winWaitActive( winTitle="A" )
 
 
 •Ô‚è’l

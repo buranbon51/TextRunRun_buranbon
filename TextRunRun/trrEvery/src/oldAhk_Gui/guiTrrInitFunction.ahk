@@ -7,7 +7,7 @@
 guinif_cleatedDate(versionNum, vType){
 	smallVar1 := ".00.03"
 	smallVar2 := ".00.03"
-	cleatedDate := "2025年1月10日"
+	cleatedDate := "2025年1月12日"
 	str_local := "昔のAhkの解像度の違いに対応"
 
 	version = %vType%%smallVar1%

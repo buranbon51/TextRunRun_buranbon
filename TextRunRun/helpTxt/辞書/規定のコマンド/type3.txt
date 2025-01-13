@@ -8,24 +8,24 @@
 ˆø”‚ÍA”¼ŠpƒXƒy[ƒX‚Å•ªŠ„‚³‚ê‚È‚¢B
 ˆê‚Â‚Ì•¶Žš—ñ“¯‘R‚É‚È‚éB
 
-## ƒ^ƒCƒv 3 ‚Ì“Á’¥
-### <<< ‚Ì“®ì
+ ƒ^ƒCƒv 3 ‚Ì“Á’¥
+ <<< ‚Ì“®ì
 “Ç‚Ýž‚Þ
-### —š—ð‚ÉŽc‚·‚©
+ —š—ð‚ÉŽc‚·‚©
 Žc‚³‚È‚¢
-### &&& ‚Ì“®ì
+ &&& ‚Ì“®ì
 –³Ž‹‚·‚é
-### >>> ‚Ì“®ì
+ >>> ‚Ì“®ì
 –³Ž‹‚·‚é
-### %% ‚Æ ## ‚ð“WŠJ‚·‚é‚©‚Ç‚¤‚©
+ %% ‚Æ ## ‚ð“WŠJ‚·‚é‚©‚Ç‚¤‚©
 ‚µ‚È‚¢
-### " " ‚ª‚ ‚Á‚½ê‡
+ " " ‚ª‚ ‚Á‚½ê‡
 –³Ž‹‚·‚é
-### •ªŠ„ƒeƒLƒXƒg‚Å‚Ì“®ì
+ •ªŠ„ƒeƒLƒXƒg‚Å‚Ì“®ì
 ƒtƒH[ƒJƒX‚³‚ê‚½ˆÊ’u‚ÍŠÖŒW‚È‚¢B
 
 
-## &cleanText
+ &cleanText
 
 
 ƒ^ƒCƒv3
@@ -48,7 +48,7 @@ Alt+C
 ’Ç‰Á‚Åà–¾
 
 
-## &cleanTextEasy
+ &cleanTextEasy
 
 
 ƒ^ƒCƒv3
@@ -70,7 +70,7 @@ Alt+C
 
 
 
-## &editItem
+ &editItem
 
 
 ƒ^ƒCƒv3
@@ -102,7 +102,7 @@ Alt+Enter ‚ªƒVƒ‡[ƒgƒJƒbƒgƒL[‚¾‚Á‚½‚Ì‚ÅAƒIƒ}ƒP‚Å‚»‚¤‚È‚é‚æ‚¤‚É‚µ‚½B
 
 
 
-## &enterForLastWord
+ &enterForLastWord
 
 
 ƒ^ƒCƒv3
@@ -122,7 +122,7 @@ Alt+Enter ‚ªƒVƒ‡[ƒgƒJƒbƒgƒL[‚¾‚Á‚½‚Ì‚ÅAƒIƒ}ƒP‚Å‚»‚¤‚È‚é‚æ‚¤‚É‚µ‚½B
 
 
 
-## &hotkeyAllGroundEdit
+ &hotkeyAllGroundEdit
 
 
 ƒ^ƒCƒv3
@@ -154,7 +154,7 @@ _ ƒAƒ“ƒ_[ƒo[ ‚Å‚Â‚È‚°‚½
 
 
 
-## &hotkeyAllGroundNew
+ &hotkeyAllGroundNew
 
 
 ƒ^ƒCƒv3
@@ -174,7 +174,7 @@ _ ƒAƒ“ƒ_[ƒo[ ‚Å‚Â‚È‚°‚½
 
 
 
-## &hotkeyOnTextEdit
+ &hotkeyOnTextEdit
 
 
 ƒ^ƒCƒv3
@@ -200,7 +200,7 @@ Ctrl+Alt+Shift+a ‚ÌŒ`Ž®‚Å‚à‚æ‚¢B
 
 
 
-## &hotkeyOnTextNew
+ &hotkeyOnTextNew
 
 
 ƒ^ƒCƒv3
@@ -223,7 +223,7 @@ Ctrl+Shift+N
 
 
 
-## &more
+ &more
 
 
 ƒ^ƒCƒv3
@@ -254,7 +254,7 @@ trrEvery\user\output.txt ‚Ìƒtƒ@ƒCƒ‹‚Ì’†g‚ð•\Ž¦B
 
 
 
-## &moreTextOut
+ &moreTextOut
 
 
 ƒ^ƒCƒv3
@@ -281,7 +281,7 @@ trrEvery\user\output.txt ‚Ìƒtƒ@ƒCƒ‹‚Ì’†g‚ð•\Ž¦B
 
 
 
-## &newItem
+ &newItem
 
 
 ƒ^ƒCƒv3
@@ -342,7 +342,7 @@ Ctrl+N
 
 
 
-## &newMultipleItem
+ &newMultipleItem
 
 
 ƒ^ƒCƒv3
@@ -368,7 +368,7 @@ Ctrl+N
 
 
 
-## &outArgsTestType3
+ &outArgsTestType3
 
 
 ƒ^ƒCƒv3
@@ -383,7 +383,7 @@ Ctrl+N
 
 
 
-## &outArgsToFileAssignAddLinefeed
+ &outArgsToFileAssignAddLinefeed
 
 
 ƒ^ƒCƒv3
@@ -421,7 +421,7 @@ Ctrl+N
 
 
 
-## &outArgsToFileAssignAddLinefeedTextOut
+ &outArgsToFileAssignAddLinefeedTextOut
 
 
 ƒ^ƒCƒv3
@@ -444,7 +444,7 @@ Ctrl+N
 
 
 
-## &outArgsToMultipleText1AddLinefeed
+ &outArgsToMultipleText1AddLinefeed
 
 
 ƒ^ƒCƒv3
@@ -464,7 +464,7 @@ Ctrl+N
 
 
 
-## &outArgsToMultipleText1AddLinefeedTextOut
+ &outArgsToMultipleText1AddLinefeedTextOut
 
 
 ƒ^ƒCƒv3
@@ -486,7 +486,7 @@ Ctrl+N
 
 
 
-## &outArgsToOutFileAddLinefeed
+ &outArgsToOutFileAddLinefeed
 
 
 ƒ^ƒCƒv3
@@ -507,7 +507,7 @@ trrEvery\user\output.txt ‚Ìƒtƒ@ƒCƒ‹‚Éo—Í‚·‚éB
 
 
 
-## &outArgsToOutFileAddLinefeedTextOut
+ &outArgsToOutFileAddLinefeedTextOut
 
 
 ƒ^ƒCƒv3
@@ -527,7 +527,7 @@ trrEvery\user\output.txt ‚Ìƒtƒ@ƒCƒ‹‚Éo—Í‚·‚éB
 
 
 
-## &outArgsToOutGuiAddLinefeed
+ &outArgsToOutGuiAddLinefeed
 
 
 ƒ^ƒCƒv3
@@ -547,7 +547,7 @@ trrEvery\user\output.txt ‚Ìƒtƒ@ƒCƒ‹‚Éo—Í‚·‚éB
 
 
 
-## &outArgsToOutGuiAddLinefeedTextOut
+ &outArgsToOutGuiAddLinefeedTextOut
 
 
 ƒ^ƒCƒv3
@@ -567,7 +567,7 @@ trrEvery\user\output.txt ‚Ìƒtƒ@ƒCƒ‹‚Éo—Í‚·‚éB
 
 
 
-## &outArgsToTextEditExecutor
+ &outArgsToTextEditExecutor
 
 
 ƒ^ƒCƒv3
@@ -596,7 +596,7 @@ F_getTextEditExecutor( ) ‚ÆA
 
 
 
-## &outArgsToTextEditExecutorTextOut
+ &outArgsToTextEditExecutorTextOut
 
 
 ƒ^ƒCƒv3
@@ -615,7 +615,7 @@ F_getTextEditExecutor( ) ‚ÆA
 
 
 
-## &outArgsToTextGuiAssign
+ &outArgsToTextGuiAssign
 
 
 ƒ^ƒCƒv3
@@ -654,7 +654,7 @@ B_GuiNumText1 ‚È‚Ç‚Ì•Ï”‚ðŽg‚Á‚ÄA %B_GuiNumText1% ‚È‚Ç‚ÌŽg‚¢•û‚ÅŽw’è‚·‚éŽ–‚ðŠ©‚
 
 
 
-## &outArgsToTextGuiAssignAdd
+ &outArgsToTextGuiAssignAdd
 
 
 ƒ^ƒCƒv3
@@ -680,7 +680,7 @@ B_GuiNumText1 ‚È‚Ç‚Ì•Ï”‚ðŽg‚Á‚ÄA %B_GuiNumText1% ‚È‚Ç‚ÌŽg‚¢•û‚ÅŽw’è‚·‚éŽ–‚ðŠ©‚
 
 
 
-## &outArgsToTextGuiAssignAddTextOut
+ &outArgsToTextGuiAssignAddTextOut
 
 
 ƒ^ƒCƒv3
@@ -712,7 +712,7 @@ Transform, , Deref ‚ðŽg—p‚µ‚ÄA
 
 
 
-## &outArgsToTextGuiAssignTextOut
+ &outArgsToTextGuiAssignTextOut
 
 
 ƒ^ƒCƒv3
@@ -744,7 +744,7 @@ Transform, , Deref ‚ðŽg—p‚µ‚ÄA
 
 
 
-## &outArgsToTmpOutGui
+ &outArgsToTmpOutGui
 
 
 ƒ^ƒCƒv3
@@ -761,7 +761,7 @@ Transform, , Deref ‚ðŽg—p‚µ‚ÄA
 
 
 
-## &outArgsToTmpOutGuiTextOut
+ &outArgsToTmpOutGuiTextOut
 
 
 ƒ^ƒCƒv3
@@ -779,7 +779,7 @@ Transform, , Deref ‚ðŽg—p‚µ‚ÄA
 
 
 
-## &outErrFileToFileGui
+ &outErrFileToFileGui
 
 
 ƒ^ƒCƒv3
@@ -796,7 +796,7 @@ trrEvery\user\errorOutput.txt ‚Ìƒtƒ@ƒCƒ‹‚ð ƒGƒ‰[•\Ž¦ ‚Éo—Í‚·‚éB
 
 
 
-## &outErrGuiToErrFileAddLinefeed
+ &outErrGuiToErrFileAddLinefeed
 
 
 ƒ^ƒCƒv3
@@ -815,7 +815,7 @@ trrEvery\user\errorOutput.txt ‚Ìƒtƒ@ƒCƒ‹‚Éo—Í‚·‚éB
 
 
 
-## &outOutFileToFileGui
+ &outOutFileToFileGui
 
 
 ƒ^ƒCƒv3
@@ -832,7 +832,7 @@ trrEvery\user\temp\outputTmp.txt ‚Ìƒtƒ@ƒCƒ‹‚ð ’~‚¦Ž®à–¾•\Ž¦ ‚Éo—Í‚·‚éB
 
 
 
-## &outOutGuiToOutFileAddLinefeed
+ &outOutGuiToOutFileAddLinefeed
 
 
 ƒ^ƒCƒv3
@@ -851,7 +851,7 @@ trrEvery\user\output.txt ‚Ìƒtƒ@ƒCƒ‹‚Éo—Í‚·‚éB
 
 
 
-## &outTmpOutGuiToOutFileAddLinefeed
+ &outTmpOutGuiToOutFileAddLinefeed
 
 
 ƒ^ƒCƒv3
@@ -870,7 +870,7 @@ trrEvery\user\output.txt ‚Ìƒtƒ@ƒCƒ‹‚Éo—Í‚·‚éB
 
 
 
-## &outTmpOutGuiToOutGuiAddLinefeed
+ &outTmpOutGuiToOutGuiAddLinefeed
 
 
 ƒ^ƒCƒv3
@@ -889,7 +889,7 @@ trrEvery\user\output.txt ‚Ìƒtƒ@ƒCƒ‹‚Éo—Í‚·‚éB
 
 
 
-## &outTmpOutGuiToText
+ &outTmpOutGuiToText
 
 
 ƒ^ƒCƒv3
@@ -912,7 +912,7 @@ trrEvery\user\output.txt ‚Ìƒtƒ@ƒCƒ‹‚Éo—Í‚·‚éB
 
 
 
-## &outTmpOutGuiToTmpFile
+ &outTmpOutGuiToTmpFile
 
 
 ƒ^ƒCƒv3
@@ -931,7 +931,7 @@ trrEvery\user\temp\outputTmp.txt ‚Ìƒtƒ@ƒCƒ‹‚Éo—Í‚·‚éB
 
 
 
-## &sendEndToTextEditExecutor
+ &sendEndToTextEditExecutor
 
 
 ƒ^ƒCƒv3
@@ -957,7 +957,7 @@ F_getTextEditExecutor( ) ‚ÆA
 
 
 
-## &sendPaste
+ &sendPaste
 
 
 ƒ^ƒCƒv3
@@ -990,7 +990,7 @@ F_getTextEditExecutor( ) ‚ÆA
 
 
 
-## &sendPasteFromFile
+ &sendPasteFromFile
 
 
 ƒ^ƒCƒv3
@@ -1015,7 +1015,7 @@ F_getTextEditExecutor( ) ‚ÆA
 
 
 
-## &sendPasteFromFileTextOut
+ &sendPasteFromFileTextOut
 
 
 ƒ^ƒCƒv3
@@ -1035,7 +1035,7 @@ F_getTextEditExecutor( ) ‚ÆA
 
 
 
-## &sendPasteTextOut
+ &sendPasteTextOut
 
 
 ƒ^ƒCƒv3
@@ -1061,7 +1061,7 @@ F_getTextEditExecutor( ) ‚ÆA
 
 
 
-## &sendScriptToText
+ &sendScriptToText
 
 
 ƒ^ƒCƒv3
@@ -1133,7 +1133,7 @@ Gui‚ÌƒRƒ“ƒgƒ[ƒ‹‚Å’Ç‰Á‚µ‚½ƒ{ƒ^ƒ“‚Æ‚¢‚Á‚½‚à‚Ì‚©‚çƒeƒLƒXƒg‚ð‘€ì‚·‚é‚½‚ß‚É—pˆÓ‚µ‚
 
 
 
-## &sendTextItself
+ &sendTextItself
 
 
 ƒ^ƒCƒv3
@@ -1184,7 +1184,7 @@ return
 
 
 
-## &stockAddBlue
+ &stockAddBlue
 
 
 ƒ^ƒCƒv3
@@ -1209,7 +1209,7 @@ return
 
 
 
-## &stockAddGreen
+ &stockAddGreen
 
 
 ƒ^ƒCƒv3

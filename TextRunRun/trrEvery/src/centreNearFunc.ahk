@@ -321,9 +321,9 @@ cen_setSnippetObjList(str, maxCount, pControl, GuiNum){
 
 cen_iniSetAnyList(){
 	cen_setSysComList("", 200, "List89_1_1", 89)
-	cen_setSpecialWordList("", 150, "List89_3_1", 89)
+	cen_setSpecialWordList("", 300, "List89_3_1", 89)
 	cen_setVariableWordList("", 200, "List89_2_1", 89)
-	;cen_setUserVariableWordList("", 500, "List89_5_1", 89)
+	cen_setUserVariableWordList("", 200, "List89_5_1", 89)
 	;cen_setUserMakeWordList("", 500, "List89_4_1", 89)
 	cen_setOptionVariableWordList("", 200, "List89_6_1", 89)
 	;cen_setSnippetObjList("", 500, "List89_7_1", 89)
@@ -334,7 +334,6 @@ cen_showEverInputGui(){
 	{
 		Gui, 89:Hide
 	} else {
-		cen_setUserVariableWordList("", 500, "List89_5_1", 89)
 		cen_setUserMakeWordList("", 500, "List89_4_1", 89)
 		cen_setSnippetObjList("", 500, "List89_7_1", 89)
 		Sleep, 200

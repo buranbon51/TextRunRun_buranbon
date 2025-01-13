@@ -2,7 +2,7 @@
 
 
 
-## B_betweenWordKeyStart1_1
+ B_betweenWordKeyStart1_1
 
 
 ‚±‚Ì•Ï”‚ÍA‹N“®Žž‚É ƒeƒLƒXƒg‚Ì•¶Žš‚ÅŽ©“®“I‚ÉŽÀs ‚ÌÝ’è‚ð•Û‘¶‚·‚é‚½‚ß‚É—pˆÓ‚µ‚½•Ï”B
@@ -29,7 +29,7 @@ O_ ‚Ì•Ï”‚Æ¬“¯‚µ‚È‚¢‚æ‚¤‚ÉB
 ‚È‚Ç‚ª‚ ‚éB
 
 
-## B_betweenWordScriptStart1_1
+ B_betweenWordScriptStart1_1
 
 
 ‚±‚Ì•Ï”‚ÍA‹N“®Žž‚É ƒeƒLƒXƒg‚Ì•¶Žš‚ÅŽ©“®“I‚ÉŽÀs ‚ÌÝ’è‚ð•Û‘¶‚·‚é‚½‚ß‚É—pˆÓ‚µ‚½•Ï”B
@@ -56,7 +56,7 @@ O_ ‚Ì•Ï”‚Æ¬“¯‚µ‚È‚¢‚æ‚¤‚ÉB
 ‚È‚Ç‚ª‚ ‚éB
 
 
-## B_betweenWordTabAllStartFlag1
+ B_betweenWordTabAllStartFlag1
 
 
 ƒeƒLƒXƒg‚Ì•¶Žš‚ÅŽ©“®“I‚ÉŽÀs ‚ÌÝ’è‚ÌA
@@ -71,7 +71,7 @@ B_ ‚Ì•Ï”‚ÍA‘ã“ü‚µ‚ÄŽg—p‚µ‚Ä‚¢‚­•Ï”‚Å‚Í‚È‚¢B
 O_ ‚Ì•Ï”‚Æ¬“¯‚µ‚È‚¢‚æ‚¤‚ÉB
 
 
-## B_conLastWord_Tab
+ B_conLastWord_Tab
 
 
 ÅŒã‚Ì•¶Žš‚ÅŽ©“®“I‚ÉŽÀs‚ÌÝ’è ‚ÌƒEƒCƒ“ƒhƒE‚Ì
@@ -85,13 +85,13 @@ GuiControl, %B_GuiNumLastWord%:Choose , %B_conLastWord_Tab%, 2
 F_lastWordTabChange( 2 ) ‚Å‚àA“¯‚¶‘€ì‚ª‚Å‚«‚éB
 
 
-## B_conMultipleText1_Edit1
+ B_conMultipleText1_Edit1
 
 
 “ñsˆÈã‚ÌƒeƒLƒXƒg ‚Ì“ü—Í—“‚ÌƒRƒ“ƒgƒ[ƒ‹‚Ì•Ï”–¼‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_conText1_Edit1
+ B_conText1_Edit1
 
 
 ƒeƒLƒXƒg‚P ‚Ì“ü—Í—“‚ÌƒRƒ“ƒgƒ[ƒ‹‚Ì•Ï”–¼‚ð’l‚ÉŽ‚ÂB
@@ -104,7 +104,7 @@ F_lastWordTabChange( 2 ) ‚Å‚àA“¯‚¶‘€ì‚ª‚Å‚«‚éB
 ‚È‚Ç‚ÌŽg‚¢•û‚ÅŽg—p‚·‚éB
 
 
-## B_conText1_Picture1
+ B_conText1_Picture1
 
 
 ƒeƒLƒXƒg‚P ‚ÌƒAƒCƒRƒ“‚ÌƒRƒ“ƒgƒ[ƒ‹‚Ì•Ï”–¼‚ð’l‚ÉŽ‚ÂB
@@ -116,43 +116,43 @@ F_lastWordTabChange( 2 ) ‚Å‚àA“¯‚¶‘€ì‚ª‚Å‚«‚éB
 ‚È‚Ç‚ÌŽg‚¢•û‚ÅŽg—p‚·‚éB
 
 
-## B_conText2_Edit1
+ B_conText2_Edit1
 
 
 ƒeƒLƒXƒg‚Q ‚Ì“ü—Í—“‚ÌƒRƒ“ƒgƒ[ƒ‹‚Ì•Ï”–¼‚ð’l‚ÉŽ‚ÂB
 
 
-## B_conText2_Picture1
+ B_conText2_Picture1
 
 
 ƒeƒLƒXƒg‚Q ‚ÌƒAƒCƒRƒ“‚ÌƒRƒ“ƒgƒ[ƒ‹‚Ì•Ï”–¼‚ð’l‚ÉŽ‚ÂB
 
 
-## B_conText3_Edit1
+ B_conText3_Edit1
 
 
 ƒeƒLƒXƒg‚R ‚Ì“ü—Í—“‚ÌƒRƒ“ƒgƒ[ƒ‹‚Ì•Ï”–¼‚ð’l‚ÉŽ‚ÂB
 
 
-## B_conText3_Picture1
+ B_conText3_Picture1
 
 
 ƒeƒLƒXƒg‚R ‚ÌƒAƒCƒRƒ“‚ÌƒRƒ“ƒgƒ[ƒ‹‚Ì•Ï”–¼‚ð’l‚ÉŽ‚ÂB
 
 
-## B_conTextSplit1_Picture1
+ B_conTextSplit1_Picture1
 
 
 •ªŠ„ƒeƒLƒXƒg‚P ‚ÌƒAƒCƒRƒ“‚ÌƒRƒ“ƒgƒ[ƒ‹‚Ì•Ï”–¼‚ð’l‚ÉŽ‚ÂB
 
 
-## B_conTextSplit2_Picture1
+ B_conTextSplit2_Picture1
 
 
 •ªŠ„ƒeƒLƒXƒg‚Q ‚ÌƒAƒCƒRƒ“‚ÌƒRƒ“ƒgƒ[ƒ‹‚Ì•Ï”–¼‚ð’l‚ÉŽ‚ÂB
 
 
-## B_DriveName
+ B_DriveName
 
 
 TRR ‚ð‹N“®‚µ‚½Aƒhƒ‰ƒCƒu‚ÌƒpƒX‚ðŠi”[‚·‚é•Ï”B
@@ -162,7 +162,7 @@ C:\‚È‚ÇB
 USBƒƒ‚ƒŠ‚È‚Ç‚©‚ç TRR ‚ð‹N“®‚µ‚½ê‡‚ÍA‚»‚Ìƒhƒ‰ƒCƒu‚ÌƒpƒX‚É‚È‚éB
 
 
-## B_ErrorFile
+ B_ErrorFile
 
 
 ’Êí‚Í  
@@ -176,7 +176,7 @@ userƒtƒHƒ‹ƒ_‚ð•ÏX‚·‚éÝ’è‚ð‚µ‚½ê‡A
 ‚±‚Ì’l‚à•ÏX‚·‚éB
 
 
-## B_EveryFolder
+ B_EveryFolder
 
 
 %A_ScriptDir%\trrEvery
@@ -184,103 +184,103 @@ userƒtƒHƒ‹ƒ_‚ð•ÏX‚·‚éÝ’è‚ð‚µ‚½ê‡A
 ‚ÌƒtƒHƒ‹ƒ_ƒpƒX‚ð’l‚ÉŽ‚Â•Ï”B
 
 
-## B_GuiNumClickWindow
+ B_GuiNumClickWindow
 
 
 ƒ}ƒEƒX‘€ì‚Ì‚½‚ß‚ÌƒEƒCƒ“ƒhƒE ‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumErrorOutput
+ B_GuiNumErrorOutput
 
 
 ƒGƒ‰[•\Ž¦ ‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumInputList
+ B_GuiNumInputList
 
 
 “ü—Í•âŠ® ‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumLastWord
+ B_GuiNumLastWord
 
 
 ÅŒã‚Ì•¶Žš‚ÅŽÀs‚·‚éÝ’è ‚ÌƒEƒCƒ“ƒhƒE‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumMultipleText1
+ B_GuiNumMultipleText1
 
 
 “ñsˆÈã‚ÌƒeƒLƒXƒg ‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumOutput
+ B_GuiNumOutput
 
 
 ’~‚¦Ž®à–¾•\Ž¦ ‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumReadFileOut
+ B_GuiNumReadFileOut
 
 
 ƒtƒ@ƒCƒ‹•\Ž¦—p ‚ÌƒEƒCƒ“ƒhƒE‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumStock1
+ B_GuiNumStock1
 
 
 ƒXƒgƒbƒNˆê—— ‚ÌÂ‚¢•û‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumStock2
+ B_GuiNumStock2
 
 
 ƒXƒgƒbƒNˆê—— ‚Ì—Î‚Ì•û‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumText1
+ B_GuiNumText1
 
 
 ƒeƒLƒXƒg‚P ‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumText2
+ B_GuiNumText2
 
 
 ƒeƒLƒXƒg‚Q ‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumText3
+ B_GuiNumText3
 
 
 ƒeƒLƒXƒg‚R ‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumTextSplit1
+ B_GuiNumTextSplit1
 
 
 •ªŠ„ƒeƒLƒXƒg‚P ‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumTextSplit2
+ B_GuiNumTextSplit2
 
 
 •ªŠ„ƒeƒLƒXƒg‚Q ‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumTimer
+ B_GuiNumTimer
 
 
 ƒ^ƒCƒ}[ˆê—— ‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_GuiNumTmpOutput
+ B_GuiNumTmpOutput
 
 
 ˆêŽž“I‚Èà–¾•\Ž¦ ‚ÌGui‚Ìƒiƒ“ƒo[‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_itemArg0
+ B_itemArg0
 
 
 “ñsˆÈã‚ÌƒAƒCƒeƒ€ ‚ÌƒXƒNƒŠƒvƒg“à‚ÅŽg—p‚·‚éŽž‚Ì‚ÝˆÓ–¡‚ð¬‚·•Ï”B
@@ -312,7 +312,7 @@ B_itemArg0 ‚ðŽg—p‚µ‚½ƒXƒNƒŠƒvƒg‚ðŽg‚¤ê‡A B_itemArg9 ‚Ü‚Å‚µ‚©Žg‚¦‚È‚¢Ž–‚ðl—¶‚
 ‚Æ‚¢‚Á‚Ä‚àA TRR ‚Å‚ÍA Loop ‚ðŽg‚¦‚È‚¢‚Ì‚ÅAŽg—p‚·‚é‚±‚Æ‚Í–³‚¢‚ÆŽv‚¤‚ªB
 
 
-## B_itemArg1
+ B_itemArg1
 
 
 “ñsˆÈã‚ÌƒAƒCƒeƒ€ ‚ÌƒXƒNƒŠƒvƒg“à‚ÅŽg—p‚·‚éŽž‚Ì‚ÝˆÓ–¡‚ð¬‚·•Ï”B
@@ -350,7 +350,7 @@ B_itemArg9
 ‚±‚ê‚ç‚Ì•Ï”‚ÍA B_itemArg1 ‚ÌˆÓ–¡‚ª•ª‚©‚Á‚Ä‚¢‚é‚È‚çAà–¾‚Ì•K—v‚ª‚È‚¢‚Ì‚ÅÈ—ª‚·‚éB
 
 
-## B_itemArgAll
+ B_itemArgAll
 
 
 “ñsˆÈã‚ÌƒAƒCƒeƒ€ ‚ÌƒXƒNƒŠƒvƒg“à‚ÅŽg—p‚·‚éŽž‚Ì‚ÝˆÓ–¡‚ð¬‚·•Ï”B
@@ -471,7 +471,7 @@ testItem  %A_MyDocuments%
 AhkƒRƒ}ƒ“ƒh ‚Ìˆø”‚ÌŽw’è‚É‹ß‚¢Œ`‚É‚È‚éB
 
 
-## B_itemNameOwn
+ B_itemNameOwn
 
 
 “ñsˆÈã‚ÌƒAƒCƒeƒ€ ‚ÌƒXƒNƒŠƒvƒg“à‚ÅŽg—p‚·‚éŽž‚Ì‚ÝˆÓ–¡‚ð¬‚·•Ï”B
@@ -490,7 +490,7 @@ B_itemNameOwn ‚Ì’l‚à•Ê‚Ì‚Éã‘‚«‚³‚ê‚é‚Ì‚ÅA‚»‚±‚Í’ˆÓ‚ª•K—v‚Å‚ ‚éB
 ‚±‚ê‚Í B_item ‚Æ–¼‚Ì‚Â‚­•Ï”‘S”Ê‚É“¯‚¶’ˆÓ‚ª•K—v‚Å‚ ‚éB
 
 
-## B_lastWordKeyStart2_1
+ B_lastWordKeyStart2_1
 
 
 ‚±‚Ì•Ï”‚ÍA‹N“®Žž‚É
@@ -556,7 +556,7 @@ E_lastWordRestoreFirst ‚Ìà–¾‚Í‚±‚¿‚ç‚Ìƒy[ƒW‚ÅB
 ‚±‚ê‚ç‚ÍA—p“r‚ª“¯‚¶‚à‚Ì‚Å‚ ‚éB
 
 
-## B_lastWordScriptStart2_1
+ B_lastWordScriptStart2_1
 
 
 ‚±‚Ì•Ï”‚ÍA‹N“®Žž‚É
@@ -622,7 +622,7 @@ E_lastWordRestoreFirst ‚Ìà–¾‚Í‚±‚¿‚ç‚Ìƒy[ƒW‚ÅB
 ‚±‚ê‚ç‚ÍA—p“r‚ª“¯‚¶‚à‚Ì‚Å‚ ‚éB
 
 
-## B_lastWordTabAllStartFlag2
+ B_lastWordTabAllStartFlag2
 
 
 ‚±‚Ì•Ï”‚ÍA‹N“®Žž‚É
@@ -647,7 +647,7 @@ E_lastWordRestoreFirst ‚Ìà–¾‚Í‚±‚¿‚ç‚Ìƒy[ƒW‚ÅB
 ‚±‚ê‚ç‚ÍA—p“r‚ª“¯‚¶‚à‚Ì‚Å‚ ‚éB
 
 
-## B_LineFeedCR
+ B_LineFeedCR
 
 
 ‰üs‚ðŠi”[‚µ‚½•Ï”B
@@ -669,7 +669,7 @@ TRRã‚Ì `n ‚Ìƒ‹[ƒ‹‚Í•Ê‚Ìƒy[ƒW‚ÅÚ‚µ‚­à–¾‚µ‚Ä‚¢‚éB
 •¶Žš‚ª" "‚ÅˆÍ‚Ü‚ê‚Ä‚¢‚é‚Æ‚«‚Ìƒ‹[ƒ‹
 
 
-## B_LineFeedCRLF
+ B_LineFeedCRLF
 
 
 ‰üs‚ðŠi”[‚µ‚½•Ï”B
@@ -678,7 +678,7 @@ TRRã‚Ì `n ‚Ìƒ‹[ƒ‹‚Í•Ê‚Ìƒy[ƒW‚ÅÚ‚µ‚­à–¾‚µ‚Ä‚¢‚éB
 
 
 
-## B_LineFeedLF
+ B_LineFeedLF
 
 
 ‰üs‚ðŠi”[‚µ‚½•Ï”B
@@ -686,7 +686,7 @@ TRRã‚Ì `n ‚Ìƒ‹[ƒ‹‚Í•Ê‚Ìƒy[ƒW‚ÅÚ‚µ‚­à–¾‚µ‚Ä‚¢‚éB
 `n ‚Å‚ ‚èA LF ‚Ì‰üs‚Å‚ ‚éB
 
 
-## B_OutputFile
+ B_OutputFile
 
 
 ’Êí‚Í
@@ -699,7 +699,7 @@ userƒtƒHƒ‹ƒ_‚ð•ÏX‚·‚éÝ’è‚ð‚µ‚½ê‡A
 ‚±‚Ì’l‚à•ÏX‚·‚éB
 
 
-## B_TmpOutputFile
+ B_TmpOutputFile
 
 
 ’Êí‚Í
@@ -712,56 +712,56 @@ userƒtƒHƒ‹ƒ_‚ð•ÏX‚·‚éÝ’è‚ð‚µ‚½ê‡A
 ‚±‚Ì’l‚à•ÏX‚·‚éB
 
 
-## B_WinTitleClickWindow
+ B_WinTitleClickWindow
 
 
 ƒ}ƒEƒX‘€ì‚Ì‚½‚ß‚ÌƒEƒCƒ“ƒhƒE ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_WinTitleErrorOutput
+ B_WinTitleErrorOutput
 
 
 ˆêŽž“I‚Èà–¾•\Ž¦ ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_WinTitleMultipleText1
+ B_WinTitleMultipleText1
 
 
 “ñsˆÈã‚ÌƒeƒLƒXƒg ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_WinTitleNoCloseTimer
+ B_WinTitleNoCloseTimer
 
 
 ƒEƒCƒ“ƒhƒE‚ð•Â‚¶‚¸‚É•\Ž¦‚·‚éƒ^ƒCƒ}[ˆê——
 &shutdown‚ðŽg—p‚µ‚½Žž‚É•\Ž¦‚·‚éƒEƒCƒ“ƒhƒE ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_WinTitleOutput
+ B_WinTitleOutput
 
 
 ’~‚¦Ž®à–¾•\Ž¦ ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_WinTitleReadFileOut
+ B_WinTitleReadFileOut
 
 
 ƒtƒ@ƒCƒ‹•\Ž¦—p‚ÌƒEƒCƒ“ƒhƒE ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_WinTitleStock1
+ B_WinTitleStock1
 
 
 ƒXƒgƒbƒN‚ÌÂ‚¢•û ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_WinTitleStock2
+ B_WinTitleStock2
 
 
 ƒXƒgƒbƒN‚Ì—Î‚Ì•û ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_WinTitleText1
+ B_WinTitleText1
 
 
 ƒeƒLƒXƒg‚P ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
@@ -772,37 +772,37 @@ userƒtƒHƒ‹ƒ_‚É‰Á‚¦‚È‚¢Ý’è ‚Ì
 ‚»‚Ì•Ï‚í‚Á‚½ƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚É‘Î‰ž‚µ‚Ä‚¢‚éB
 
 
-## B_WinTitleText2
+ B_WinTitleText2
 
 
 ƒeƒLƒXƒg‚Q ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_WinTitleText3
+ B_WinTitleText3
 
 
 ƒeƒLƒXƒg‚R ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_WinTitleTextSplit1
+ B_WinTitleTextSplit1
 
 
 •ªŠ„ƒeƒLƒXƒg‚P ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_WinTitleTextSplit2
+ B_WinTitleTextSplit2
 
 
 •ªŠ„ƒeƒLƒXƒg‚Q ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_WinTitleTimer
+ B_WinTitleTimer
 
 
 ƒ^ƒCƒ}[ˆê—— ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
 
 
-## B_WinTitleTmpOutput
+ B_WinTitleTmpOutput
 
 
 ƒGƒ‰[•\Ž¦ ‚ÌƒEƒCƒ“ƒhƒEƒ^ƒCƒgƒ‹‚ðŠi”[‚µ‚½•Ï”B
